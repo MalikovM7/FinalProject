@@ -1,0 +1,22 @@
+﻿@model FinalProjectMVC.ViewModels.Admin.FAQ.FAQVM
+
+<div class="container mt-5">
+    <h1 class="text-center">Create FAQ</h1>
+
+    <form asp-action="Create" method="post" class="mt-4">
+        <div class="form-group">
+            <label for="Question">Question</label>
+            <input asp-for="Question" class="form-control" id="Question" />
+            <span asp-validation-for="Question" class="text-danger"></span>
+        </div>
+
+        <div class="form-group mt-3">
+            <label for="Answer">Answer</label>
+            <textarea asp-for="Answer" class="form-control" id="Answer" rows="5"></textarea>
+            <span asp-validation-for="Answer" class="text-danger"></span>
+        </div>
+
+        <button type="submit" class="btn btn-success mt-3">Create</button>
+        <a asp-action="Index" class="btn btn-outline-danger mt-3">Cancel</a>
+    </form>
+</div>

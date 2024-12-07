@@ -1,0 +1,46 @@
+﻿@model IEnumerable<FinalProjectMVC.ViewModels.Admin.AboutUs.AboutUsVM>
+
+<div class="container mt-5">
+    <h1 class="text-center">Manage About Us</h1>
+
+    <!-- Add New Entry Button -->
+    <a asp-action="Create" class="btn btn-primary mb-4">Add New About Us</a>
+
+    <!-- About Us Table -->
+    <table class="table table-striped table-bordered">
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col">Title</th>
+                <th scope="col">Subtitle</th>
+                <th scope="col">Description</th>
+                <th scope="col" class="text-center">Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model != null && Model.Any())
+            {
+                foreach (var about in Model)
+                {
+                    <tr>
+                        <td>@about.Title</td>
+                        <td>@about.Subtitle</td>
+                        <td>@about.Description</td>
+                        <td class="text-center">
+                            <a asp-action="Details" asp-route-id="@about.Id" class="btn btn-info btn-sm">Details</a>
+                            <a asp-action="Edit" asp-route-id="@about.Id" class="btn btn-warning btn-sm mx-1">Edit</a>
+                            <form asp-action="Delete" asp-route-id="@about.Id" method="post" class="d-inline">
+                                <button type="submit" class="btn btn-danger btn-sm">Delete</button>
+                            </form>
+                        </td>
+                    </tr>
+                }
+            }
+            else
+            {
+                <tr>
+                    <td colspan="4" class="text-center text-muted">No records available. Please add a new About Us entry.</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

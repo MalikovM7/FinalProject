@@ -1,0 +1,573 @@
+html{
+
+    scroll-behavior: smooth;
+    
+    
+    }
+    
+    
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+    }
+
+
+    .headof {
+        
+        text-align: center;
+        margin-top: 80px;
+        margin-bottom: 20px;
+
+    }
+    
+    .headof h1 {
+        display: flex;
+        justify-content: end;
+        margin: 0;
+        font-size: 70px;
+        font-weight: 700;
+        color: #777;
+    }
+    
+    .nav1 {
+        display: flex;
+        justify-content: end;
+        margin-top: 10px;
+    }
+    
+    .nav1 a {
+        text-decoration: none;
+        color: #555;
+        margin: 0 5px;
+    }
+
+
+
+
+
+    .container-main{
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+
+    .content {
+        display: flex;
+    }
+    
+    .sidebar {
+        width: 25%;
+        padding-right: 20px;
+    }
+    
+    .sidebar .search input {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+    
+    .sidebar .categories {
+        background: #f9f9f9;
+        padding: 10px;
+        border-radius: 5px;
+    }
+    
+    .sidebar .categories h2 {
+        margin: 0;
+        margin-bottom: 10px;
+        font-size: 1.2em;
+    }
+    
+    .sidebar .categories ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .sidebar .categories ul li {
+        padding: 5px 0;
+    }
+    
+    .sidebar .categories ul li ul {
+        padding-left: 20px;
+    }
+    
+    .main-content {
+        width: 75%;
+    }
+    
+    .video-post {
+        background: #fff;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+        width: 100%;
+        margin-left: 10px;
+    }
+    
+    .video-header {
+        position: relative;
+    }
+    
+    .video-header img {
+        max-width: 100%;
+        border-radius: 5px;
+    }
+    
+    .play-button {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 68px;
+        height: 48px;
+        cursor: pointer;
+    }
+    
+    .post h2 {
+        margin: 20px 0 10px;
+        font-size: 1.8em;
+    }
+    
+    .post-meta {
+        color: #777;
+        font-size: 0.9em;
+        margin-bottom: 20px;
+    }
+    
+    .post-meta span {
+        margin-right: 10px;
+    }
+    
+    .post p {
+        font-size: 1em;
+        color: #333;
+    }
+    
+    .read-more {
+        display: inline-block;
+        padding: 10px 20px;
+        background: #000;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background 0.3s;
+    }
+    
+    .read-more:hover {
+        background: #333;
+    }
+
+
+
+    .post {
+        
+        background-color: white;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.268);
+        border-radius: 8px;
+        overflow: hidden;
+        max-width: 100%;
+        width: 100%;
+    }
+    
+    .post-image img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+    
+    .post-content {
+        padding: 20px;
+    }
+    
+    .post-title {
+        font-size: 24px;
+        margin: 0 0 10px;
+    }
+    
+    .post-meta {
+        color: #888;
+        font-size: 14px;
+        margin: 0 0 20px;
+    }
+    
+    .post-text {
+        color: #333;
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+
+
+
+
+
+
+
+
+
+
+.slide-post{
+
+
+        background-color: white;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.268);
+        border-radius: 8px;
+        overflow: hidden;
+        max-width: 100%;
+        width: 100%;
+        margin-left: 10px;
+
+}
+    .slider {
+    
+        position: relative;
+        margin: 0 auto;
+        margin-top: 200px;
+        width: 50%;
+        overflow: hidden;
+        width: 100%; 
+        height: 50%;
+        
+      }
+      
+      .slides {
+        
+        display: flex;
+        transition: transform 0.5s ease;
+        width: 100%;
+        max-width: 100%;
+        height: 100%;
+        
+      }
+      
+      .slides img {
+       
+        /* min-width: 100%; */
+        
+        display: block;
+        width: 100%; 
+        height: 100%; 
+        object-fit: cover;
+        
+
+      }
+      
+      .slider button {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background: transparent;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        font-size: 24px;
+        z-index: 2;
+      }
+      
+      .prev {
+        left: 0;
+      }
+      
+      .next {
+        right: 0;
+      }
+    
+
+
+
+
+
+
+
+
+      .quote-section {
+        font-family: Arial, sans-serif;
+        background-color: #111;
+        color: white;
+        padding: 20px;
+        position: relative;
+        margin-bottom: 20px;
+    }
+
+    .quote-section::before {
+        content: "";
+        display: block;
+        height: 4px;
+        background-color: red;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+
+    .quote-section blockquote {
+        margin: 0;
+        padding-left: 20px;
+        font-size: 1.2em;
+        border-left: 5px solid red;
+    }
+
+    .quote-section blockquote::before {
+        content: open-quote;
+    }
+
+    .quote-section blockquote::after {
+        content: close-quote;
+    }
+
+    .quote-section cite {
+        display: block;
+        text-align: right;
+        margin-top: 10px;
+        font-style: normal;
+        color: #ccc;
+    }
+
+    .quote-section .post-meta {
+        font-size: 0.9em;
+        color: #666;
+        margin-bottom: 20px;
+    }
+
+    .quote-section .read-more {
+        background-color: #fff;
+        border: 1px solid #ccc;
+        padding: 10px 20px;
+        text-decoration: none;
+        color: #333;
+        display: inline-block;
+        border-radius: 4px;
+    }
+
+    .quote-section .read-more:hover {
+        background-color: #f0f0f0;
+    }
+
+
+
+
+
+
+    .pagination {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px 0;
+    }
+    
+    .pagination-btn {
+        border: 1px solid #ccc;
+        padding: 10px 15px;
+        margin: 0 5px;
+        background-color: #fff;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+    
+    .pagination-btn:hover {
+        background-color: #f0f0f0;
+    }
+    
+    .pagination-btn.active {
+        background-color: #eee;
+        font-weight: bold;
+    }
+
+
+
+
+
+
+
+
+    .sidebar-section {
+        margin-bottom: 20px;
+        background-color: #fff;
+        border: 1px solid #ddd;
+        padding: 15px;
+    }
+    
+    .sidebar-section h3 {
+        margin-top: 0;
+        font-size: 1.2em;
+        color: #333;
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 10px;
+    }
+    
+    .reservation-detail h4, .helping-center p {
+        font-size: 1em;
+        margin: 10px 0;
+    }
+    
+    .reservation-detail p {
+        font-size: 0.9em;
+        color: #666;
+    }
+    
+    .btn {
+        display: inline-block;
+        padding: 10px 15px;
+        color: #fff;
+        background-color: #333;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        text-align: center;
+        margin-top: 10px;
+    }
+    
+    .btn:hover {
+        background-color: #555;
+    }
+    
+    .testimonials p {
+        font-size: 0.9em;
+        color: #666;
+        margin: 10px 0;
+    }
+    
+    .testimonial-dots {
+        text-align: center;
+        margin-top: 10px;
+    }
+    
+    .dot {
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        margin: 0 3px;
+        background-color: #ccc;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+    
+    .dot.active, .dot:hover {
+        background-color: #333;
+    }
+
+
+
+
+
+
+
+
+    .tab-header {
+        display: flex;
+        border-bottom: 2px solid #ddd;
+    }
+    
+    .tab-button {
+        flex: 1;
+        padding: 10px;
+        cursor: pointer;
+        background-color: #f9f9f9;
+        border: none;
+        text-align: center;
+    }
+    
+    .tab-button.active {
+        background-color: #333;
+        color: white;
+        border-bottom: 2px solid red;
+    }
+    
+    .tab-content .tab-pane {
+        display: none;
+        padding: 10px 0;
+    }
+    
+    .tab-content .tab-pane.active {
+        display: block;
+    }
+    
+    .post-item {
+        display: flex;
+        margin-bottom: 10px;
+    }
+    
+    .post-item img {
+        width: 50px;
+        height: 50px;
+        margin-right: 10px;
+        object-fit: cover;
+    }
+    
+     .post-info span {
+        display: block;
+        font-size: 0.8em;
+        color: #666;
+        text-align:left
+    }
+    
+    .btn {
+        display: inline-block;
+        padding: 10px 15px;
+        color: #fff;
+        background-color: #333;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        text-align: center;
+        margin-top: 10px;
+        width: 100%;
+    }
+    
+    .btn:hover {
+        background-color: #555;
+    }
+    
+    .archives-list {
+        list-style: none;
+        padding: 0;
+    }
+    
+    .archives-list > li {
+        margin-bottom: 10px;
+        font-size: 0.9em;
+        cursor: pointer;
+    }
+    
+    .archives-list > li > ul {
+        list-style: none;
+        padding-left: 20px;
+    }
+    
+    .archives-list > li > ul > li {
+        font-size: 0.8em;
+        color: #666;
+    }
+
+    .sidebar-section h3 {
+        margin-top: 0;
+        font-size: 1.2em;
+        color: #333;
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 10px;
+    }
+    
+    .twitter-feed .tweet {
+        margin-bottom: 15px;
+    }
+    
+    .twitter-feed i {
+        color: red;
+        font-size: 1.2em;
+        margin-right: 5px;
+    }
+    
+    .twitter-feed .twitter-handle {
+        color: red;
+        font-weight: bold;
+    }
+    
+    .twitter-feed .tweet-time {
+        color: #999;
+        font-size: 0.8em;
+        margin-top: 5px;
+    }

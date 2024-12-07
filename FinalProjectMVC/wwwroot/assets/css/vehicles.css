@@ -1,0 +1,159 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+
+/* Main Content */
+.container-main {
+    padding: 30px 15px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.container-main .headof h1 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.container-main .nav1 {
+    font-size: 14px;
+}
+
+.container-main .nav1 a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.container-main .nav1 a:hover {
+    text-decoration: underline;
+}
+
+/* Vehicle Listings */
+.row.border {
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+img.img-fluid {
+    border-radius: 5px;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+.text-danger {
+    color: #dc3545;
+}
+
+ul.list-inline {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+ul.list-inline li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+button.btn-dark {
+    background-color: #343a40;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+
+button.btn-dark:hover {
+    background-color: #23272b;
+}
+
+/* Search Panel */
+.bg-light {
+    background-color: #f9f9f9 !important;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+form .form-control, form .form-select {
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+button.w-100 {
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 10px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+
+button.w-100:hover {
+    background-color: #0056b3;
+}
+
+
+.price-slider {
+    text-align: center;
+}
+
+.price-slider input[type="range"] {
+    width: 100%;
+    margin: 10px 0;
+}
+
+#priceRange {
+    font-weight: bold;
+}
+
+/* Testimonials */
+.testimonial {
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.testimonial p {
+    margin-bottom: 5px;
+}
+
+.testimonial-indicators {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.testimonial-indicators .dot {
+    width: 10px;
+    height: 10px;
+    background-color: #ddd;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.testimonial-indicators .dot.active {
+    background-color: #007bff;
+}

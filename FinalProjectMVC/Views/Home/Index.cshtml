@@ -1,0 +1,385 @@
+﻿@model FinalProjectMVC.ViewModels.Home.HomePageViewModel
+<body>
+   
+<main> 
+    
+
+<!-- First form of the page -->
+
+    <div class="deals-container">
+            @foreach (var preview in Model.Previews.Where(p => p.IsSelected))
+            {
+                <div class="deals-text">
+                    <h1>@preview.Title</h1>
+                    <h2>@preview.Description </h2>
+                </div>
+                <div class="car-image">
+                    @if (!string.IsNullOrEmpty(preview.ImagePath))
+                    {
+                        <img src="@preview.ImagePath" alt="@preview.Title" class="car-img">
+                    }
+                </div>
+            }
+   
+
+   
+            
+            <div class="search-container">
+            <div class="search-header">
+                <h3>Search for Cheap Rental Cars Wherever You Are</h3>
+            </div>
+            <div class="search-form">
+                <div class="form-group">
+                    <label for="pickup-location">Picking Up Location</label>
+                    <input type="text" id="pickup-location" placeholder="Airport or Anywhere">
+                </div>
+                <div class="form-group">
+                    <label for="dropoff-location">Dropping Off Location</label>
+                    <input type="text" id="dropoff-location" placeholder="Airport or Anywhere">
+                </div>
+                <div class="form-group">
+                    <label for="pickup-date">Picking Up Date</label>
+                    <input type="date" id="pickup-date">
+                </div>
+                <div class="form-group">
+                    <label for="pickup-hour">Picking Up Hour</label>
+                    <input type="time" id="pickup-hour">
+                </div>
+                <div class="form-group">
+                    <label for="dropoff-date">Dropping Off Date</label>
+                    <input type="date" id="dropoff-date">
+                </div>
+                <div class="form-group">
+                    <label for="dropoff-hour">Dropping Off Hour</label>
+                    <input type="time" id="dropoff-hour">
+                </div>
+                <div class="form-group">
+                    <button id="find-car">FIND CAR</button>
+                </div>
+                <div class="advanced-search">
+                    <a href="#">Advanced Search</a>
+                </div>
+            </div>
+        </div>
+    </div>
+           
+
+ 
+
+
+      <div class="features-container">
+        <div class="feature-item">
+            <div class="feature-icon">
+                <i class="fa-solid fa-life-ring"></i>
+            </div>
+            <div class="feature-text">
+                <h3>7/24 CAR SUPPORT</h3>
+            </div>
+        </div>
+        <div class="feature-item feature-highlight">
+            <div class="feature-icon">
+                <i class="fa-solid fa-calendar-days"></i>
+            </div>
+            <div class="feature-text">
+                <h3>RESERVATION ANYTIME</h3>
+            </div>
+        </div>
+        <div class="feature-item">
+            <div class="feature-icon">
+                <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <div class="feature-text">
+                <h3>LOTS OF LOCATIONS</h3>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+        <div class="info-container">
+            @if (Model.AboutUs != null && Model.AboutUs.Any())
+            {
+                foreach (var aboutUs in Model.AboutUs)
+                {
+                    <div class="info-content">
+                        <h2>@aboutUs.Title</h2>
+                        <h1>@aboutUs.Subtitle</h1>
+                        <p>@aboutUs.Description</p>
+                        <ul>
+                            @if (aboutUs.Points != null && aboutUs.Points.Any())
+                            {
+                                foreach (var point in aboutUs.Points)
+                                {
+                                    <li>✔ @point</li>
+                                }
+                            }
+                        </ul>
+                        <div class="info-buttons">
+                            <button class="btn-red">SEE ALL VEHICLES</button>
+                            <button class="btn-black">RESERVATION NOW</button>
+                        </div>
+                    </div>
+                    <div class="simple-slider">
+                        <div class="simple-slides">
+                            @if (aboutUs.ImageUrls != null && aboutUs.ImageUrls.Any())
+                            {
+                                foreach (var imageUrl in aboutUs.ImageUrls)
+                                {
+                                    <img src="@imageUrl" alt="Image">
+                                }
+                            }
+                        </div>
+                        <button class="prev" onclick="prevSlide()">&#10094;</button>
+                        <button class="next" onclick="nextSlide()">&#10095;</button>
+                    </div>
+                }
+            }
+            else
+            {
+                <p>No About Us content is available at the moment.</p>
+            }
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Car Slider -->
+
+    
+    <div class="slider">
+        <h2>Featured Cars</h2>
+        <div class="car-slides">
+            <div class="car-slide">
+                <img src="https://www.thecarexpert.co.uk/wp-content/uploads/2018/06/1806-Audi-A4-19my-01-1200x1200-cropped.jpg" alt="Car 1">
+                <h3>Audi A4</h3>
+                <p>Starting at $50/day</p>
+                <button class="rent-btn">Rent It</button>
+            </div>
+            <div class="car-slide">
+                    <img src="https://media.ed.edmunds-media.com/bmw/5-series/2021/oem/2021_bmw_5-series_sedan_530e_fq_oem_1_600.jpg" alt="Car 2">
+                <h3>BMW 530e</h3>
+                <p>Starting at $80/day</p>
+                <button class="rent-btn">Rent It</button>
+            </div>
+            <div class="car-slide">
+                <img src="https://www.thecarexpert.co.uk/wp-content/uploads/2018/12/mercedes-benz-c-class-test-drive-wallpaper-1200x1200-cropped.jpg" alt="Car 3">
+                <h3>Mercedes C class</h3>
+                <p>Starting at $70/day</p>
+                <button class="rent-btn">Rent It</button>
+            </div>
+            <div class="car-slide">
+                <img src="https://www.thecarexpert.co.uk/wp-content/uploads/2018/06/1806-Audi-A4-19my-01-1200x1200-cropped.jpg" alt="Car 1">
+                <h3>Audi A4</h3>
+                <p>Starting at $50/day</p>
+                <button class="rent-btn">Rent It</button>
+            </div>
+            <div class="car-slide">
+                    <img src="https://media.ed.edmunds-media.com/bmw/5-series/2021/oem/2021_bmw_5-series_sedan_530e_fq_oem_1_600.jpg" alt="Car 2">
+                <h3>BMW 530e</h3>
+                <p>Starting at $80/day</p>
+                <button class="rent-btn">Rent It</button>
+            </div>
+            <div class="car-slide">
+                <img src="https://www.thecarexpert.co.uk/wp-content/uploads/2018/12/mercedes-benz-c-class-test-drive-wallpaper-1200x1200-cropped.jpg" alt="Car 3">
+                <h3>Mercedes C class</h3>
+                <p>Starting at $70/day</p>
+                <button class="rent-btn">Rent It</button>
+            </div>
+        </div>
+        <button class="prev  btn-prev-car sliderButton" onclick="prevSlide()">&#10094;</button>
+        <button class="next  btn-next-car sliderButton" onclick="nextSlide()">&#10095;</button>
+    </div>
+
+
+
+
+
+
+
+
+
+<!-- Stats -->
+
+    <div class="stats-container">
+        <div class="stat-item">
+            <div class="stat-icon">
+                <i class="fa-solid fa-heart"></i>
+            </div>
+            <div class="stat-text">
+                <h3>5657</h3>
+                <p>HAPPY CUSTOMERS</p>
+            </div>
+        </div>
+        <div class="stat-item">
+            <div class="stat-icon">
+                <i class="fa-solid fa-car"></i>
+            </div>
+            <div class="stat-text">
+                <h3>657</h3>
+                <p>TOTAL CAR COUNT</p>
+            </div>
+        </div>
+        <div class="stat-item">
+            <div class="stat-icon">
+                <i class="fa-solid fa-flag"></i>
+            </div>
+            <div class="stat-text">
+                <h3>1,255,657</h3>
+                <p>TOTAL KM/MIL</p>
+            </div>
+        </div>
+        <div class="stat-item">
+            <div class="stat-icon">
+                <i class="fa-solid fa-comments"></i>
+            </div>
+            <div class="stat-text">
+                <h3>1255</h3>
+                <p>CALL CENTER SOLUTIONS</p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+<!-- FAQS -->
+
+        <div class="faq-container">
+            <h2>FAQs</h2>
+            @if (Model.FAQs != null && Model.FAQs.Any())
+            {
+                foreach (var faq in Model.FAQs)
+                {
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>@faq.Question</span>
+                            <button class="toggle-answer" onclick="toggleAnswer(this)">+</button>
+                        </div>
+                        <div class="faq-answer" style="display: none;">
+                            <p>@faq.Answer</p>
+                        </div>
+                    </div>
+                }
+            }
+            else
+            {
+                <p>No FAQs available at the moment.</p>
+            }
+        </div>
+        </div>
+
+<!-- Search Panel -->
+
+    <div class="search-section-bottom">
+        <div class="search-text-bottom">
+            <h3>Great Rental Cars</h3>
+            <h1>FIND YOUR CAR</h1>
+        </div>
+        <div class="search-form-bottom">
+            <div class="form-group-bottom">
+                <label for="pickup-location">Picking Up Location</label>
+                <input type="text" id="pickup-location" placeholder="Airport or Anywhere">
+            </div>
+            <div class="form-group-bottom">
+                <label for="pickup-date">Picking Up Date</label>
+                <input type="date" id="pickup-date">
+            </div>
+            <div class="form-group-bottom">
+                <label for="price-category">Price Category</label>
+                <select id="price-category">
+                    <option value="" disabled selected>Select Car Group</option>
+                    <option value="economy">Economy</option>
+                    <option value="luxury">Luxury</option>
+                    <option value="suv">SUV</option>
+                </select>
+            </div>
+            <div class="form-group-bottom">
+                <button id="find-car-bottom">FIND CAR</button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+<!-- This is map part -->
+
+
+    <section class="map top">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.598155952697!2d49.85455788983272!3d40.41775208149123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40308980df11e5d9%3A0xc91cb4884a663cf2!2zVG9wZGFuIMSwbsWfYWF0LTEwMDEgeMSxcmRhdmF0LiBEyZlybsmZZ8O8bCBiYXphcsSxIFRpa2ludGkgbWF0ZXJpYWxsYXLEsW7EsW4gdG9wZGFuIHbJmSBwyZlyYWvJmW5kyZkgc2F0xLHFnyBtyZlya8mZemk!5e0!3m2!1sen!2saz!4v1716023636214!5m2!1sen!2saz" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </iframe>
+      </section>
+
+
+
+
+<!-- Blog Posts -->
+
+
+      <div class="blog-posts">
+        <div class="post">
+            <div class="post-image">
+                <img src="https://jthemes.net/themes/html/rentit/assets/img/preview/blog/recent-post-570x270x1.jpg" alt="Car Service">
+                <span class="post-category">CAR SERVICE</span>
+            </div>
+            <div class="post-date">21<br>DEC</div>
+            <div class="post-content">
+                <p class="post-author">By isamercan</p>
+                <h3>Amazing Cars here and best offer waits for you</h3>
+                <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+            </div>
+        </div>
+        <div class="post">
+            <div class="post-image">
+                <img src="https://jthemes.net/themes/html/rentit/assets/img/preview/blog/recent-post-570x270x2.jpg" alt="Repair">
+                <span class="post-category">REPAIR</span>
+            </div>
+            <div class="post-date">21<br>DEC</div>
+            <div class="post-content">
+                <p class="post-author">By isamercan</p>
+                <h3>Amazing Cars here and best offer waits for you</h3>
+                <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+</main>
+
+<button id="topBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+
+
+
+
+
+</body>
+</html>
+

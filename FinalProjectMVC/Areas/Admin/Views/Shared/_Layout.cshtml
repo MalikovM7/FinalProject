@@ -1,0 +1,102 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Admin Panel</title>
+    <!-- plugins:css -->
+    <link rel="stylesheet" href="~/admin/vendors/mdi/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="~/admin/vendors/base/vendor.bundle.base.css">
+    <!-- plugin css for this page -->
+    <link rel="stylesheet" href="~/admin/vendors/datatables.net-bs4/dataTables.bootstrap4.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert2/11.14.4/sweetalert2.min.css" integrity="sha512-Xxs33QtURTKyRJi+DQ7EKwWzxpDlLSqjC7VYwbdWW9zdhrewgsHoim8DclqjqMlsMeiqgAi51+zuamxdEP2v1Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- inject:css -->
+    <link rel="stylesheet" href="~/admin/css/style.css">
+    <!-- endinject -->
+    <link rel="shortcut icon" href="~/admin/images/favicon.png" />
+</head>
+
+<body>
+    <div class="container-scroller">
+        <!-- Navbar -->
+        <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
+            <div class="navbar-brand-wrapper d-flex justify-content-center">
+
+                    <a class="navbar-brand brand-logo" asp-area="" asp-controller="Home" asp-action="Index" class="btn btn-secondary">
+
+                    <img src="~/admin/images/logo.svg" alt="logo" />
+                </a>
+            </div>
+            <div class="navbar-menu-wrapper d-flex align-items-center justify-content-end">
+                <ul class="navbar-nav navbar-nav-right">
+                    <li class="nav-item nav-profile dropdown">
+                        @if (User.Identity.IsAuthenticated)
+                        {
+                            <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="profileDropdown">
+                                @* <img src="~/admin/images/faces/face1.jpg" alt="profile" /> *@
+                                <span class="nav-profile-name">@User.Identity.Name</span>
+                            </a>
+                        }
+                        <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="profileDropdown">
+                            <form method="post" style="display:inline;" asp-controller="Account" asp-action="Logout">
+                                <button type="submit" class="dropdown-item">
+                                    <i class="mdi mdi-logout text-primary"></i> Logout
+                                </button>
+                            </form>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Sidebar -->
+        <div class="container-fluid page-body-wrapper">
+            <nav class="sidebar sidebar-offcanvas" id="sidebar">
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a class="nav-link" asp-controller="Dashboard" asp-action="Index">
+                            <i class="mdi mdi-home menu-icon"></i>
+                            <span class="menu-title">Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" asp-controller="FAQ" asp-action="Index">
+                            <i class="mdi mdi-comment-question-outline menu-icon"></i>
+                            <span class="menu-title">FAQs</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" asp-controller="HomePreview" asp-action="Index" asp-area="Admin">
+                            <i class="mdi mdi-home-outline menu-icon"></i>
+                            <span class="menu-title">Home Previews</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" asp-controller="AboutUs" asp-action="Index" asp-area="Admin">
+                            <i class="mdi mdi-information-outline menu-icon"></i>
+                            <span class="menu-title">About Us</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            @RenderBody()
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="~/admin/vendors/base/vendor.bundle.base.js"></script>
+    <script src="~/admin/vendors/chart.js/Chart.min.js"></script>
+    <script src="~/admin/vendors/datatables.net/jquery.dataTables.js"></script>
+    <script src="~/admin/vendors/datatables.net-bs4/dataTables.bootstrap4.js"></script>
+    <script src="~/admin/js/off-canvas.js"></script>
+    <script src="~/admin/js/hoverable-collapse.js"></script>
+    <script src="~/admin/js/template.js"></script>
+    <script src="~/admin/js/dashboard.js"></script>
+    <script src="~/admin/js/data-table.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert2/11.14.4/sweetalert2.min.js" integrity="sha512-a/ljmGyCvVDl+QZXCxw/6hKcG4V7Syo7qmb9lUFTwrP12lCCItvQKeTMBMjtpa+3RE6UZ7gk+/IZzj4H04y4ng==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+
+</html>

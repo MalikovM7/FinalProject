@@ -1,0 +1,116 @@
+﻿@model FinalProjectMVC.ViewModels.Vehicles.VehiclePageVM
+<!-- Main Content Section -->
+    <div class="container-main">
+        <div class="headof">
+            <h1>VEHICLES</h1>
+            <div class="nav1">
+                <a href="#">Home</a> &gt; <a href="#">Vehicles</a>
+            </div>
+        </div>
+    </div>
+
+    <main class="container my-5">
+        <div class="row">
+            <!-- Left: Vehicle Listings -->
+
+        <div class="col-md-8">
+            @foreach (var car in Model.Cars)
+            {
+                <div class="row mb-4 border p-3">
+                    <div class="col-md-4">
+                        <img src="@car.ImagePath" class="img-fluid" alt="@car.Brand @car.Model">
+                    </div>
+                    <div class="col-md-8">
+                        <h5 class="text-uppercase">@car.Brand @car.Model</h5>
+                        <p class="text-danger"><strong>Start from $@car.PricePerDay/per day</strong></p>
+                        <p>Available from @car.AvailabilityStart.ToShortDateString() to @car.AvailabilityEnd.ToShortDateString()</p>
+                        <ul class="list-inline">
+                            <li class="list-inline-item"><strong>@car.Year</strong></li>
+                            <li class="list-inline-item">@car.Fueltype</li>
+                            <li class="list-inline-item">@car.Color</li>
+                            <li class="list-inline-item">@car.Location</li>
+                        </ul>
+                        @if (car.IsAvailable)
+                        {
+                            <button class="btn btn-dark">Rent It</button>
+                        }
+                        else
+                        {
+                            <button class="btn btn-secondary" disabled>Unavailable</button>
+                        }
+                    </div>
+                </div>
+            }
+        </div>
+
+            <!-- Right: Search Panel -->
+            <div class="col-md-4">
+                <!-- Search Panel -->
+                <div class="border p-4 bg-light">
+                    <h5 class="text-uppercase mb-4">Find Best Rental Car</h5>
+                    <form>
+                        <div class="mb-3">
+                            <label for="pickupLocation" class="form-label">Picking Up Location</label>
+                            <input type="text" class="form-control" id="pickupLocation" placeholder="Airport or Anywhere">
+                        </div>
+                        <div class="mb-3">
+                            <label for="dropoffLocation" class="form-label">Dropping Off Location</label>
+                            <input type="text" class="form-control" id="dropoffLocation" placeholder="Airport or Anywhere">
+                        </div>
+                        <div class="mb-3">
+                            <label for="pickupDate" class="form-label">Picking Up Date</label>
+                            <input type="date" class="form-control" id="pickupDate">
+                        </div>
+                        <div class="mb-3">
+                            <label for="pickupHour" class="form-label">Picking Up Hour</label>
+                            <input type="time" class="form-control" id="pickupHour">
+                        </div>
+                        <div class="mb-3">
+                            <label for="category" class="form-label">Select Category</label>
+                            <select class="form-select" id="category">
+                                <option selected>Select Category</option>
+                                <option value="1">Sedan</option>
+                                <option value="2">SUV</option>
+                                <option value="3">Truck</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="type" class="form-label">Select Type</label>
+                            <select class="form-select" id="type">
+                                <option selected>Select Type</option>
+                                <option value="1">Luxury</option>
+                                <option value="2">Economy</option>
+                                <option value="3">Sport</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Find Car</button>
+                    </form>
+                </div>
+
+                <!-- Price Filter -->
+                <div class="border p-4 bg-light mt-4">
+                    <h5 class="text-uppercase mb-4">Price</h5>
+                    <div class="price-slider">
+                        <input type="range" id="priceMin" class="form-range" min="100" max="278" value="100">
+                        <input type="range" id="priceMax" class="form-range" min="100" max="278" value="278">
+                        <button class="btn btn-dark w-100 mt-3">Filter</button>
+                        <p class="mt-2 text-center"><span id="priceRange">$100 - $278</span></p>
+                    </div>
+                </div>
+
+                <!-- Testimonials -->
+                <div class="border p-4 bg-light mt-4">
+                    <h5 class="text-uppercase mb-4">Testimonials</h5>
+                    <div class="testimonial">
+                        <p>Vivamus eget nibh. Etiam cursus leo vel metus. Nulla facilisi. Aenean nec eros. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia.</p>
+                        <p><strong>John Doe</strong></p>
+                        <p>Co-founder at Rent It</p>
+                    </div>
+                    <div class="testimonial-indicators text-center mt-3">
+                        <span class="dot active" data-index="0"></span>
+                        <span class="dot" data-index="1"></span>
+                        <span class="dot" data-index="2"></span>
+                    </div>
+                </div>
+            </div>
+    </main>

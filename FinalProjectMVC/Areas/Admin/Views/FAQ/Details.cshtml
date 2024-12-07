@@ -1,0 +1,20 @@
+﻿@model FinalProjectMVC.ViewModels.Admin.FAQ.FAQVM
+
+<div class="container mt-5">
+    <h1 class="text-center">FAQ Details</h1>
+
+    <div class="card mt-4">
+        <div class="card-body">
+            <h4 class="card-title">Question</h4>
+            <p class="card-text">@Model.Question</p>
+
+            <h4 class="card-title mt-4">Answer</h4>
+            <p class="card-text">@Model.Answer</p>
+        </div>
+    </div>
+
+    <div class="mt-4 text-center">
+        <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-warning">Edit</a>
+        <a asp-action="Index" class="btn btn-primary">Back to List</a>
+    </div>
+</div>
