@@ -1,4 +1,4 @@
-﻿using FinalProjectMVC.Identity;
+﻿using Domain.Identity;
 using FinalProjectMVC.ViewModels.Account;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;

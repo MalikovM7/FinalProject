@@ -1,11 +1,11 @@
-﻿using FinalProjectMVC.Common;
-using FinalProjectMVC.Data;
-using FinalProjectMVC.Exceptions;
+﻿using Domain.Common;
+using Persistence.Data;
+using Domain.Exceptions;
 using Microsoft.EntityFrameworkCore;
 using Repositories.Repositories;
 using System.Linq.Expressions;
 
-namespace FinalProjectMVC.Repositories.Implementations
+namespace Persistence.Repositories.Implementations
 {
     public class BaseRepository<T> : IBaseRepository<T> where T : BaseEntity
     {

@@ -1,8 +1,8 @@
-﻿using FinalProjectMVC.Models;
+﻿using Domain.Models;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using Microsoft.EntityFrameworkCore;
 
-namespace FinalProjectMVC.Configurations
+namespace Persistence.Configurations
 {
     public class FAQConfiguration : IEntityTypeConfiguration<FAQ>
     {

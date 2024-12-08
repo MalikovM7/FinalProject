@@ -1,5 +1,5 @@
-﻿using FinalProjectMVC.Exceptions;
-using FinalProjectMVC.Models;
+﻿using Domain.Exceptions;
+using Domain.Models;
 using FinalProjectMVC.ViewModels.Admin.AboutUs;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;

@@ -1,4 +1,4 @@
-﻿namespace FinalProjectMVC.Helpers.Enums
+﻿namespace Domain.Helpers.Enums
 {
     public enum Roles
     {

@@ -1,4 +1,4 @@
-﻿using FinalProjectMVC.Models;
+﻿using Domain.Models;
 
 namespace FinalProjectMVC.ViewModels.Vehicles
 {

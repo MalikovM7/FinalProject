@@ -1,0 +1,25 @@
+﻿@model IEnumerable<Domain.Models.Reservation>
+
+<h1>My Reservations</h1>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Car</th>
+            <th>Start Date</th>
+            <th>End Date</th>
+            <th>Total Price</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var reservation in Model)
+        {
+            <tr>
+                <td>@reservation.Car.Brand @reservation.Car.Model</td>
+                <td>@reservation.StartDate.ToShortDateString()</td>
+                <td>@reservation.EndDate.ToShortDateString()</td>
+                <td>@reservation.TotalPrice.ToString("C")</td>
+            </tr>
+        }
+    </tbody>
+</table>

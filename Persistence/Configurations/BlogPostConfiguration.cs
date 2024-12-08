@@ -1,8 +1,9 @@
-﻿using FinalProjectMVC.Models;
+﻿
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using Microsoft.EntityFrameworkCore;
+using Domain.Models;
 
-namespace FinalProjectMVC.Configurations
+namespace Persistence.Configurations
 {
     public class BlogPostConfiguration : IEntityTypeConfiguration<BlogPost>
     {

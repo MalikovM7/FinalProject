@@ -1,6 +1,6 @@
-﻿using FinalProjectMVC.Data;
-using FinalProjectMVC.Exceptions;
-using FinalProjectMVC.Models;
+﻿
+using Domain.Exceptions;
+using Domain.Models;
 
 using Repositories.Repositories;
 using Services.Interfaces;

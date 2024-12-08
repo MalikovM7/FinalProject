@@ -1,5 +1,5 @@
-﻿using FinalProjectMVC.Exceptions;
-using FinalProjectMVC.Models;
+﻿using Domain.Exceptions;
+using Domain.Models;
 
 using FinalProjectMVC.Services.Implementations;
 using FinalProjectMVC.ViewModels.Admin.FAQ;

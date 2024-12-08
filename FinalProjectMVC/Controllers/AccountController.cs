@@ -1,8 +1,8 @@
 ﻿using FinalProjectMVC.ViewModels.Account;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
-using FinalProjectMVC.Helpers.Enums;
-using FinalProjectMVC.Identity;
+using Domain.Helpers.Enums;
+using Domain.Identity;
 using Services.Interfaces;
 
 namespace FinalProjectMVC.Controllers

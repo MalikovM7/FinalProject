@@ -3,7 +3,7 @@ using Microsoft.Extensions.Options;
 using MimeKit.Text;
 using MimeKit;
 using MailKit.Net.Smtp;
-using FinalProjectMVC.Helpers;
+using Domain.Helpers;
 using Services.Interfaces;
 
 namespace FinalProjectMVC.Services.Implementations

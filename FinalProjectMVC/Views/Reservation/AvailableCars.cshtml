@@ -1,0 +1,31 @@
+﻿@model IEnumerable<Domain.Models.Car>
+
+<h1>Available Cars</h1>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Brand</th>
+            <th>Model</th>
+            <th>Year</th>
+            <th>Price Per Day</th>
+            <th>Location</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var car in Model)
+        {
+            <tr>
+                <td>@car.Brand</td>
+                <td>@car.Model</td>
+                <td>@car.Year</td>
+                <td>@car.PricePerDay.ToString("C")</td>
+                <td>@car.Location</td>
+                <td>
+                    <a asp-controller="Reservation" asp-action="Reserve" asp-route-carId="@car.Id" class="btn btn-primary">Reserve</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

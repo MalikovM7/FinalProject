@@ -1,12 +1,14 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
-using FinalProjectMVC.Helpers;
+using Domain.Helpers;
 using FinalProjectMVC.Services.Implementations;
-using FinalProjectMVC.Data;
-using FinalProjectMVC.Identity;
-using FinalProjectMVC.Repositories.Implementations;
+using Persistence.Data;
+using Domain.Identity;
+using Persistence.Repositories.Implementations;
 using Services.Interfaces;
 using Repositories.Repositories;
+using Services.Implementations.Implementations;
+using Microsoft.AspNetCore.Authentication.Cookies;
 namespace FinalProjectMVC
 {
     public class Program
@@ -23,6 +25,12 @@ namespace FinalProjectMVC
 
             builder.Services.AddDbContext<AppDbContext>(options => options.UseSqlServer(connectionString));
 
+            builder.Services.AddAuthentication(options =>
+            {
+                options.DefaultAuthenticateScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+                options.DefaultChallengeScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+            })
+            .AddCookie();
 
 
             builder.Services.AddIdentity<AppUser, IdentityRole>(options =>
@@ -41,6 +49,7 @@ namespace FinalProjectMVC
                 .AddEntityFrameworkStores<AppDbContext>()
                 .AddDefaultTokenProviders();
 
+            builder.Services.AddScoped<IReservationService, ReservationService>();
             builder.Services.AddScoped<IFaqRepository, FAQRepository>();
             builder.Services.AddScoped<IHomePreviewRepository, HomePreviewRepository>();
             builder.Services.AddScoped<IAboutUsRepository, AboutUsRepository>();

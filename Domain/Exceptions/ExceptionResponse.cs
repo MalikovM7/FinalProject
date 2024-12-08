@@ -1,6 +1,6 @@
 ﻿using System.Net;
 
-namespace FinalProjectMVC.Exceptions
+namespace Domain.Exceptions
 {
     public class ExceptionResponse
     {

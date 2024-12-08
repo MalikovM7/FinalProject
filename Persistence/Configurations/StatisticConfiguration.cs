@@ -1,8 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using FinalProjectMVC.Models;
+using Domain.Models;
 
-namespace FinalProjectMVC.Data.Configurations
+namespace Persistence.Configurations
 {
     public class StatisticConfiguration : IEntityTypeConfiguration<Statistic>
     {

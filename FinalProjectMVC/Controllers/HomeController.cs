@@ -1,4 +1,4 @@
-using FinalProjectMVC.Models;
+using Domain.Models;
 using FinalProjectMVC.ViewModels.Home;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;

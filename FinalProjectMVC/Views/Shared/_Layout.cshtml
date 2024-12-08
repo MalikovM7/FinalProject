@@ -11,23 +11,23 @@
     <script src="~/assets/js/home.js" defer></script>
     <link rel="stylesheet" href="~/assets/css/home.css">
     <style>
-        /* Ensure the header stays fixed at the top */
         .header-container {
             position: fixed;
             top: 0;
             left: 0;
             width: 100%;
-            z-index: 1030; /* Ensure it stays above other elements */
+            z-index: 1030;
             background-color: #fff;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
 
         body {
-            padding-top: 80px; /* Offset for the fixed header */
+            padding-top: 80px;
         }
     </style>
 </head>
 <body>
+    <!-- Header Navbar -->
     <div class="header-container">
         <header class="d-flex align-items-center justify-content-between px-4 py-2">
             <div class="logo">
@@ -37,7 +37,8 @@
                 <ul class="nav">
                     <li class="nav-item"><a class="nav-link" asp-controller="Home" asp-action="Index">Home</a></li>
                     <li class="nav-item"><a class="nav-link" asp-controller="Vehicle" asp-action="Vehicle">Vehicles</a></li>
-                    <li class="nav-item"><a class="nav-link" asp-controller="Blog" asp-action="Index">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" asp-controller="Reservation" asp-action="AvailableCars">Reserve a Car</a></li>
+                    <li class="nav-item"><a class="nav-link" asp-controller="Reservation" asp-action="MyReservations">My Reservations</a></li>
                     <li class="nav-item"><a class="nav-link" asp-controller="Contact" asp-action="Index">Contact</a></li>
                     @if (User.IsInRole("Admin") || User.IsInRole("SuperAdmin"))
                     {
@@ -66,14 +67,14 @@
         </header>
     </div>
 
+    <!-- Main Content -->
     <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
     </div>
 
-   
-
+    <!-- Footer -->
     <footer class="border-top footer text-muted py-4">
         <div class="footer-content d-flex justify-content-between px-4">
             <div class="contact-form">

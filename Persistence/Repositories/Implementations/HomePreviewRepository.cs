@@ -1,8 +1,8 @@
-﻿using FinalProjectMVC.Data;
-using FinalProjectMVC.Models;
+﻿using Persistence.Data;
+using Domain.Models;
 using Repositories.Repositories;
 
-namespace FinalProjectMVC.Repositories.Implementations
+namespace Persistence.Repositories.Implementations
 {
     public class HomePreviewRepository : BaseRepository<HomePreview>, IHomePreviewRepository
     {

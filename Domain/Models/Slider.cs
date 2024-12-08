@@ -1,6 +1,6 @@
-﻿using FinalProjectMVC.Common;
+﻿using Domain.Common;
 
-namespace FinalProjectMVC.Models
+namespace Domain.Models
 {
     public class Slider : BaseEntity
     {

@@ -1,6 +1,9 @@
-﻿using FinalProjectMVC.Common;
+﻿
 
-namespace FinalProjectMVC.Models
+
+using Domain.Common;
+
+namespace Domain.Models
 {
     public class AboutUsViewModel : BaseEntity
     {

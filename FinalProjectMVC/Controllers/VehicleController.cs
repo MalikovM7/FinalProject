@@ -1,6 +1,4 @@
-﻿using FinalProjectMVC.Models;
-using FinalProjectMVC.Services.Implementations;
-using FinalProjectMVC.ViewModels.Home;
+﻿using Domain.Models;
 using FinalProjectMVC.ViewModels.Vehicles;
 using Microsoft.AspNetCore.Mvc;
 using Services.Interfaces;

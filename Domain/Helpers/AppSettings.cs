@@ -1,4 +1,4 @@
-﻿namespace FinalProjectMVC.Helpers
+﻿namespace Domain.Helpers
 {
     public class AppSettings
     {

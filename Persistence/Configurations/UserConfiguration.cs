@@ -1,9 +1,8 @@
-﻿using FinalProjectMVC.Identity;
-using FinalProjectMVC.Models;
+﻿using Domain.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace FinalProjectMVC.Configurations
+namespace Persistence.Configurations
 {
     public class UserConfiguration : IEntityTypeConfiguration<AppUser>
     {

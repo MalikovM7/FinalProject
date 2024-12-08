@@ -1,5 +1,5 @@
-﻿using FinalProjectMVC.Data;
-using FinalProjectMVC.Models;
+﻿using Persistence.Data;
+using Domain.Models;
 using Microsoft.EntityFrameworkCore;
 using Services.Interfaces;
 

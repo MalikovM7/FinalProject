@@ -1,4 +1,4 @@
-﻿namespace FinalProjectMVC.Exceptions
+﻿namespace Domain.Exceptions
 {
     public class NotFoundException : Exception
     {

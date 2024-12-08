@@ -1,11 +1,10 @@
-﻿using FinalProjectMVC.Configurations;
-using FinalProjectMVC.Data.Configurations;
-using FinalProjectMVC.Identity;
-using FinalProjectMVC.Models;
+﻿using Domain.Identity;
+using Domain.Models;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using Persistence.Configurations;
 
-namespace FinalProjectMVC.Data;
+namespace Persistence.Data;
 
 public class AppDbContext : IdentityDbContext<AppUser>
 {
@@ -17,14 +16,15 @@ public class AppDbContext : IdentityDbContext<AppUser>
 
     public DbSet<AppUser> Users { get; set; }
     public DbSet<Car> Cars { get; set; }
-    public DbSet<Reservation> Reservations { get; set; }
+
+    public DbSet<Category> Categories { get; set; }
     public DbSet<Contact> Contacts { get; set; }
     public DbSet<BlogPost> BlogPosts { get; set; }
     public DbSet<Payment> Payments { get; set; }
 
     public DbSet<FAQ> FAQS { get; set; }
 
-  
+    public DbSet<Reservation> Reservations { get; set; }
 
     public DbSet<Statistic> Statistics { get; set; }
 
@@ -51,7 +51,6 @@ public class AppDbContext : IdentityDbContext<AppUser>
         builder.ApplyConfiguration(new BlogPostConfiguration());
         builder.ApplyConfiguration(new ContactFormConfiguration());
         builder.ApplyConfiguration(new FAQConfiguration());
-        builder.ApplyConfiguration(new ReservationConfiguration());
         builder.ApplyConfiguration(new StatisticConfiguration());
 
 

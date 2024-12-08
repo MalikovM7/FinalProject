@@ -1,4 +1,4 @@
-﻿namespace FinalProjectMVC.Common
+﻿namespace Domain.Common
 {
     public abstract class BaseEntity
     {

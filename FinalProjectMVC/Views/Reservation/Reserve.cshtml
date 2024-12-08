@@ -1,0 +1,25 @@
+﻿@model FinalProjectMVC.ViewModels.Reservation.CarReservationViewModel
+
+<h1>Reserve Car</h1>
+
+@if (Model != null)
+{
+    <h2>@Model.Brand @Model.Model</h2>
+    <p>Price Per Day: @Model.PricePerDay</p>
+    <p>Available From: @Model.AvailabilityStart.ToShortDateString()</p>
+    <p>Available To: @Model.AvailabilityEnd.ToShortDateString()</p>
+    <p>Location: @Model.Location</p>
+
+    <form asp-action="Reserve" method="post">
+        <input type="hidden" name="CarId" value="@Model.CarId" />
+        <label for="startDate">Start Date:</label>
+        <input type="date" id="startDate" name="startDate" required />
+        <label for="endDate">End Date:</label>
+        <input type="date" id="endDate" name="endDate" required />
+        <button type="submit">Reserve</button>
+    </form>
+}
+else
+{
+    <p>Car details are not available.</p>
+}

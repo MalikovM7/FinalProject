@@ -1,4 +1,4 @@
-﻿using FinalProjectMVC.Common;
+﻿using Domain.Common;
 using System.Linq.Expressions;
 
 namespace Repositories.Repositories
