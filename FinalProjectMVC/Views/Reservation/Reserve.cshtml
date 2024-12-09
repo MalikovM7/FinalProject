@@ -6,8 +6,8 @@
 {
     <h2>@Model.Brand @Model.Model</h2>
     <p>Price Per Day: @Model.PricePerDay</p>
-    <p>Available From: @Model.AvailabilityStart.ToShortDateString()</p>
-    <p>Available To: @Model.AvailabilityEnd.ToShortDateString()</p>
+    <p>Available From: @Model.AvailabilityStart</p>
+    <p>Available To: @Model.AvailabilityEnd</p>
     <p>Location: @Model.Location</p>
 
     <form asp-action="Reserve" method="post">

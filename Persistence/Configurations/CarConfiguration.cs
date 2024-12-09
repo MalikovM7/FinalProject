@@ -51,12 +51,8 @@ namespace Persistence.Configurations
                 .HasForeignKey(c => c.CategoryId)
                 .OnDelete(DeleteBehavior.Cascade);
 
-            // Additional configuration for dates
-            builder.Property(c => c.AvailabilityStart)
-                .IsRequired();
 
-            builder.Property(c => c.AvailabilityEnd)
-                .IsRequired();
+              
         }
     }
 }

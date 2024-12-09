@@ -90,13 +90,6 @@ namespace FinalProjectMVC.Areas.Admin.Controllers
                 ModelState.AddModelError("CategoryId", "Please select a category.");
             }
 
-            if (!ModelState.IsValid)
-            {
-                var categories = await _vehicleService.GetCategoriesAsync();
-                ViewBag.Categories = new SelectList(categories, "Id", "Name");
-                return View(carVM);
-            }
-
             var car = new Car
             {
                 Brand = carVM.Brand,

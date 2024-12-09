@@ -15,9 +15,9 @@ namespace FinalProjectMVC.ViewModels.Admin.Car
         public decimal PricePerDay { get; set; }
         public bool IsAvailable { get; set; }
         public string ImagePath { get; set; }
-        public string Location { get; set; }
-        public DateTime AvailabilityStart { get; set; }
-        public DateTime AvailabilityEnd { get; set; }
+        public string? Location { get; set; }
+        public DateTime? AvailabilityStart { get; set; }
+        public DateTime? AvailabilityEnd { get; set; }
         public int CategoryId { get; set; } // Required for category binding
         public string CategoryName { get; set; } // Name of the category
     }
