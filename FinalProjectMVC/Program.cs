@@ -50,7 +50,9 @@ namespace FinalProjectMVC
                 .AddDefaultTokenProviders();
 
             builder.Services.AddScoped<IReservationService, ReservationService>();
+            builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
             builder.Services.AddScoped<IFaqRepository, FAQRepository>();
+            builder.Services.AddScoped<IVehicleRepository, VehicleRepository>();
             builder.Services.AddScoped<IHomePreviewRepository, HomePreviewRepository>();
             builder.Services.AddScoped<IAboutUsRepository, AboutUsRepository>();
             builder.Services.AddScoped<IEmailService, EmailService>();

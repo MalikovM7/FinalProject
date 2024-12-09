@@ -18,7 +18,7 @@ namespace FinalProjectMVC.Controllers
 
         public async Task<IActionResult> Vehicle()
         {
-            var cars = await _vehicleService.GetVehiclesAsync();
+            var cars = await _vehicleService.GetCarSAsync();
 
             if (cars == null || !cars.Any())
             {

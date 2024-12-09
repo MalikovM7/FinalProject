@@ -1,0 +1,54 @@
+﻿@model FinalProjectMVC.ViewModels.Admin.Car.VehicleVM
+
+<div class="container mt-5">
+    <h1 class="text-center">Edit Vehicle</h1>
+
+    <form asp-action="Edit" method="post" class="mt-4">
+        <input type="hidden" asp-for="Id" />
+
+        <div class="form-group">
+            <label for="Brand">Brand</label>
+            <input asp-for="Brand" class="form-control" id="Brand" />
+            <span asp-validation-for="Brand" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label for="CategoryId">Category</label>
+            <select asp-for="CategoryId" asp-items="ViewBag.Categories" class="form-control"></select>
+            <span asp-validation-for="CategoryId" class="text-danger"></span>
+        </div>
+
+        <div class="form-group mt-3">
+            <label for="Model">Model</label>
+            <input asp-for="Model" class="form-control" id="Model" />
+            <span asp-validation-for="Model" class="text-danger"></span>
+        </div>
+
+        <div class="form-group mt-3">
+            <label for="Year">Year</label>
+            <input asp-for="Year" class="form-control" id="Year" />
+            <span asp-validation-for="Year" class="text-danger"></span>
+        </div>
+
+        <div class="form-group mt-3">
+            <label for="Fueltype">Fuel Type</label>
+            <input asp-for="Fueltype" class="form-control" id="Fueltype" />
+            <span asp-validation-for="Fueltype" class="text-danger"></span>
+        </div>
+
+        <div class="form-group mt-3">
+            <label for="PricePerDay">Price Per Day</label>
+            <input asp-for="PricePerDay" class="form-control" id="PricePerDay" />
+            <span asp-validation-for="PricePerDay" class="text-danger"></span>
+        </div>
+
+        <div class="form-group mt-3">
+            <label for="ImagePath">Image Path</label>
+            <input asp-for="ImagePath" class="form-control" id="ImagePath" />
+            <span asp-validation-for="ImagePath" class="text-danger"></span>
+        </div>
+
+        <button type="submit" class="btn btn-success mt-3">Save Changes</button>
+        <a asp-action="Index" class="btn btn-outline-danger mt-3">Cancel</a>
+    </form>
+</div>

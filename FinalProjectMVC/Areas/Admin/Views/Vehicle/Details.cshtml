@@ -1,0 +1,35 @@
+﻿@model FinalProjectMVC.ViewModels.Admin.Car.VehicleVM
+
+<div class="container mt-5">
+    <h1 class="text-center">Vehicle Details</h1>
+
+    <div class="card mt-4">
+        <div class="card-body">
+            <h4 class="card-title">Brand</h4>
+            <p class="card-text">@Model.Brand</p>
+
+            <h4 class="card-title mt-4">Model</h4>
+            <p class="card-text">@Model.Model</p>
+
+            <h4 class="card-title mt-4">Year</h4>
+            <p class="card-text">@Model.Year</p>
+
+            <h4 class="card-title mt-4">Fuel Type</h4>
+            <p class="card-text">@Model.Fueltype</p>
+
+            <h4 class="card-title mt-4">Price Per Day</h4>
+            <p class="card-text">@Model.PricePerDay</p>
+
+            <h4 class="card-title mt-4">Category</h4>
+            <p class="card-text">@Model.CategoryName</p>
+
+            <h4 class="card-title mt-4">Image</h4>
+            <img src="@Model.ImagePath" alt="@Model.Brand" class="img-fluid">
+        </div>
+    </div>
+
+    <div class="mt-4 text-center">
+        <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-warning">Edit</a>
+        <a asp-action="Index" class="btn btn-primary">Back to List</a>
+    </div>
+</div>
