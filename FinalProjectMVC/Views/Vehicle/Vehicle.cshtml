@@ -30,6 +30,8 @@
                             <li class="list-inline-item">@car.Color</li>
                             <li class="list-inline-item">@car.Location</li>
                         </ul>
+
+
                         @if (car.IsAvailable)
                         {
                             <button class="btn btn-dark">Rent It</button>
@@ -38,6 +40,9 @@
                         {
                             <button class="btn btn-secondary" disabled>Unavailable</button>
                         }
+
+                        <a asp-action="Detail" asp-controller="Vehicle" asp-route-id="@car.Id" class="btn btn-primary">Details</a>
+
                     </div>
                 </div>
             }

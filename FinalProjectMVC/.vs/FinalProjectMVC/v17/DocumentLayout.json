@@ -3,126 +3,104 @@
   "WorkspaceRootPath": "C:\\Users\\vuqar\\Desktop\\Final Code\\FinalProjectMVC\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2DCE3D6F-C8B8-496C-8B0C-DD3EB13D834B}|FinalProjectMVC.csproj|c:\\users\\vuqar\\desktop\\final code\\finalprojectmvc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2DCE3D6F-C8B8-496C-8B0C-DD3EB13D834B}|FinalProjectMVC.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B340434A-F318-42BA-BF3D-536C99C250CF}|..\\Domain\\Domain.csproj|c:\\users\\vuqar\\desktop\\final code\\domain\\models\\sliderimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B340434A-F318-42BA-BF3D-536C99C250CF}|..\\Domain\\Domain.csproj|c:\\users\\vuqar\\desktop\\final code\\domain\\models\\slider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5AED6B82-AC60-45BE-9848-7AB0C84ADFCC}|..\\Persistence\\Persistence.csproj|c:\\users\\vuqar\\desktop\\final code\\persistence\\repositories\\implementations\\aboutusrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{76CBC9AB-1984-499D-97DB-771A12054DBF}|..\\Repositories\\Repositories.csproj|c:\\users\\vuqar\\desktop\\final code\\repositories\\repositories\\ivehiclerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F1D5799D-7ED2-4C59-81FF-5091AE59E823}|..\\Services.Implementations\\Services.Implementations.csproj|c:\\users\\vuqar\\desktop\\final code\\services.implementations\\implementations\\aboutusservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{76CBC9AB-1984-499D-97DB-771A12054DBF}|..\\Repositories\\Repositories.csproj|c:\\users\\vuqar\\desktop\\final code\\repositories\\repositories\\ibaserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C2E4027D-638F-4B4A-9E0F-483E1323F214}|..\\Services\\Services.csproj|c:\\users\\vuqar\\desktop\\final code\\services\\interfaces\\iaboutusservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B340434A-F318-42BA-BF3D-536C99C250CF}|..\\Domain\\Domain.csproj|c:\\users\\vuqar\\desktop\\final code\\domain\\models\\contact.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2DCE3D6F-C8B8-496C-8B0C-DD3EB13D834B}|FinalProjectMVC.csproj|c:\\users\\vuqar\\desktop\\final code\\finalprojectmvc\\areas\\admin\\controllers\\vehiclecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2DCE3D6F-C8B8-496C-8B0C-DD3EB13D834B}|FinalProjectMVC.csproj|solutionrelative:areas\\admin\\controllers\\vehiclecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5AED6B82-AC60-45BE-9848-7AB0C84ADFCC}|..\\Persistence\\Persistence.csproj|c:\\users\\vuqar\\desktop\\final code\\persistence\\repositories\\implementations\\baserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2DCE3D6F-C8B8-496C-8B0C-DD3EB13D834B}|FinalProjectMVC.csproj|c:\\users\\vuqar\\desktop\\final code\\finalprojectmvc\\viewmodels\\admin\\car\\vehiclevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2DCE3D6F-C8B8-496C-8B0C-DD3EB13D834B}|FinalProjectMVC.csproj|solutionrelative:viewmodels\\admin\\car\\vehiclevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2DCE3D6F-C8B8-496C-8B0C-DD3EB13D834B}|FinalProjectMVC.csproj|c:\\users\\vuqar\\desktop\\final code\\finalprojectmvc\\areas\\admin\\views\\vehicle\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{2DCE3D6F-C8B8-496C-8B0C-DD3EB13D834B}|FinalProjectMVC.csproj|solutionrelative:areas\\admin\\views\\vehicle\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2DCE3D6F-C8B8-496C-8B0C-DD3EB13D834B}|FinalProjectMVC.csproj|c:\\users\\vuqar\\desktop\\final code\\finalprojectmvc\\areas\\admin\\views\\vehicle\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{2DCE3D6F-C8B8-496C-8B0C-DD3EB13D834B}|FinalProjectMVC.csproj|solutionrelative:areas\\admin\\views\\vehicle\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B340434A-F318-42BA-BF3D-536C99C250CF}|..\\Domain\\Domain.csproj|c:\\users\\vuqar\\desktop\\final code\\domain\\models\\car.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5AED6B82-AC60-45BE-9848-7AB0C84ADFCC}|..\\Persistence\\Persistence.csproj|c:\\users\\vuqar\\desktop\\final code\\persistence\\migrations\\20241209174847_carsik.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5AED6B82-AC60-45BE-9848-7AB0C84ADFCC}|..\\Persistence\\Persistence.csproj|c:\\users\\vuqar\\desktop\\final code\\persistence\\configurations\\carconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{2DCE3D6F-C8B8-496C-8B0C-DD3EB13D834B}|FinalProjectMVC.csproj|c:\\users\\vuqar\\desktop\\final code\\finalprojectmvc\\areas\\admin\\views\\vehicle\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{2DCE3D6F-C8B8-496C-8B0C-DD3EB13D834B}|FinalProjectMVC.csproj|solutionrelative:areas\\admin\\views\\vehicle\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\vuqar\\Desktop\\Final Code\\Persistence\\Migrations\\20241209174408_carsss.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2DCE3D6F-C8B8-496C-8B0C-DD3EB13D834B}|FinalProjectMVC.csproj|c:\\users\\vuqar\\desktop\\final code\\finalprojectmvc\\areas\\admin\\controllers\\vehiclecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2DCE3D6F-C8B8-496C-8B0C-DD3EB13D834B}|FinalProjectMVC.csproj|solutionrelative:areas\\admin\\controllers\\vehiclecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2DCE3D6F-C8B8-496C-8B0C-DD3EB13D834B}|FinalProjectMVC.csproj|c:\\users\\vuqar\\desktop\\final code\\finalprojectmvc\\views\\reservation\\reserve.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{2DCE3D6F-C8B8-496C-8B0C-DD3EB13D834B}|FinalProjectMVC.csproj|solutionrelative:views\\reservation\\reserve.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2DCE3D6F-C8B8-496C-8B0C-DD3EB13D834B}|FinalProjectMVC.csproj|c:\\users\\vuqar\\desktop\\final code\\finalprojectmvc\\views\\vehicle\\vehicle.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{2DCE3D6F-C8B8-496C-8B0C-DD3EB13D834B}|FinalProjectMVC.csproj|solutionrelative:views\\vehicle\\vehicle.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2DCE3D6F-C8B8-496C-8B0C-DD3EB13D834B}|FinalProjectMVC.csproj|c:\\users\\vuqar\\desktop\\final code\\finalprojectmvc\\controllers\\reservationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2DCE3D6F-C8B8-496C-8B0C-DD3EB13D834B}|FinalProjectMVC.csproj|solutionrelative:controllers\\reservationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2DCE3D6F-C8B8-496C-8B0C-DD3EB13D834B}|FinalProjectMVC.csproj|c:\\users\\vuqar\\desktop\\final code\\finalprojectmvc\\viewmodels\\reservation\\carreservationviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2DCE3D6F-C8B8-496C-8B0C-DD3EB13D834B}|FinalProjectMVC.csproj|solutionrelative:viewmodels\\reservation\\carreservationviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2DCE3D6F-C8B8-496C-8B0C-DD3EB13D834B}|FinalProjectMVC.csproj|c:\\users\\vuqar\\desktop\\final code\\finalprojectmvc\\viewmodels\\admin\\car\\vehiclevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2DCE3D6F-C8B8-496C-8B0C-DD3EB13D834B}|FinalProjectMVC.csproj|solutionrelative:viewmodels\\admin\\car\\vehiclevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B340434A-F318-42BA-BF3D-536C99C250CF}|..\\Domain\\Domain.csproj|c:\\users\\vuqar\\desktop\\final code\\domain\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2DCE3D6F-C8B8-496C-8B0C-DD3EB13D834B}|FinalProjectMVC.csproj|c:\\users\\vuqar\\desktop\\final code\\finalprojectmvc\\controllers\\vehiclecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2DCE3D6F-C8B8-496C-8B0C-DD3EB13D834B}|FinalProjectMVC.csproj|solutionrelative:controllers\\vehiclecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2DCE3D6F-C8B8-496C-8B0C-DD3EB13D834B}|FinalProjectMVC.csproj|c:\\users\\vuqar\\desktop\\final code\\finalprojectmvc\\areas\\admin\\views\\vehicle\\availablecars.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{2DCE3D6F-C8B8-496C-8B0C-DD3EB13D834B}|FinalProjectMVC.csproj|solutionrelative:areas\\admin\\views\\vehicle\\availablecars.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{2DCE3D6F-C8B8-496C-8B0C-DD3EB13D834B}|FinalProjectMVC.csproj|c:\\users\\vuqar\\desktop\\final code\\finalprojectmvc\\views\\vehicle\\vehicle.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2DCE3D6F-C8B8-496C-8B0C-DD3EB13D834B}|FinalProjectMVC.csproj|solutionrelative:views\\vehicle\\vehicle.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2DCE3D6F-C8B8-496C-8B0C-DD3EB13D834B}|FinalProjectMVC.csproj|c:\\users\\vuqar\\desktop\\final code\\finalprojectmvc\\areas\\admin\\views\\homepreview\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{2DCE3D6F-C8B8-496C-8B0C-DD3EB13D834B}|FinalProjectMVC.csproj|solutionrelative:areas\\admin\\views\\homepreview\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{2DCE3D6F-C8B8-496C-8B0C-DD3EB13D834B}|FinalProjectMVC.csproj|c:\\users\\vuqar\\desktop\\final code\\finalprojectmvc\\views\\vehicle\\detail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2DCE3D6F-C8B8-496C-8B0C-DD3EB13D834B}|FinalProjectMVC.csproj|solutionrelative:views\\vehicle\\detail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2DCE3D6F-C8B8-496C-8B0C-DD3EB13D834B}|FinalProjectMVC.csproj|c:\\users\\vuqar\\desktop\\final code\\finalprojectmvc\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2DCE3D6F-C8B8-496C-8B0C-DD3EB13D834B}|FinalProjectMVC.csproj|solutionrelative:views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2DCE3D6F-C8B8-496C-8B0C-DD3EB13D834B}|FinalProjectMVC.csproj|c:\\users\\vuqar\\desktop\\final code\\finalprojectmvc\\viewmodels\\vehicles\\vehicledetailsvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2DCE3D6F-C8B8-496C-8B0C-DD3EB13D834B}|FinalProjectMVC.csproj|solutionrelative:viewmodels\\vehicles\\vehicledetailsvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2DCE3D6F-C8B8-496C-8B0C-DD3EB13D834B}|FinalProjectMVC.csproj|c:\\users\\vuqar\\desktop\\final code\\finalprojectmvc\\viewmodels\\vehicles\\vehiclepagevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2DCE3D6F-C8B8-496C-8B0C-DD3EB13D834B}|FinalProjectMVC.csproj|solutionrelative:viewmodels\\vehicles\\vehiclepagevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2DCE3D6F-C8B8-496C-8B0C-DD3EB13D834B}|FinalProjectMVC.csproj|c:\\users\\vuqar\\desktop\\final code\\finalprojectmvc\\viewmodels\\home\\homepageviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2DCE3D6F-C8B8-496C-8B0C-DD3EB13D834B}|FinalProjectMVC.csproj|solutionrelative:viewmodels\\home\\homepageviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2DCE3D6F-C8B8-496C-8B0C-DD3EB13D834B}|FinalProjectMVC.csproj|c:\\users\\vuqar\\desktop\\final code\\finalprojectmvc\\areas\\admin\\views\\vehicle\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{2DCE3D6F-C8B8-496C-8B0C-DD3EB13D834B}|FinalProjectMVC.csproj|solutionrelative:areas\\admin\\views\\vehicle\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2DCE3D6F-C8B8-496C-8B0C-DD3EB13D834B}|FinalProjectMVC.csproj|c:\\users\\vuqar\\desktop\\final code\\finalprojectmvc\\areas\\admin\\views\\homepreview\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{2DCE3D6F-C8B8-496C-8B0C-DD3EB13D834B}|FinalProjectMVC.csproj|solutionrelative:areas\\admin\\views\\homepreview\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{2DCE3D6F-C8B8-496C-8B0C-DD3EB13D834B}|FinalProjectMVC.csproj|c:\\users\\vuqar\\desktop\\final code\\finalprojectmvc\\areas\\admin\\views\\vehicle\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2DCE3D6F-C8B8-496C-8B0C-DD3EB13D834B}|FinalProjectMVC.csproj|solutionrelative:areas\\admin\\views\\vehicle\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2DCE3D6F-C8B8-496C-8B0C-DD3EB13D834B}|FinalProjectMVC.csproj|c:\\users\\vuqar\\desktop\\final code\\finalprojectmvc\\areas\\admin\\views\\homepreview\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{2DCE3D6F-C8B8-496C-8B0C-DD3EB13D834B}|FinalProjectMVC.csproj|solutionrelative:areas\\admin\\views\\homepreview\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{2DCE3D6F-C8B8-496C-8B0C-DD3EB13D834B}|FinalProjectMVC.csproj|c:\\users\\vuqar\\desktop\\final code\\finalprojectmvc\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{2DCE3D6F-C8B8-496C-8B0C-DD3EB13D834B}|FinalProjectMVC.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5AED6B82-AC60-45BE-9848-7AB0C84ADFCC}|..\\Persistence\\Persistence.csproj|c:\\users\\vuqar\\desktop\\final code\\persistence\\repositories\\implementations\\categoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2DCE3D6F-C8B8-496C-8B0C-DD3EB13D834B}|FinalProjectMVC.csproj|c:\\users\\vuqar\\desktop\\final code\\finalprojectmvc\\areas\\admin\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2DCE3D6F-C8B8-496C-8B0C-DD3EB13D834B}|FinalProjectMVC.csproj|solutionrelative:areas\\admin\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5AED6B82-AC60-45BE-9848-7AB0C84ADFCC}|..\\Persistence\\Persistence.csproj|c:\\users\\vuqar\\desktop\\final code\\persistence\\repositories\\implementations\\faqrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2DCE3D6F-C8B8-496C-8B0C-DD3EB13D834B}|FinalProjectMVC.csproj|c:\\users\\vuqar\\desktop\\final code\\finalprojectmvc\\wwwroot\\templates\\verification.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2DCE3D6F-C8B8-496C-8B0C-DD3EB13D834B}|FinalProjectMVC.csproj|solutionrelative:wwwroot\\templates\\verification.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2DCE3D6F-C8B8-496C-8B0C-DD3EB13D834B}|FinalProjectMVC.csproj|c:\\users\\vuqar\\desktop\\final code\\finalprojectmvc\\wwwroot\\assets\\js\\blog.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{2DCE3D6F-C8B8-496C-8B0C-DD3EB13D834B}|FinalProjectMVC.csproj|solutionrelative:wwwroot\\assets\\js\\blog.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2DCE3D6F-C8B8-496C-8B0C-DD3EB13D834B}|FinalProjectMVC.csproj|c:\\users\\vuqar\\desktop\\final code\\finalprojectmvc\\wwwroot\\assets\\js\\contact.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{2DCE3D6F-C8B8-496C-8B0C-DD3EB13D834B}|FinalProjectMVC.csproj|solutionrelative:wwwroot\\assets\\js\\contact.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2DCE3D6F-C8B8-496C-8B0C-DD3EB13D834B}|FinalProjectMVC.csproj|c:\\users\\vuqar\\desktop\\final code\\finalprojectmvc\\wwwroot\\assets\\js\\home.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{2DCE3D6F-C8B8-496C-8B0C-DD3EB13D834B}|FinalProjectMVC.csproj|solutionrelative:wwwroot\\assets\\js\\home.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B340434A-F318-42BA-BF3D-536C99C250CF}|..\\Domain\\Domain.csproj|c:\\users\\vuqar\\desktop\\final code\\domain\\models\\slider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B340434A-F318-42BA-BF3D-536C99C250CF}|..\\Domain\\Domain.csproj|c:\\users\\vuqar\\desktop\\final code\\domain\\models\\sliderimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5AED6B82-AC60-45BE-9848-7AB0C84ADFCC}|..\\Persistence\\Persistence.csproj|c:\\users\\vuqar\\desktop\\final code\\persistence\\configurations\\carconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{76CBC9AB-1984-499D-97DB-771A12054DBF}|..\\Repositories\\Repositories.csproj|c:\\users\\vuqar\\desktop\\final code\\repositories\\repositories\\icategoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{76CBC9AB-1984-499D-97DB-771A12054DBF}|..\\Repositories\\Repositories.csproj|c:\\users\\vuqar\\desktop\\final code\\repositories\\repositories\\iaboutusrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5AED6B82-AC60-45BE-9848-7AB0C84ADFCC}|..\\Persistence\\Persistence.csproj|c:\\users\\vuqar\\desktop\\final code\\persistence\\repositories\\implementations\\categoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C2E4027D-638F-4B4A-9E0F-483E1323F214}|..\\Services\\Services.csproj|c:\\users\\vuqar\\desktop\\final code\\services\\interfaces\\ivehicleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5AED6B82-AC60-45BE-9848-7AB0C84ADFCC}|..\\Persistence\\Persistence.csproj|c:\\users\\vuqar\\desktop\\final code\\persistence\\repositories\\implementations\\baserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2DCE3D6F-C8B8-496C-8B0C-DD3EB13D834B}|FinalProjectMVC.csproj|c:\\users\\vuqar\\desktop\\final code\\finalprojectmvc\\areas\\admin\\views\\homepreview\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{2DCE3D6F-C8B8-496C-8B0C-DD3EB13D834B}|FinalProjectMVC.csproj|solutionrelative:areas\\admin\\views\\homepreview\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{B340434A-F318-42BA-BF3D-536C99C250CF}|..\\Domain\\Domain.csproj|c:\\users\\vuqar\\desktop\\final code\\domain\\models\\blogpost.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -141,19 +119,260 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "SliderImage.cs",
-              "DocumentMoniker": "C:\\Users\\vuqar\\Desktop\\Final Code\\Domain\\Models\\SliderImage.cs",
-              "RelativeDocumentMoniker": "..\\Domain\\Models\\SliderImage.cs",
-              "ToolTip": "C:\\Users\\vuqar\\Desktop\\Final Code\\Domain\\Models\\SliderImage.cs",
-              "RelativeToolTip": "..\\Domain\\Models\\SliderImage.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAzAAAA",
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\vuqar\\Desktop\\Final Code\\FinalProjectMVC\\Areas\\Admin\\Views\\Vehicle\\Index.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Vehicle\\Index.cshtml",
+              "ToolTip": "C:\\Users\\vuqar\\Desktop\\Final Code\\FinalProjectMVC\\Areas\\Admin\\Views\\Vehicle\\Index.cshtml",
+              "RelativeToolTip": "Areas\\Admin\\Views\\Vehicle\\Index.cshtml",
+              "ViewState": "AQIAABsAAAAAAAAAAAAAACcAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-10T20:35:54.428Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Category.cs",
+              "DocumentMoniker": "C:\\Users\\vuqar\\Desktop\\Final Code\\Domain\\Models\\Category.cs",
+              "RelativeDocumentMoniker": "..\\Domain\\Models\\Category.cs",
+              "ToolTip": "C:\\Users\\vuqar\\Desktop\\Final Code\\Domain\\Models\\Category.cs",
+              "RelativeToolTip": "..\\Domain\\Models\\Category.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-09T17:59:11.156Z",
+              "WhenOpened": "2024-12-10T20:21:24.749Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "C:\\Users\\vuqar\\Desktop\\Final Code\\FinalProjectMVC\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "Views\\_ViewImports.cshtml",
+              "ToolTip": "C:\\Users\\vuqar\\Desktop\\Final Code\\FinalProjectMVC\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "Views\\_ViewImports.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-10T19:17:23.269Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\vuqar\\Desktop\\Final Code\\FinalProjectMVC\\Areas\\Admin\\Views\\Vehicle\\Details.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Vehicle\\Details.cshtml",
+              "ToolTip": "C:\\Users\\vuqar\\Desktop\\Final Code\\FinalProjectMVC\\Areas\\Admin\\Views\\Vehicle\\Details.cshtml",
+              "RelativeToolTip": "Areas\\Admin\\Views\\Vehicle\\Details.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-10T19:14:15.265Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Detail.cshtml",
+              "DocumentMoniker": "C:\\Users\\vuqar\\Desktop\\Final Code\\FinalProjectMVC\\Views\\Vehicle\\Detail.cshtml",
+              "RelativeDocumentMoniker": "Views\\Vehicle\\Detail.cshtml",
+              "ToolTip": "C:\\Users\\vuqar\\Desktop\\Final Code\\FinalProjectMVC\\Views\\Vehicle\\Detail.cshtml",
+              "RelativeToolTip": "Views\\Vehicle\\Detail.cshtml",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAtwBEAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-10T19:14:02.829Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "VehicleController.cs",
+              "DocumentMoniker": "C:\\Users\\vuqar\\Desktop\\Final Code\\FinalProjectMVC\\Controllers\\VehicleController.cs",
+              "RelativeDocumentMoniker": "Controllers\\VehicleController.cs",
+              "ToolTip": "C:\\Users\\vuqar\\Desktop\\Final Code\\FinalProjectMVC\\Controllers\\VehicleController.cs",
+              "RelativeToolTip": "Controllers\\VehicleController.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAQwCwAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T19:13:20.719Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Vehicle.cshtml",
+              "DocumentMoniker": "C:\\Users\\vuqar\\Desktop\\Final Code\\FinalProjectMVC\\Views\\Vehicle\\Vehicle.cshtml",
+              "RelativeDocumentMoniker": "Views\\Vehicle\\Vehicle.cshtml",
+              "ToolTip": "C:\\Users\\vuqar\\Desktop\\Final Code\\FinalProjectMVC\\Views\\Vehicle\\Vehicle.cshtml",
+              "RelativeToolTip": "Views\\Vehicle\\Vehicle.cshtml",
+              "ViewState": "AQIAABsAAAAAAAAAAAAAACsAAAB+AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-10T19:12:23.163Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "VehicleVM.cs",
+              "DocumentMoniker": "C:\\Users\\vuqar\\Desktop\\Final Code\\FinalProjectMVC\\ViewModels\\Admin\\Car\\VehicleVM.cs",
+              "RelativeDocumentMoniker": "ViewModels\\Admin\\Car\\VehicleVM.cs",
+              "ToolTip": "C:\\Users\\vuqar\\Desktop\\Final Code\\FinalProjectMVC\\ViewModels\\Admin\\Car\\VehicleVM.cs",
+              "RelativeToolTip": "ViewModels\\Admin\\Car\\VehicleVM.cs",
+              "ViewState": "AQIAABgAAAAAAAAAAAA7wCcAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T18:40:23.859Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\vuqar\\Desktop\\Final Code\\FinalProjectMVC\\Areas\\Admin\\Views\\Vehicle\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Vehicle\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\vuqar\\Desktop\\Final Code\\FinalProjectMVC\\Areas\\Admin\\Views\\Vehicle\\Edit.cshtml",
+              "RelativeToolTip": "Areas\\Admin\\Views\\Vehicle\\Edit.cshtml",
+              "ViewState": "AQIAACoAAAAAAAAAAAAAAC0AAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-10T20:34:44.461Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "VehicleController.cs",
+              "DocumentMoniker": "C:\\Users\\vuqar\\Desktop\\Final Code\\FinalProjectMVC\\Areas\\Admin\\Controllers\\VehicleController.cs",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Controllers\\VehicleController.cs",
+              "ToolTip": "C:\\Users\\vuqar\\Desktop\\Final Code\\FinalProjectMVC\\Areas\\Admin\\Controllers\\VehicleController.cs",
+              "RelativeToolTip": "Areas\\Admin\\Controllers\\VehicleController.cs",
+              "ViewState": "AQIAAJ4AAAAAAAAAAAA4wKMAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T18:44:59.039Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "VehicleDetailsVM.cs",
+              "DocumentMoniker": "C:\\Users\\vuqar\\Desktop\\Final Code\\FinalProjectMVC\\ViewModels\\Vehicles\\VehicleDetailsVM.cs",
+              "RelativeDocumentMoniker": "ViewModels\\Vehicles\\VehicleDetailsVM.cs",
+              "ToolTip": "C:\\Users\\vuqar\\Desktop\\Final Code\\FinalProjectMVC\\ViewModels\\Vehicles\\VehicleDetailsVM.cs",
+              "RelativeToolTip": "ViewModels\\Vehicles\\VehicleDetailsVM.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T19:22:51.356Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "HomePageViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\vuqar\\Desktop\\Final Code\\FinalProjectMVC\\ViewModels\\Home\\HomePageViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModels\\Home\\HomePageViewModel.cs",
+              "ToolTip": "C:\\Users\\vuqar\\Desktop\\Final Code\\FinalProjectMVC\\ViewModels\\Home\\HomePageViewModel.cs",
+              "RelativeToolTip": "ViewModels\\Home\\HomePageViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T19:54:21.233Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "VehiclePageVM.cs",
+              "DocumentMoniker": "C:\\Users\\vuqar\\Desktop\\Final Code\\FinalProjectMVC\\ViewModels\\Vehicles\\VehiclePageVM.cs",
+              "RelativeDocumentMoniker": "ViewModels\\Vehicles\\VehiclePageVM.cs",
+              "ToolTip": "C:\\Users\\vuqar\\Desktop\\Final Code\\FinalProjectMVC\\ViewModels\\Vehicles\\VehiclePageVM.cs",
+              "RelativeToolTip": "ViewModels\\Vehicles\\VehiclePageVM.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T18:40:01.485Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\vuqar\\Desktop\\Final Code\\FinalProjectMVC\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\vuqar\\Desktop\\Final Code\\FinalProjectMVC\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-12-10T18:43:48.844Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\vuqar\\Desktop\\Final Code\\FinalProjectMVC\\Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\vuqar\\Desktop\\Final Code\\FinalProjectMVC\\Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAFQAAAAAAAAAAAAAAF8AAACKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-10T18:42:29.226Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\vuqar\\Desktop\\Final Code\\FinalProjectMVC\\Areas\\Admin\\Views\\Vehicle\\Create.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Vehicle\\Create.cshtml",
+              "ToolTip": "C:\\Users\\vuqar\\Desktop\\Final Code\\FinalProjectMVC\\Areas\\Admin\\Views\\Vehicle\\Create.cshtml",
+              "RelativeToolTip": "Areas\\Admin\\Views\\Vehicle\\Create.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-10T18:38:02.423Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Verification.html",
+              "DocumentMoniker": "C:\\Users\\vuqar\\Desktop\\Final Code\\FinalProjectMVC\\wwwroot\\templates\\Verification.html",
+              "RelativeDocumentMoniker": "wwwroot\\templates\\Verification.html",
+              "ToolTip": "C:\\Users\\vuqar\\Desktop\\Final Code\\FinalProjectMVC\\wwwroot\\templates\\Verification.html",
+              "RelativeToolTip": "wwwroot\\templates\\Verification.html",
+              "ViewState": "AQIAAGwAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-12-10T18:36:47.378Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "contact.js",
+              "DocumentMoniker": "C:\\Users\\vuqar\\Desktop\\Final Code\\FinalProjectMVC\\wwwroot\\assets\\js\\contact.js",
+              "RelativeDocumentMoniker": "wwwroot\\assets\\js\\contact.js",
+              "ToolTip": "C:\\Users\\vuqar\\Desktop\\Final Code\\FinalProjectMVC\\wwwroot\\assets\\js\\contact.js",
+              "RelativeToolTip": "wwwroot\\assets\\js\\contact.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-12-10T18:36:34.955Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "home.js",
+              "DocumentMoniker": "C:\\Users\\vuqar\\Desktop\\Final Code\\FinalProjectMVC\\wwwroot\\assets\\js\\home.js",
+              "RelativeDocumentMoniker": "wwwroot\\assets\\js\\home.js",
+              "ToolTip": "C:\\Users\\vuqar\\Desktop\\Final Code\\FinalProjectMVC\\wwwroot\\assets\\js\\home.js",
+              "RelativeToolTip": "wwwroot\\assets\\js\\home.js",
+              "ViewState": "AQIAAJkAAAAAAAAAAAAiwJcAAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-12-10T18:36:06.974Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "blog.js",
+              "DocumentMoniker": "C:\\Users\\vuqar\\Desktop\\Final Code\\FinalProjectMVC\\wwwroot\\assets\\js\\blog.js",
+              "RelativeDocumentMoniker": "wwwroot\\assets\\js\\blog.js",
+              "ToolTip": "C:\\Users\\vuqar\\Desktop\\Final Code\\FinalProjectMVC\\wwwroot\\assets\\js\\blog.js",
+              "RelativeToolTip": "wwwroot\\assets\\js\\blog.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-12-10T18:36:05.638Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "SliderImage.cs",
+              "DocumentMoniker": "C:\\Users\\vuqar\\Desktop\\Final Code\\Domain\\Models\\SliderImage.cs",
+              "RelativeDocumentMoniker": "..\\Domain\\Models\\SliderImage.cs",
+              "ToolTip": "C:\\Users\\vuqar\\Desktop\\Final Code\\Domain\\Models\\SliderImage.cs",
+              "RelativeToolTip": "..\\Domain\\Models\\SliderImage.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T18:28:22.356Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
               "Title": "Slider.cs",
               "DocumentMoniker": "C:\\Users\\vuqar\\Desktop\\Final Code\\Domain\\Models\\Slider.cs",
               "RelativeDocumentMoniker": "..\\Domain\\Models\\Slider.cs",
@@ -161,425 +380,67 @@
               "RelativeToolTip": "..\\Domain\\Models\\Slider.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-09T17:59:06.396Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-10T18:28:18.179Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Car.cs",
-              "DocumentMoniker": "C:\\Users\\vuqar\\Desktop\\Final Code\\Domain\\Models\\Car.cs",
-              "RelativeDocumentMoniker": "..\\Domain\\Models\\Car.cs",
-              "ToolTip": "C:\\Users\\vuqar\\Desktop\\Final Code\\Domain\\Models\\Car.cs",
-              "RelativeToolTip": "..\\Domain\\Models\\Car.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAABIAAAAHAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-09T17:37:41.349Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "ReservationController.cs",
-              "DocumentMoniker": "C:\\Users\\vuqar\\Desktop\\Final Code\\FinalProjectMVC\\Controllers\\ReservationController.cs",
-              "RelativeDocumentMoniker": "Controllers\\ReservationController.cs",
-              "ToolTip": "C:\\Users\\vuqar\\Desktop\\Final Code\\FinalProjectMVC\\Controllers\\ReservationController.cs",
-              "RelativeToolTip": "Controllers\\ReservationController.cs",
-              "ViewState": "AQIAABgAAAAAAAAAAAAUwCgAAAAkAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-09T17:42:18.827Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "VehicleController.cs",
-              "DocumentMoniker": "C:\\Users\\vuqar\\Desktop\\Final Code\\FinalProjectMVC\\Areas\\Admin\\Controllers\\VehicleController.cs",
-              "RelativeDocumentMoniker": "Areas\\Admin\\Controllers\\VehicleController.cs",
-              "ToolTip": "C:\\Users\\vuqar\\Desktop\\Final Code\\FinalProjectMVC\\Areas\\Admin\\Controllers\\VehicleController.cs",
-              "RelativeToolTip": "Areas\\Admin\\Controllers\\VehicleController.cs",
-              "ViewState": "AQIAAF8AAAAAAAAAAAAWwG8AAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-09T13:58:17.907Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "IBaseRepository.cs",
-              "DocumentMoniker": "C:\\Users\\vuqar\\Desktop\\Final Code\\Repositories\\Repositories\\IBaseRepository.cs",
-              "RelativeDocumentMoniker": "..\\Repositories\\Repositories\\IBaseRepository.cs",
-              "ToolTip": "C:\\Users\\vuqar\\Desktop\\Final Code\\Repositories\\Repositories\\IBaseRepository.cs",
-              "RelativeToolTip": "..\\Repositories\\Repositories\\IBaseRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-09T14:10:55.352Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "IVehicleRepository.cs",
-              "DocumentMoniker": "C:\\Users\\vuqar\\Desktop\\Final Code\\Repositories\\Repositories\\IVehicleRepository.cs",
-              "RelativeDocumentMoniker": "..\\Repositories\\Repositories\\IVehicleRepository.cs",
-              "ToolTip": "C:\\Users\\vuqar\\Desktop\\Final Code\\Repositories\\Repositories\\IVehicleRepository.cs",
-              "RelativeToolTip": "..\\Repositories\\Repositories\\IVehicleRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-09T14:10:57.936Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\vuqar\\Desktop\\Final Code\\FinalProjectMVC\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\vuqar\\Desktop\\Final Code\\FinalProjectMVC\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAABAAAAAAAAAAAAAQwGEAAAAfAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-09T14:15:41.35Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\vuqar\\Desktop\\Final Code\\FinalProjectMVC\\Areas\\Admin\\Views\\Vehicle\\Index.cshtml",
-              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Vehicle\\Index.cshtml",
-              "ToolTip": "C:\\Users\\vuqar\\Desktop\\Final Code\\FinalProjectMVC\\Areas\\Admin\\Views\\Vehicle\\Index.cshtml",
-              "RelativeToolTip": "Areas\\Admin\\Views\\Vehicle\\Index.cshtml",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAABEAAAAsAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-09T13:30:47.116Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "AboutUsRepository.cs",
-              "DocumentMoniker": "C:\\Users\\vuqar\\Desktop\\Final Code\\Persistence\\Repositories\\Implementations\\AboutUsRepository.cs",
-              "RelativeDocumentMoniker": "..\\Persistence\\Repositories\\Implementations\\AboutUsRepository.cs",
-              "ToolTip": "C:\\Users\\vuqar\\Desktop\\Final Code\\Persistence\\Repositories\\Implementations\\AboutUsRepository.cs",
-              "RelativeToolTip": "..\\Persistence\\Repositories\\Implementations\\AboutUsRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-09T14:11:54.384Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Contact.cs",
-              "DocumentMoniker": "C:\\Users\\vuqar\\Desktop\\Final Code\\Domain\\Models\\Contact.cs",
-              "RelativeDocumentMoniker": "..\\Domain\\Models\\Contact.cs",
-              "ToolTip": "C:\\Users\\vuqar\\Desktop\\Final Code\\Domain\\Models\\Contact.cs",
-              "RelativeToolTip": "..\\Domain\\Models\\Contact.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-09T17:55:30.004Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "IAboutUsService.cs",
-              "DocumentMoniker": "C:\\Users\\vuqar\\Desktop\\Final Code\\Services\\Interfaces\\IAboutUsService.cs",
-              "RelativeDocumentMoniker": "..\\Services\\Interfaces\\IAboutUsService.cs",
-              "ToolTip": "C:\\Users\\vuqar\\Desktop\\Final Code\\Services\\Interfaces\\IAboutUsService.cs",
-              "RelativeToolTip": "..\\Services\\Interfaces\\IAboutUsService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-09T17:56:06.485Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "AboutUsService.cs",
-              "DocumentMoniker": "C:\\Users\\vuqar\\Desktop\\Final Code\\Services.Implementations\\Implementations\\AboutUsService.cs",
-              "RelativeDocumentMoniker": "..\\Services.Implementations\\Implementations\\AboutUsService.cs",
-              "ToolTip": "C:\\Users\\vuqar\\Desktop\\Final Code\\Services.Implementations\\Implementations\\AboutUsService.cs",
-              "RelativeToolTip": "..\\Services.Implementations\\Implementations\\AboutUsService.cs",
-              "ViewState": "AQIAAA0AAAAAAAAAAAAzwBIAAAAZAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-09T17:56:16.306Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "Edit.cshtml",
-              "DocumentMoniker": "C:\\Users\\vuqar\\Desktop\\Final Code\\FinalProjectMVC\\Areas\\Admin\\Views\\Vehicle\\Edit.cshtml",
-              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Vehicle\\Edit.cshtml",
-              "ToolTip": "C:\\Users\\vuqar\\Desktop\\Final Code\\FinalProjectMVC\\Areas\\Admin\\Views\\Vehicle\\Edit.cshtml",
-              "RelativeToolTip": "Areas\\Admin\\Views\\Vehicle\\Edit.cshtml",
-              "ViewState": "AQIAABgAAAAAAAAAAAAAAC8AAAArAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-09T14:01:14.114Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\Users\\vuqar\\Desktop\\Final Code\\FinalProjectMVC\\Areas\\Admin\\Views\\Vehicle\\Create.cshtml",
-              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Vehicle\\Create.cshtml",
-              "ToolTip": "C:\\Users\\vuqar\\Desktop\\Final Code\\FinalProjectMVC\\Areas\\Admin\\Views\\Vehicle\\Create.cshtml",
-              "RelativeToolTip": "Areas\\Admin\\Views\\Vehicle\\Create.cshtml",
-              "ViewState": "AQIAACEAAAAAAAAAAAAAADIAAABPAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-09T14:03:01.226Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "Reserve.cshtml",
-              "DocumentMoniker": "C:\\Users\\vuqar\\Desktop\\Final Code\\FinalProjectMVC\\Views\\Reservation\\Reserve.cshtml",
-              "RelativeDocumentMoniker": "Views\\Reservation\\Reserve.cshtml",
-              "ToolTip": "C:\\Users\\vuqar\\Desktop\\Final Code\\FinalProjectMVC\\Views\\Reservation\\Reserve.cshtml",
-              "RelativeToolTip": "Views\\Reservation\\Reserve.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAvAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-09T17:42:56.154Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "20241209174408_carsss.cs",
-              "DocumentMoniker": "C:\\Users\\vuqar\\Desktop\\Final Code\\Persistence\\Migrations\\20241209174408_carsss.cs",
-              "RelativeDocumentMoniker": "..\\Persistence\\Migrations\\20241209174408_carsss.cs",
-              "ToolTip": "C:\\Users\\vuqar\\Desktop\\Final Code\\Persistence\\Migrations\\20241209174408_carsss.cs",
-              "RelativeToolTip": "..\\Persistence\\Migrations\\20241209174408_carsss.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-09T17:44:09.014Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "20241209174847_carsik.cs",
-              "DocumentMoniker": "C:\\Users\\vuqar\\Desktop\\Final Code\\Persistence\\Migrations\\20241209174847_carsik.cs",
-              "RelativeDocumentMoniker": "..\\Persistence\\Migrations\\20241209174847_carsik.cs",
-              "ToolTip": "C:\\Users\\vuqar\\Desktop\\Final Code\\Persistence\\Migrations\\20241209174847_carsik.cs",
-              "RelativeToolTip": "..\\Persistence\\Migrations\\20241209174847_carsik.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-09T17:48:47.703Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "BaseRepository.cs",
-              "DocumentMoniker": "C:\\Users\\vuqar\\Desktop\\Final Code\\Persistence\\Repositories\\Implementations\\BaseRepository.cs",
-              "RelativeDocumentMoniker": "..\\Persistence\\Repositories\\Implementations\\BaseRepository.cs",
-              "ToolTip": "C:\\Users\\vuqar\\Desktop\\Final Code\\Persistence\\Repositories\\Implementations\\BaseRepository.cs",
-              "RelativeToolTip": "..\\Persistence\\Repositories\\Implementations\\BaseRepository.cs",
-              "ViewState": "AQIAAAcAAAAAAAAAAIAwwBcAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-09T14:12:17.068Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "Vehicle.cshtml",
-              "DocumentMoniker": "C:\\Users\\vuqar\\Desktop\\Final Code\\FinalProjectMVC\\Views\\Vehicle\\Vehicle.cshtml",
-              "RelativeDocumentMoniker": "Views\\Vehicle\\Vehicle.cshtml",
-              "ToolTip": "C:\\Users\\vuqar\\Desktop\\Final Code\\FinalProjectMVC\\Views\\Vehicle\\Vehicle.cshtml",
-              "RelativeToolTip": "Views\\Vehicle\\Vehicle.cshtml",
-              "ViewState": "AQIAAAgAAAAAAAAAAAAcwBkAAABAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-09T17:43:19.81Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 22,
               "Title": "CarConfiguration.cs",
               "DocumentMoniker": "C:\\Users\\vuqar\\Desktop\\Final Code\\Persistence\\Configurations\\CarConfiguration.cs",
               "RelativeDocumentMoniker": "..\\Persistence\\Configurations\\CarConfiguration.cs",
               "ToolTip": "C:\\Users\\vuqar\\Desktop\\Final Code\\Persistence\\Configurations\\CarConfiguration.cs",
               "RelativeToolTip": "..\\Persistence\\Configurations\\CarConfiguration.cs",
-              "ViewState": "AQIAABwAAAAAAAAAAAAQwDUAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-09T17:47:54.455Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "CarReservationViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\vuqar\\Desktop\\Final Code\\FinalProjectMVC\\ViewModels\\Reservation\\CarReservationViewModel.cs",
-              "RelativeDocumentMoniker": "ViewModels\\Reservation\\CarReservationViewModel.cs",
-              "ToolTip": "C:\\Users\\vuqar\\Desktop\\Final Code\\FinalProjectMVC\\ViewModels\\Reservation\\CarReservationViewModel.cs",
-              "RelativeToolTip": "ViewModels\\Reservation\\CarReservationViewModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAWAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-09T17:42:30.527Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "VehicleVM.cs",
-              "DocumentMoniker": "C:\\Users\\vuqar\\Desktop\\Final Code\\FinalProjectMVC\\ViewModels\\Admin\\Car\\VehicleVM.cs",
-              "RelativeDocumentMoniker": "ViewModels\\Admin\\Car\\VehicleVM.cs",
-              "ToolTip": "C:\\Users\\vuqar\\Desktop\\Final Code\\FinalProjectMVC\\ViewModels\\Admin\\Car\\VehicleVM.cs",
-              "RelativeToolTip": "ViewModels\\Admin\\Car\\VehicleVM.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAgwBEAAAAWAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-09T14:25:55.67Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "Details.cshtml",
-              "DocumentMoniker": "C:\\Users\\vuqar\\Desktop\\Final Code\\FinalProjectMVC\\Areas\\Admin\\Views\\Vehicle\\Details.cshtml",
-              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Vehicle\\Details.cshtml",
-              "ToolTip": "C:\\Users\\vuqar\\Desktop\\Final Code\\FinalProjectMVC\\Areas\\Admin\\Views\\Vehicle\\Details.cshtml",
-              "RelativeToolTip": "Areas\\Admin\\Views\\Vehicle\\Details.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACMAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-09T14:03:38.789Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "AvailableCars.cshtml",
-              "DocumentMoniker": "C:\\Users\\vuqar\\Desktop\\Final Code\\FinalProjectMVC\\Areas\\Admin\\Views\\Vehicle\\AvailableCars.cshtml",
-              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Vehicle\\AvailableCars.cshtml",
-              "ToolTip": "C:\\Users\\vuqar\\Desktop\\Final Code\\FinalProjectMVC\\Areas\\Admin\\Views\\Vehicle\\AvailableCars.cshtml",
-              "RelativeToolTip": "Areas\\Admin\\Views\\Vehicle\\AvailableCars.cshtml",
-              "ViewState": "AQIAABUAAAAAAAAAAAAcwCYAAAAtAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-09T14:04:02.725Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "Edit.cshtml",
-              "DocumentMoniker": "C:\\Users\\vuqar\\Desktop\\Final Code\\FinalProjectMVC\\Areas\\Admin\\Views\\HomePreview\\Edit.cshtml",
-              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\HomePreview\\Edit.cshtml",
-              "ToolTip": "C:\\Users\\vuqar\\Desktop\\Final Code\\FinalProjectMVC\\Areas\\Admin\\Views\\HomePreview\\Edit.cshtml",
-              "RelativeToolTip": "Areas\\Admin\\Views\\HomePreview\\Edit.cshtml",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAABMAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-09T14:01:53.922Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\Users\\vuqar\\Desktop\\Final Code\\FinalProjectMVC\\Areas\\Admin\\Views\\HomePreview\\Create.cshtml",
-              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\HomePreview\\Create.cshtml",
-              "ToolTip": "C:\\Users\\vuqar\\Desktop\\Final Code\\FinalProjectMVC\\Areas\\Admin\\Views\\HomePreview\\Create.cshtml",
-              "RelativeToolTip": "Areas\\Admin\\Views\\HomePreview\\Create.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAOAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-09T14:01:32.491Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "Details.cshtml",
-              "DocumentMoniker": "C:\\Users\\vuqar\\Desktop\\Final Code\\FinalProjectMVC\\Areas\\Admin\\Views\\HomePreview\\Details.cshtml",
-              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\HomePreview\\Details.cshtml",
-              "ToolTip": "C:\\Users\\vuqar\\Desktop\\Final Code\\FinalProjectMVC\\Areas\\Admin\\Views\\HomePreview\\Details.cshtml",
-              "RelativeToolTip": "Areas\\Admin\\Views\\HomePreview\\Details.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAGAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-09T14:02:05.363Z"
+              "WhenOpened": "2024-12-10T18:26:43.668Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 23,
-              "Title": "VehicleController.cs",
-              "DocumentMoniker": "C:\\Users\\vuqar\\Desktop\\Final Code\\FinalProjectMVC\\Controllers\\VehicleController.cs",
-              "RelativeDocumentMoniker": "Controllers\\VehicleController.cs",
-              "ToolTip": "C:\\Users\\vuqar\\Desktop\\Final Code\\FinalProjectMVC\\Controllers\\VehicleController.cs",
-              "RelativeToolTip": "Controllers\\VehicleController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-09T14:29:04.734Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "CategoryRepository.cs",
-              "DocumentMoniker": "C:\\Users\\vuqar\\Desktop\\Final Code\\Persistence\\Repositories\\Implementations\\CategoryRepository.cs",
-              "RelativeDocumentMoniker": "..\\Persistence\\Repositories\\Implementations\\CategoryRepository.cs",
-              "ToolTip": "C:\\Users\\vuqar\\Desktop\\Final Code\\Persistence\\Repositories\\Implementations\\CategoryRepository.cs",
-              "RelativeToolTip": "..\\Persistence\\Repositories\\Implementations\\CategoryRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAYAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-09T14:11:42.393Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "FAQRepository.cs",
-              "DocumentMoniker": "C:\\Users\\vuqar\\Desktop\\Final Code\\Persistence\\Repositories\\Implementations\\FAQRepository.cs",
-              "RelativeDocumentMoniker": "..\\Persistence\\Repositories\\Implementations\\FAQRepository.cs",
-              "ToolTip": "C:\\Users\\vuqar\\Desktop\\Final Code\\Persistence\\Repositories\\Implementations\\FAQRepository.cs",
-              "RelativeToolTip": "..\\Persistence\\Repositories\\Implementations\\FAQRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-09T14:12:18.229Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "IAboutUsRepository.cs",
-              "DocumentMoniker": "C:\\Users\\vuqar\\Desktop\\Final Code\\Repositories\\Repositories\\IAboutUsRepository.cs",
-              "RelativeDocumentMoniker": "..\\Repositories\\Repositories\\IAboutUsRepository.cs",
-              "ToolTip": "C:\\Users\\vuqar\\Desktop\\Final Code\\Repositories\\Repositories\\IAboutUsRepository.cs",
-              "RelativeToolTip": "..\\Repositories\\Repositories\\IAboutUsRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-09T14:10:56.158Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
               "Title": "ICategoryRepository.cs",
               "DocumentMoniker": "C:\\Users\\vuqar\\Desktop\\Final Code\\Repositories\\Repositories\\ICategoryRepository.cs",
               "RelativeDocumentMoniker": "..\\Repositories\\Repositories\\ICategoryRepository.cs",
               "ToolTip": "C:\\Users\\vuqar\\Desktop\\Final Code\\Repositories\\Repositories\\ICategoryRepository.cs",
               "RelativeToolTip": "..\\Repositories\\Repositories\\ICategoryRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAA6AAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-09T14:10:52.282Z"
+              "WhenOpened": "2024-12-10T18:25:44.716Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
-              "Title": "IVehicleService.cs",
-              "DocumentMoniker": "C:\\Users\\vuqar\\Desktop\\Final Code\\Services\\Interfaces\\IVehicleService.cs",
-              "RelativeDocumentMoniker": "..\\Services\\Interfaces\\IVehicleService.cs",
-              "ToolTip": "C:\\Users\\vuqar\\Desktop\\Final Code\\Services\\Interfaces\\IVehicleService.cs",
-              "RelativeToolTip": "..\\Services\\Interfaces\\IVehicleService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAyAAAA",
+              "DocumentIndex": 24,
+              "Title": "CategoryRepository.cs",
+              "DocumentMoniker": "C:\\Users\\vuqar\\Desktop\\Final Code\\Persistence\\Repositories\\Implementations\\CategoryRepository.cs",
+              "RelativeDocumentMoniker": "..\\Persistence\\Repositories\\Implementations\\CategoryRepository.cs",
+              "ToolTip": "C:\\Users\\vuqar\\Desktop\\Final Code\\Persistence\\Repositories\\Implementations\\CategoryRepository.cs",
+              "RelativeToolTip": "..\\Persistence\\Repositories\\Implementations\\CategoryRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-09T14:09:50.787Z"
+              "WhenOpened": "2024-12-10T18:25:41.933Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\vuqar\\Desktop\\Final Code\\FinalProjectMVC\\Areas\\Admin\\Views\\HomePreview\\Index.cshtml",
-              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\HomePreview\\Index.cshtml",
-              "ToolTip": "C:\\Users\\vuqar\\Desktop\\Final Code\\FinalProjectMVC\\Areas\\Admin\\Views\\HomePreview\\Index.cshtml",
-              "RelativeToolTip": "Areas\\Admin\\Views\\HomePreview\\Index.cshtml",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAAABsAAABqAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-09T13:58:41.324Z"
+              "DocumentIndex": 25,
+              "Title": "BaseRepository.cs",
+              "DocumentMoniker": "C:\\Users\\vuqar\\Desktop\\Final Code\\Persistence\\Repositories\\Implementations\\BaseRepository.cs",
+              "RelativeDocumentMoniker": "..\\Persistence\\Repositories\\Implementations\\BaseRepository.cs",
+              "ToolTip": "C:\\Users\\vuqar\\Desktop\\Final Code\\Persistence\\Repositories\\Implementations\\BaseRepository.cs",
+              "RelativeToolTip": "..\\Persistence\\Repositories\\Implementations\\BaseRepository.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAA1wAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T18:25:39.133Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "BlogPost.cs",
+              "DocumentMoniker": "C:\\Users\\vuqar\\Desktop\\Final Code\\Domain\\Models\\BlogPost.cs",
+              "RelativeDocumentMoniker": "..\\Domain\\Models\\BlogPost.cs",
+              "ToolTip": "C:\\Users\\vuqar\\Desktop\\Final Code\\Domain\\Models\\BlogPost.cs",
+              "RelativeToolTip": "..\\Domain\\Models\\BlogPost.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T18:24:18.207Z"
             }
           ]
         }

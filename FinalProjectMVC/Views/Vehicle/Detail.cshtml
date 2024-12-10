@@ -1,0 +1,34 @@
+﻿@model VehicleDetailsVM
+
+<div class="container my-5">
+    <div class="row">
+        <div class="col-md-6">
+            <img src="@Model.ImagePath" class="img-fluid" alt="@Model.Brand @Model.Model">
+        </div>
+        <div class="col-md-6">
+            <h1>@Model.Brand @Model.Model</h1>
+            <p><strong>Category:</strong> @Model.CategoryName</p>
+            <p><strong>Price Per Day:</strong> $@Model.PricePerDay</p>
+            <p><strong>Year:</strong> @Model.Year</p>
+            <p><strong>Fuel Type:</strong> @Model.Fueltype</p>
+            <p><strong>Color:</strong> @Model.Color</p>
+            <p><strong>Location:</strong> @Model.Location</p>
+            <p>
+                <strong>Availability:</strong>
+                @Model.AvailabilityStart
+                @Model.AvailabilityEnd
+            </p>
+
+            @if (Model.IsAvailable)
+            {
+                <button class="btn btn-dark">Rent It</button>
+            }
+            else
+            {
+                <button class="btn btn-secondary" disabled>Unavailable</button>
+            }
+
+            <a asp-action="Vehicle" class="btn btn-outline-primary mt-3">Back to Vehicles</a>
+        </div>
+    </div>
+</div>

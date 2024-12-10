@@ -1,9 +1,3 @@
-C:\Users\vuqar\Desktop\Final Code\Services.Implementations\obj\Debug\net8.0\Services.Implementations.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\vuqar\Desktop\Final Code\Services.Implementations\obj\Debug\net8.0\Services.Implementations.AssemblyInfoInputs.cache
-C:\Users\vuqar\Desktop\Final Code\Services.Implementations\obj\Debug\net8.0\Services.Implementations.AssemblyInfo.cs
-C:\Users\vuqar\Desktop\Final Code\Services.Implementations\obj\Debug\net8.0\Services.Implementations.csproj.CoreCompileInputs.cache
-C:\Users\vuqar\Desktop\Final Code\Services.Implementations\obj\Debug\net8.0\Services.Implementations.sourcelink.json
-C:\Users\vuqar\Desktop\Final Code\Services.Implementations\obj\Debug\net8.0\Services.Implementations.csproj.AssemblyReference.cache
 C:\Users\vuqar\Desktop\Final Code\Services.Implementations\bin\Debug\net8.0\Services.Implementations.deps.json
 C:\Users\vuqar\Desktop\Final Code\Services.Implementations\bin\Debug\net8.0\Services.Implementations.runtimeconfig.json
 C:\Users\vuqar\Desktop\Final Code\Services.Implementations\bin\Debug\net8.0\Services.Implementations.dll
@@ -16,6 +10,12 @@ C:\Users\vuqar\Desktop\Final Code\Services.Implementations\bin\Debug\net8.0\Doma
 C:\Users\vuqar\Desktop\Final Code\Services.Implementations\bin\Debug\net8.0\Persistence.pdb
 C:\Users\vuqar\Desktop\Final Code\Services.Implementations\bin\Debug\net8.0\Repositories.pdb
 C:\Users\vuqar\Desktop\Final Code\Services.Implementations\bin\Debug\net8.0\Services.pdb
+C:\Users\vuqar\Desktop\Final Code\Services.Implementations\obj\Debug\net8.0\Services.Implementations.csproj.AssemblyReference.cache
+C:\Users\vuqar\Desktop\Final Code\Services.Implementations\obj\Debug\net8.0\Services.Implementations.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\vuqar\Desktop\Final Code\Services.Implementations\obj\Debug\net8.0\Services.Implementations.AssemblyInfoInputs.cache
+C:\Users\vuqar\Desktop\Final Code\Services.Implementations\obj\Debug\net8.0\Services.Implementations.AssemblyInfo.cs
+C:\Users\vuqar\Desktop\Final Code\Services.Implementations\obj\Debug\net8.0\Services.Implementations.csproj.CoreCompileInputs.cache
+C:\Users\vuqar\Desktop\Final Code\Services.Implementations\obj\Debug\net8.0\Services.Implementations.sourcelink.json
 C:\Users\vuqar\Desktop\Final Code\Services.Implementations\obj\Debug\net8.0\Services.D20D43D5.Up2Date
 C:\Users\vuqar\Desktop\Final Code\Services.Implementations\obj\Debug\net8.0\Services.Implementations.dll
 C:\Users\vuqar\Desktop\Final Code\Services.Implementations\obj\Debug\net8.0\refint\Services.Implementations.dll

@@ -85,9 +85,16 @@ namespace FinalProjectMVC.Areas.Admin.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create(VehicleVM carVM)
         {
-            if (carVM.CategoryId == 0)
+            //if (carVM.CategoryId == 0)
+            //{
+            //    ModelState.AddModelError("CategoryId", "Please select a category.");
+            //}
+
+            //if (carVM.Brand is null || carVM.Color is null || carVM.Fueltype is null) return View(carVM);
+
+            if (!ModelState.IsValid)
             {
-                ModelState.AddModelError("CategoryId", "Please select a category.");
+                  return View(carVM);
             }
 
             var car = new Car
@@ -105,6 +112,8 @@ namespace FinalProjectMVC.Areas.Admin.Controllers
                 AvailabilityStart = carVM.AvailabilityStart,
                 AvailabilityEnd = carVM.AvailabilityEnd,
                 CategoryId = carVM.CategoryId
+
+                
             };
 
             await _vehicleService.AddCarAsync(car);
@@ -144,7 +153,7 @@ namespace FinalProjectMVC.Areas.Admin.Controllers
         }
 
 
-        // POST: Admin/Car/Edit/5
+       
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, VehicleVM carVM)
@@ -152,13 +161,6 @@ namespace FinalProjectMVC.Areas.Admin.Controllers
             if (id != carVM.Id)
             {
                 return NotFound();
-            }
-
-            if (!ModelState.IsValid)
-            {
-                var categories = await _vehicleService.GetCategoriesAsync();
-                ViewBag.Categories = new SelectList(categories, "Id", "Name", carVM.CategoryId);
-                return View(carVM);
             }
 
             var car = new Car
