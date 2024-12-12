@@ -1,4 +1,5 @@
 ﻿@model FinalProjectMVC.ViewModels.Home.HomePageViewModel
+
 <body>
    
 <main> 
@@ -339,33 +340,27 @@
 <!-- Blog Posts -->
 
 
-      <div class="blog-posts">
-        <div class="post">
-            <div class="post-image">
-                <img src="https://jthemes.net/themes/html/rentit/assets/img/preview/blog/recent-post-570x270x1.jpg" alt="Car Service">
-                <span class="post-category">CAR SERVICE</span>
-            </div>
-            <div class="post-date">21<br>DEC</div>
-            <div class="post-content">
-                <p class="post-author">By isamercan</p>
-                <h3>Amazing Cars here and best offer waits for you</h3>
-                <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
-            </div>
-        </div>
-        <div class="post">
-            <div class="post-image">
-                <img src="https://jthemes.net/themes/html/rentit/assets/img/preview/blog/recent-post-570x270x2.jpg" alt="Repair">
-                <span class="post-category">REPAIR</span>
-            </div>
-            <div class="post-date">21<br>DEC</div>
-            <div class="post-content">
-                <p class="post-author">By isamercan</p>
-                <h3>Amazing Cars here and best offer waits for you</h3>
-                <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
-            </div>
-        </div>
-    </div>
 
+        <div class="blog-posts">
+            @foreach (var news in Model.News)
+            {
+                <div class="post">
+                    <div class="post-image">
+                        <img src="@news.ImagePath" alt="@news.Title">
+                        <span class="post-category">@news.NewsCategory</span>
+                    </div>
+                    <div class="post-date">
+                        @(DateTime.Parse(news.NewsDate).ToString("dd"))<br>
+                        @(DateTime.Parse(news.NewsDate).ToString("MMM").ToUpper())
+                    </div>
+                    <div class="post-content">
+                        <p class="post-author">By @news.AuthorName</p>
+                        <h3>@news.Title</h3>
+                        <p>@news.Description</p>
+                    </div>
+                </div>
+            }
+        </div>
 
 
 

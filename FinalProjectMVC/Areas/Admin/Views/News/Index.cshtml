@@ -1,0 +1,75 @@
+﻿@model IEnumerable<FinalProjectMVC.ViewModels.Admin.News.NewsVM>
+
+<div class="container mt-5">
+    <h1 class="text-center">Manage News</h1>
+
+    <a asp-action="Create" class="btn btn-primary mb-4">Add New News</a>
+
+    <table class="table table-striped table-bordered">
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Title</th>
+                <th scope="col">Category</th>
+                <th scope="col">Date</th>
+                <th scope="col">Author</th>
+                <th scope="col">Image</th>
+                <th scope="col">Is Selected</th>
+                <th scope="col" class="text-center">Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model != null && Model.Any())
+            {
+                foreach (var news in Model)
+                {
+                    <tr>
+                        <td>@news.Id</td>
+                        <td>@news.Title</td>
+                        <td>@news.NewsCategory</td>
+                        <td>@news.NewsDate</td>
+                        <td>@news.AuthorName</td>
+                        <td><img src="@news.ImagePath" alt="@news.Title" style="width: 100px;"></td>
+                        <td class="text-center">
+                            @if (news.IsSelected)
+                            {
+                                <span class="badge bg-success">Selected</span>
+                            }
+                            else
+                            {
+                                <span class="badge bg-secondary">Not Selected</span>
+                            }
+                        </td>
+                        <td class="text-center">
+                            <a asp-action="Details" asp-route-id="@news.Id" class="btn btn-info btn-sm">Details</a>
+                            <a asp-action="Edit" asp-route-id="@news.Id" class="btn btn-warning btn-sm mx-1">Edit</a>
+                            <form asp-action="Delete" asp-route-id="@news.Id" method="post" class="d-inline">
+                                <button type="submit" class="btn btn-danger btn-sm">Delete</button>
+                            </form>
+                            @if (news.IsSelected)
+                            {
+                                <form asp-action="UnmarkAsSelected" method="post" class="d-inline">
+                                    <input type="hidden" name="id" value="@news.Id" />
+                                    <button type="submit" class="btn btn-secondary btn-sm mx-1">Deselect</button>
+                                </form>
+                            }
+                            else
+                            {
+                                <form asp-action="MarkAsSelected" method="post" class="d-inline">
+                                    <input type="hidden" name="id" value="@news.Id" />
+                                    <button type="submit" class="btn btn-success btn-sm mx-1">Select</button>
+                                </form>
+                            }
+                        </td>
+                    </tr>
+                }
+            }
+            else
+            {
+                <tr>
+                    <td colspan="7" class="text-center text-muted">No News available. Please add new News.</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

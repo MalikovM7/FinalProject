@@ -48,7 +48,8 @@ namespace FinalProjectMVC
                 
                 .AddEntityFrameworkStores<AppDbContext>()
                 .AddDefaultTokenProviders();
-
+            builder.Services.AddScoped<INewsRepository, NewsRepository>();
+            builder.Services.AddScoped<INewsService, NewsService>();
             builder.Services.AddScoped<IReservationService, ReservationService>();
             builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
             builder.Services.AddScoped<IFaqRepository, FAQRepository>();

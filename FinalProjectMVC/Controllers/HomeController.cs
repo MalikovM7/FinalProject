@@ -14,25 +14,29 @@ namespace FinalProjectMVC.Controllers
         private readonly IHomePreviewService _homePreviewService;
         private readonly IAboutUsService _aboutUsService;
         private readonly IfaqService _faqService;
+        private readonly INewsService _newsService;
 
-        public HomeController(ILogger<HomeController> logger, IHomePreviewService homePreviewService, IAboutUsService aboutUsService, IfaqService faqService)
+        public HomeController(ILogger<HomeController> logger, IHomePreviewService homePreviewService, IAboutUsService aboutUsService, IfaqService faqService, INewsService newsService)
         {
             _logger = logger;
             _homePreviewService = homePreviewService;
             _aboutUsService = aboutUsService;
             _faqService = faqService;
+            _newsService = newsService;
+           
         }
 
         public async Task<IActionResult> Index()
         {
-            // Fetch only selected previews
+           
             var previews = await _homePreviewService.GetPreviewsAsync();
             var selectedPreviews = previews.Where(p => p.IsSelected).ToList();
 
             var aboutUsContent = await _aboutUsService.GetAboutUsAsync();
             var faqs = await _faqService.GetFAQSAsync();
+            var news = await _newsService.GetNewsAsync();
 
-            // Logging if data is missing
+         
             if (!selectedPreviews.Any())
             {
                 _logger.LogWarning("No selected home preview content found in the database.");
@@ -48,12 +52,18 @@ namespace FinalProjectMVC.Controllers
                 _logger.LogWarning("No FAQs found in the database.");
             }
 
+            if (news == null || !news.Any())
+            {
+                _logger.LogWarning("No News found in the database.");
+            }
+
             // Populate ViewModel
             var model = new HomePageViewModel
             {
                 Previews = selectedPreviews ?? Enumerable.Empty<HomePreview>(),
                 AboutUs = aboutUsContent ?? Enumerable.Empty<AboutUsViewModel>(),
-                FAQs = faqs ?? Enumerable.Empty<FAQ>()
+                FAQs = faqs ?? Enumerable.Empty<FAQ>(),
+                News = news ?? Enumerable.Empty<News>()
             };
 
             return View(model);

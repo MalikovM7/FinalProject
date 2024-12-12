@@ -46,7 +46,7 @@ namespace FinalProjectMVC.Controllers
             return View(viewModel);
         }
 
-       [HttpPost]
+[HttpPost]
 [ValidateAntiForgeryToken]
 public async Task<IActionResult> Reserve(CarReservationViewModel viewModel, DateTime startDate, DateTime endDate)
 {

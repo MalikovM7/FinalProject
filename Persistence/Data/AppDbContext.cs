@@ -34,6 +34,8 @@ public class AppDbContext : IdentityDbContext<AppUser>
 
     public DbSet<AboutUsViewModel> AboutUsViewModels { get; set; }
 
+    public DbSet<News> News { get; set; }
+
 
     public DbSet<Slider> Sliders { get; set; }
     public DbSet<SliderImage> SliderImages { get; set; }
