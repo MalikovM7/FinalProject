@@ -12,5 +12,9 @@ namespace Services.Interfaces
         Task<Reservation> ReserveCarAsync(int carId, AppUser user, DateTime startDate, DateTime endDate);
         Task<IEnumerable<Reservation>> GetUserReservationsAsync(string userId);
 
+        Task<IEnumerable<Reservation>> GetReservationsAsync();
+
+
+
     }
 }

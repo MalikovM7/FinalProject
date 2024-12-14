@@ -63,5 +63,10 @@ namespace Services.Implementations.Implementations
                 .Where(r => r.UserId == userId)
                 .ToListAsync();
         }
+
+        public async Task<IEnumerable<Reservation>> GetReservationsAsync()
+        {
+            return (await _context.Reservations.ToListAsync());
+        }
     }
 }

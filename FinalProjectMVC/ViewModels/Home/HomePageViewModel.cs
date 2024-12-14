@@ -9,5 +9,16 @@ namespace FinalProjectMVC.ViewModels.Home
         public IEnumerable<FAQ> FAQs { get; set; }
 
         public IEnumerable<News> News { get; set; }
+
+        public IEnumerable<Slider> Sliders { get; set; }
+
+        public IEnumerable<SliderImage> SliderImages { get; set; }
+
+        public IEnumerable<Car> Cars { get; set; }
+
+
+        public int TotalCars { get; set; }
+        public int TotalUsers { get; set; }
+        public int TotalReservations { get; set; }
     }
 }

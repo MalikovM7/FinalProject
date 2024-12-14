@@ -145,65 +145,23 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- Car Slider -->
-
-    
-    <div class="slider">
-        <h2>Featured Cars</h2>
-        <div class="car-slides">
-            <div class="car-slide">
-                <img src="https://www.thecarexpert.co.uk/wp-content/uploads/2018/06/1806-Audi-A4-19my-01-1200x1200-cropped.jpg" alt="Car 1">
-                <h3>Audi A4</h3>
-                <p>Starting at $50/day</p>
-                <button class="rent-btn">Rent It</button>
+<!--Cars Slider -->
+        <div class="slider">
+            <h2>Featured Cars</h2>
+            <div class="car-slides">
+                @foreach (var car in Model.Cars)
+                {
+                    <div class="car-slide">
+                        <img src="@car.ImagePath" alt="@car.Brand @car.Model">
+                        <h3>@car.Brand @car.Model</h3>
+                        <p>Starting at $@car.PricePerDay/day</p>
+                        <button class="rent-btn">Rent It</button>
+                    </div>
+                }
             </div>
-            <div class="car-slide">
-                    <img src="https://media.ed.edmunds-media.com/bmw/5-series/2021/oem/2021_bmw_5-series_sedan_530e_fq_oem_1_600.jpg" alt="Car 2">
-                <h3>BMW 530e</h3>
-                <p>Starting at $80/day</p>
-                <button class="rent-btn">Rent It</button>
-            </div>
-            <div class="car-slide">
-                <img src="https://www.thecarexpert.co.uk/wp-content/uploads/2018/12/mercedes-benz-c-class-test-drive-wallpaper-1200x1200-cropped.jpg" alt="Car 3">
-                <h3>Mercedes C class</h3>
-                <p>Starting at $70/day</p>
-                <button class="rent-btn">Rent It</button>
-            </div>
-            <div class="car-slide">
-                <img src="https://www.thecarexpert.co.uk/wp-content/uploads/2018/06/1806-Audi-A4-19my-01-1200x1200-cropped.jpg" alt="Car 1">
-                <h3>Audi A4</h3>
-                <p>Starting at $50/day</p>
-                <button class="rent-btn">Rent It</button>
-            </div>
-            <div class="car-slide">
-                    <img src="https://media.ed.edmunds-media.com/bmw/5-series/2021/oem/2021_bmw_5-series_sedan_530e_fq_oem_1_600.jpg" alt="Car 2">
-                <h3>BMW 530e</h3>
-                <p>Starting at $80/day</p>
-                <button class="rent-btn">Rent It</button>
-            </div>
-            <div class="car-slide">
-                <img src="https://www.thecarexpert.co.uk/wp-content/uploads/2018/12/mercedes-benz-c-class-test-drive-wallpaper-1200x1200-cropped.jpg" alt="Car 3">
-                <h3>Mercedes C class</h3>
-                <p>Starting at $70/day</p>
-                <button class="rent-btn">Rent It</button>
-            </div>
+            <button class="prev btn-prev-car sliderButton" onclick="prevSlide()">&#10094;</button>
+            <button class="next btn-next-car sliderButton" onclick="nextSlide()">&#10095;</button>
         </div>
-        <button class="prev  btn-prev-car sliderButton" onclick="prevSlide()">&#10094;</button>
-        <button class="next  btn-next-car sliderButton" onclick="nextSlide()">&#10095;</button>
-    </div>
 
 
 
@@ -215,44 +173,35 @@
 
 <!-- Stats -->
 
-    <div class="stats-container">
-        <div class="stat-item">
-            <div class="stat-icon">
-                <i class="fa-solid fa-heart"></i>
+        <div class="stats-container">
+            <div class="stat-item">
+                <div class="stat-icon">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+                <div class="stat-text">
+                    <h3>@Model.TotalUsers</h3>
+                    <p>TOTAL CUSTOMERS</p>
+                </div>
             </div>
-            <div class="stat-text">
-                <h3>5657</h3>
-                <p>HAPPY CUSTOMERS</p>
+            <div class="stat-item">
+                <div class="stat-icon">
+                    <i class="fa-solid fa-car"></i>
+                </div>
+                <div class="stat-text">
+                    <h3>@Model.TotalCars</h3>
+                    <p>TOTAL CAR COUNT</p>
+                </div>
             </div>
-        </div>
-        <div class="stat-item">
-            <div class="stat-icon">
-                <i class="fa-solid fa-car"></i>
-            </div>
-            <div class="stat-text">
-                <h3>657</h3>
-                <p>TOTAL CAR COUNT</p>
-            </div>
-        </div>
-        <div class="stat-item">
-            <div class="stat-icon">
-                <i class="fa-solid fa-flag"></i>
-            </div>
-            <div class="stat-text">
-                <h3>1,255,657</h3>
-                <p>TOTAL KM/MIL</p>
-            </div>
-        </div>
-        <div class="stat-item">
-            <div class="stat-icon">
-                <i class="fa-solid fa-comments"></i>
-            </div>
-            <div class="stat-text">
-                <h3>1255</h3>
-                <p>CALL CENTER SOLUTIONS</p>
+            <div class="stat-item">
+                <div class="stat-icon">
+                    <i class="fa-solid fa-flag"></i>
+                </div>
+                <div class="stat-text">
+                    <h3>@Model.TotalReservations</h3>
+                    <p>TOTAL RESERVATIONS</p>
+                </div>
             </div>
         </div>
-    </div>
 
 
 

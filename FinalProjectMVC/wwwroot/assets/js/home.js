@@ -156,9 +156,6 @@ window.addEventListener('scroll', function() {
 
 
 
-
-
-
 const registerPasswordIcons = document.querySelectorAll(".register-password-eye");
 
 registerPasswordIcons.forEach(icon => {
