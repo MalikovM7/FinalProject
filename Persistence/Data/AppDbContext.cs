@@ -26,7 +26,7 @@ public class AppDbContext : IdentityDbContext<AppUser>
 
     public DbSet<Reservation> Reservations { get; set; }
 
-    public DbSet<Statistic> Statistics { get; set; }
+    public DbSet<Testimomal> Testimomals { get; set; }
 
     public DbSet<DriverLicense> DriverLicenses { get; set; }
 
@@ -53,7 +53,7 @@ public class AppDbContext : IdentityDbContext<AppUser>
         builder.ApplyConfiguration(new BlogPostConfiguration());
         builder.ApplyConfiguration(new ContactFormConfiguration());
         builder.ApplyConfiguration(new FAQConfiguration());
-        builder.ApplyConfiguration(new StatisticConfiguration());
+
 
 
     }

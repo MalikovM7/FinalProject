@@ -1,6 +1,8 @@
 using Domain.Models;
 using FinalProjectMVC.ViewModels.Home;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using Persistence.Data;
 using Persistence.Migrations;
 using Services.Interfaces;
 
@@ -9,26 +11,26 @@ namespace FinalProjectMVC.Controllers
 {
     public class HomeController : Controller
     {
+        private readonly AppDbContext _context;
         private readonly ILogger<HomeController> _logger;
         private readonly IHomePreviewService _homePreviewService;
         private readonly IAboutUsService _aboutUsService;
         private readonly IfaqService _faqService;
         private readonly INewsService _newsService;
         private readonly ISliderService _sliderService;
-        private readonly ISliderImageService _sliderImageService;
         private readonly IVehicleService _vehicleService;
         private readonly IReservationService _reservationService;
         private readonly IUserService _userService;
 
-        public HomeController(ILogger<HomeController> logger, IHomePreviewService homePreviewService, IAboutUsService aboutUsService, IfaqService faqService, INewsService newsService, ISliderService sliderService, ISliderImageService sliderImageService, IVehicleService vehicleService, IReservationService reservationService, IUserService userService)
+        public HomeController(ILogger<HomeController> logger, AppDbContext context, IHomePreviewService homePreviewService, IAboutUsService aboutUsService, IfaqService faqService, INewsService newsService, ISliderService sliderService, IVehicleService vehicleService, IReservationService reservationService, IUserService userService)
         {
             _logger = logger;
+            _context = context;
             _homePreviewService = homePreviewService;
             _aboutUsService = aboutUsService;
             _faqService = faqService;
             _newsService = newsService;
             _sliderService = sliderService;
-            _sliderImageService = sliderImageService;
             _vehicleService = vehicleService;
             _reservationService = reservationService;
             _userService = userService;
@@ -43,12 +45,12 @@ namespace FinalProjectMVC.Controllers
             var aboutUsContent = await _aboutUsService.GetAboutUsAsync();
             var faqs = await _faqService.GetFAQSAsync();
             var news = await _newsService.GetNewsAsync();
-            var sliderimages = await _sliderImageService.GetSliderImageSAsync();
             var sliders = await _sliderService.GetSliderSAsync();
             var sortedSliders = sliders.OrderByDescending(s => s.IsMain).ToList();
             var cars = await _vehicleService.GetCarSAsync();
             var reservations = await _reservationService.GetReservationsAsync();
             var users = await _userService.GetUsersAsync();
+            var sliderimages = await _context.SliderImages.ToListAsync();
 
 
 
@@ -72,14 +74,13 @@ namespace FinalProjectMVC.Controllers
                 _logger.LogWarning("No News found in the database.");
             }
 
-             if (sliderimages == null || !sliderimages.Any())
-            {
-                _logger.LogWarning("No slider images found in the database");
-            }
-
             if (sliders == null || !sliders.Any())
             {
                 _logger.LogWarning("No sliders found in the database");
+            }
+            if (sliderimages == null || !sliderimages.Any())
+            {
+                _logger.LogWarning("No slider images found in the database");
             }
             if (cars == null || !cars.Any())
             {

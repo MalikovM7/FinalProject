@@ -3,103 +3,51 @@
   "WorkspaceRootPath": "C:\\Users\\vuqar\\Desktop\\Final Code\\FinalProjectMVC\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2DCE3D6F-C8B8-496C-8B0C-DD3EB13D834B}|FinalProjectMVC.csproj|c:\\users\\vuqar\\desktop\\final code\\finalprojectmvc\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{2DCE3D6F-C8B8-496C-8B0C-DD3EB13D834B}|FinalProjectMVC.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{2DCE3D6F-C8B8-496C-8B0C-DD3EB13D834B}|FinalProjectMVC.csproj|c:\\users\\vuqar\\desktop\\final code\\finalprojectmvc\\areas\\admin\\controllers\\slidercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2DCE3D6F-C8B8-496C-8B0C-DD3EB13D834B}|FinalProjectMVC.csproj|solutionrelative:areas\\admin\\controllers\\slidercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2DCE3D6F-C8B8-496C-8B0C-DD3EB13D834B}|FinalProjectMVC.csproj|c:\\users\\vuqar\\desktop\\final code\\finalprojectmvc\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2DCE3D6F-C8B8-496C-8B0C-DD3EB13D834B}|FinalProjectMVC.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2DCE3D6F-C8B8-496C-8B0C-DD3EB13D834B}|FinalProjectMVC.csproj|c:\\users\\vuqar\\desktop\\final code\\finalprojectmvc\\areas\\admin\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2DCE3D6F-C8B8-496C-8B0C-DD3EB13D834B}|FinalProjectMVC.csproj|solutionrelative:areas\\admin\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2DCE3D6F-C8B8-496C-8B0C-DD3EB13D834B}|FinalProjectMVC.csproj|c:\\users\\vuqar\\desktop\\final code\\finalprojectmvc\\viewmodels\\home\\homepageviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2DCE3D6F-C8B8-496C-8B0C-DD3EB13D834B}|FinalProjectMVC.csproj|solutionrelative:viewmodels\\home\\homepageviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2DCE3D6F-C8B8-496C-8B0C-DD3EB13D834B}|FinalProjectMVC.csproj|c:\\users\\vuqar\\desktop\\final code\\finalprojectmvc\\wwwroot\\assets\\js\\home.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{2DCE3D6F-C8B8-496C-8B0C-DD3EB13D834B}|FinalProjectMVC.csproj|solutionrelative:wwwroot\\assets\\js\\home.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+      "AbsoluteMoniker": "D:0:0:{2DCE3D6F-C8B8-496C-8B0C-DD3EB13D834B}|FinalProjectMVC.csproj|c:\\users\\vuqar\\desktop\\final code\\finalprojectmvc\\viewmodels\\admin\\slider\\slidervm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2DCE3D6F-C8B8-496C-8B0C-DD3EB13D834B}|FinalProjectMVC.csproj|solutionrelative:viewmodels\\admin\\slider\\slidervm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2DCE3D6F-C8B8-496C-8B0C-DD3EB13D834B}|FinalProjectMVC.csproj|c:\\users\\vuqar\\desktop\\final code\\finalprojectmvc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2DCE3D6F-C8B8-496C-8B0C-DD3EB13D834B}|FinalProjectMVC.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2DCE3D6F-C8B8-496C-8B0C-DD3EB13D834B}|FinalProjectMVC.csproj|c:\\users\\vuqar\\desktop\\final code\\finalprojectmvc\\viewmodels\\admin\\slider\\sliderimagevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2DCE3D6F-C8B8-496C-8B0C-DD3EB13D834B}|FinalProjectMVC.csproj|solutionrelative:viewmodels\\admin\\slider\\sliderimagevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F1D5799D-7ED2-4C59-81FF-5091AE59E823}|..\\Services.Implementations\\Services.Implementations.csproj|c:\\users\\vuqar\\desktop\\final code\\services.implementations\\implementations\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2DCE3D6F-C8B8-496C-8B0C-DD3EB13D834B}|FinalProjectMVC.csproj|c:\\users\\vuqar\\desktop\\final code\\finalprojectmvc\\viewmodels\\admin\\slider\\sliderimageeditvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2DCE3D6F-C8B8-496C-8B0C-DD3EB13D834B}|FinalProjectMVC.csproj|solutionrelative:viewmodels\\admin\\slider\\sliderimageeditvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5AED6B82-AC60-45BE-9848-7AB0C84ADFCC}|..\\Persistence\\Persistence.csproj|c:\\users\\vuqar\\desktop\\final code\\persistence\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2DCE3D6F-C8B8-496C-8B0C-DD3EB13D834B}|FinalProjectMVC.csproj|c:\\users\\vuqar\\desktop\\final code\\finalprojectmvc\\areas\\admin\\views\\slider\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2DCE3D6F-C8B8-496C-8B0C-DD3EB13D834B}|FinalProjectMVC.csproj|solutionrelative:areas\\admin\\views\\slider\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C2E4027D-638F-4B4A-9E0F-483E1323F214}|..\\Services\\Services.csproj|c:\\users\\vuqar\\desktop\\final code\\services\\interfaces\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2DCE3D6F-C8B8-496C-8B0C-DD3EB13D834B}|FinalProjectMVC.csproj|c:\\users\\vuqar\\desktop\\final code\\finalprojectmvc\\areas\\admin\\views\\slider\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2DCE3D6F-C8B8-496C-8B0C-DD3EB13D834B}|FinalProjectMVC.csproj|solutionrelative:areas\\admin\\views\\slider\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C2E4027D-638F-4B4A-9E0F-483E1323F214}|..\\Services\\Services.csproj|c:\\users\\vuqar\\desktop\\final code\\services\\interfaces\\inewsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2DCE3D6F-C8B8-496C-8B0C-DD3EB13D834B}|FinalProjectMVC.csproj|c:\\users\\vuqar\\desktop\\final code\\finalprojectmvc\\areas\\admin\\views\\slider\\detail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2DCE3D6F-C8B8-496C-8B0C-DD3EB13D834B}|FinalProjectMVC.csproj|solutionrelative:areas\\admin\\views\\slider\\detail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C2E4027D-638F-4B4A-9E0F-483E1323F214}|..\\Services\\Services.csproj|c:\\users\\vuqar\\desktop\\final code\\services\\interfaces\\ireservationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F1D5799D-7ED2-4C59-81FF-5091AE59E823}|..\\Services.Implementations\\Services.Implementations.csproj|c:\\users\\vuqar\\desktop\\final code\\services.implementations\\implementations\\reservationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2DCE3D6F-C8B8-496C-8B0C-DD3EB13D834B}|FinalProjectMVC.csproj|c:\\users\\vuqar\\desktop\\final code\\finalprojectmvc\\wwwroot\\assets\\css\\home.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{2DCE3D6F-C8B8-496C-8B0C-DD3EB13D834B}|FinalProjectMVC.csproj|solutionrelative:wwwroot\\assets\\css\\home.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B340434A-F318-42BA-BF3D-536C99C250CF}|..\\Domain\\Domain.csproj|c:\\users\\vuqar\\desktop\\final code\\domain\\models\\car.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2DCE3D6F-C8B8-496C-8B0C-DD3EB13D834B}|FinalProjectMVC.csproj|c:\\users\\vuqar\\desktop\\final code\\finalprojectmvc\\viewmodels\\admin\\car\\vehiclevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2DCE3D6F-C8B8-496C-8B0C-DD3EB13D834B}|FinalProjectMVC.csproj|solutionrelative:viewmodels\\admin\\car\\vehiclevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2DCE3D6F-C8B8-496C-8B0C-DD3EB13D834B}|FinalProjectMVC.csproj|c:\\users\\vuqar\\desktop\\final code\\finalprojectmvc\\views\\vehicle\\vehicle.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{2DCE3D6F-C8B8-496C-8B0C-DD3EB13D834B}|FinalProjectMVC.csproj|solutionrelative:views\\vehicle\\vehicle.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2DCE3D6F-C8B8-496C-8B0C-DD3EB13D834B}|FinalProjectMVC.csproj|c:\\users\\vuqar\\desktop\\final code\\finalprojectmvc\\controllers\\vehiclecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2DCE3D6F-C8B8-496C-8B0C-DD3EB13D834B}|FinalProjectMVC.csproj|solutionrelative:controllers\\vehiclecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5AED6B82-AC60-45BE-9848-7AB0C84ADFCC}|..\\Persistence\\Persistence.csproj|c:\\users\\vuqar\\desktop\\final code\\persistence\\repositories\\implementations\\sliderimagerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F1D5799D-7ED2-4C59-81FF-5091AE59E823}|..\\Services.Implementations\\Services.Implementations.csproj|c:\\users\\vuqar\\desktop\\final code\\services.implementations\\implementations\\sliderimageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C2E4027D-638F-4B4A-9E0F-483E1323F214}|..\\Services\\Services.csproj|c:\\users\\vuqar\\desktop\\final code\\services\\interfaces\\isliderimageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B340434A-F318-42BA-BF3D-536C99C250CF}|..\\Domain\\Domain.csproj|c:\\users\\vuqar\\desktop\\final code\\domain\\models\\sliderimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2DCE3D6F-C8B8-496C-8B0C-DD3EB13D834B}|FinalProjectMVC.csproj|c:\\users\\vuqar\\desktop\\final code\\finalprojectmvc\\areas\\admin\\views\\slider\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2DCE3D6F-C8B8-496C-8B0C-DD3EB13D834B}|FinalProjectMVC.csproj|solutionrelative:areas\\admin\\views\\slider\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B340434A-F318-42BA-BF3D-536C99C250CF}|..\\Domain\\Domain.csproj|c:\\users\\vuqar\\desktop\\final code\\domain\\models\\slider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B340434A-F318-42BA-BF3D-536C99C250CF}|..\\Domain\\Domain.csproj|c:\\users\\vuqar\\desktop\\final code\\domain\\models\\reservation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F1D5799D-7ED2-4C59-81FF-5091AE59E823}|..\\Services.Implementations\\Services.Implementations.csproj|c:\\users\\vuqar\\desktop\\final code\\services.implementations\\implementations\\sliderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F1D5799D-7ED2-4C59-81FF-5091AE59E823}|..\\Services.Implementations\\Services.Implementations.csproj|c:\\users\\vuqar\\desktop\\final code\\services.implementations\\implementations\\faqservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F1D5799D-7ED2-4C59-81FF-5091AE59E823}|..\\Services.Implementations\\Services.Implementations.csproj|c:\\users\\vuqar\\desktop\\final code\\services.implementations\\implementations\\newsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5AED6B82-AC60-45BE-9848-7AB0C84ADFCC}|..\\Persistence\\Persistence.csproj|c:\\users\\vuqar\\desktop\\final code\\persistence\\repositories\\implementations\\sliderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5AED6B82-AC60-45BE-9848-7AB0C84ADFCC}|..\\Persistence\\Persistence.csproj|c:\\users\\vuqar\\desktop\\final code\\persistence\\repositories\\implementations\\newsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5AED6B82-AC60-45BE-9848-7AB0C84ADFCC}|..\\Persistence\\Persistence.csproj|c:\\users\\vuqar\\desktop\\final code\\persistence\\repositories\\implementations\\aboutusrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{76CBC9AB-1984-499D-97DB-771A12054DBF}|..\\Repositories\\Repositories.csproj|c:\\users\\vuqar\\desktop\\final code\\repositories\\repositories\\isliderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C2E4027D-638F-4B4A-9E0F-483E1323F214}|..\\Services\\Services.csproj|c:\\users\\vuqar\\desktop\\final code\\services\\interfaces\\isliderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2DCE3D6F-C8B8-496C-8B0C-DD3EB13D834B}|FinalProjectMVC.csproj|c:\\users\\vuqar\\desktop\\final code\\finalprojectmvc\\areas\\admin\\views\\sliderimage\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2DCE3D6F-C8B8-496C-8B0C-DD3EB13D834B}|FinalProjectMVC.csproj|solutionrelative:areas\\admin\\views\\sliderimage\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -117,80 +65,106 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "home.js",
-              "DocumentMoniker": "C:\\Users\\vuqar\\Desktop\\Final Code\\FinalProjectMVC\\wwwroot\\assets\\js\\home.js",
-              "RelativeDocumentMoniker": "wwwroot\\assets\\js\\home.js",
-              "ToolTip": "C:\\Users\\vuqar\\Desktop\\Final Code\\FinalProjectMVC\\wwwroot\\assets\\js\\home.js",
-              "RelativeToolTip": "wwwroot\\assets\\js\\home.js",
-              "ViewState": "AQIAAJMAAAAAAAAAAAAiwJwAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-12-14T15:27:59.182Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "INewsService.cs",
-              "DocumentMoniker": "C:\\Users\\vuqar\\Desktop\\Final Code\\Services\\Interfaces\\INewsService.cs",
-              "RelativeDocumentMoniker": "..\\Services\\Interfaces\\INewsService.cs",
-              "ToolTip": "C:\\Users\\vuqar\\Desktop\\Final Code\\Services\\Interfaces\\INewsService.cs",
-              "RelativeToolTip": "..\\Services\\Interfaces\\INewsService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-14T15:22:58.73Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "IUserService.cs",
-              "DocumentMoniker": "C:\\Users\\vuqar\\Desktop\\Final Code\\Services\\Interfaces\\IUserService.cs",
-              "RelativeDocumentMoniker": "..\\Services\\Interfaces\\IUserService.cs",
-              "ToolTip": "C:\\Users\\vuqar\\Desktop\\Final Code\\Services\\Interfaces\\IUserService.cs",
-              "RelativeToolTip": "..\\Services\\Interfaces\\IUserService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAcAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-14T15:22:49.919Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "IReservationService.cs",
-              "DocumentMoniker": "C:\\Users\\vuqar\\Desktop\\Final Code\\Services\\Interfaces\\IReservationService.cs",
-              "RelativeDocumentMoniker": "..\\Services\\Interfaces\\IReservationService.cs",
-              "ToolTip": "C:\\Users\\vuqar\\Desktop\\Final Code\\Services\\Interfaces\\IReservationService.cs",
-              "RelativeToolTip": "..\\Services\\Interfaces\\IReservationService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-14T15:19:42.891Z",
+              "DocumentIndex": 1,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\vuqar\\Desktop\\Final Code\\FinalProjectMVC\\Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\vuqar\\Desktop\\Final Code\\FinalProjectMVC\\Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAE4AAAAAAAAAAAAAAFoAAABLAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-15T10:26:14.367Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\vuqar\\Desktop\\Final Code\\FinalProjectMVC\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\vuqar\\Desktop\\Final Code\\FinalProjectMVC\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAACsAAAAAAAAAAAAQwDQAAABEAAAA",
+              "Title": "SliderImageVM.cs",
+              "DocumentMoniker": "C:\\Users\\vuqar\\Desktop\\Final Code\\FinalProjectMVC\\ViewModels\\Admin\\Slider\\SliderImageVM.cs",
+              "RelativeDocumentMoniker": "ViewModels\\Admin\\Slider\\SliderImageVM.cs",
+              "ToolTip": "C:\\Users\\vuqar\\Desktop\\Final Code\\FinalProjectMVC\\ViewModels\\Admin\\Slider\\SliderImageVM.cs",
+              "RelativeToolTip": "ViewModels\\Admin\\Slider\\SliderImageVM.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-14T14:47:01.835Z",
+              "WhenOpened": "2024-12-15T10:25:46.718Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\Users\\vuqar\\Desktop\\Final Code\\FinalProjectMVC\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
-              "ToolTip": "C:\\Users\\vuqar\\Desktop\\Final Code\\FinalProjectMVC\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "Controllers\\HomeController.cs",
-              "ViewState": "AQIAAGAAAAAAAAAAAAAYwG0AAAAXAAAA",
+              "DocumentIndex": 5,
+              "Title": "SliderImageEditVM.cs",
+              "DocumentMoniker": "C:\\Users\\vuqar\\Desktop\\Final Code\\FinalProjectMVC\\ViewModels\\Admin\\Slider\\SliderImageEditVM.cs",
+              "RelativeDocumentMoniker": "ViewModels\\Admin\\Slider\\SliderImageEditVM.cs",
+              "ToolTip": "C:\\Users\\vuqar\\Desktop\\Final Code\\FinalProjectMVC\\ViewModels\\Admin\\Slider\\SliderImageEditVM.cs",
+              "RelativeToolTip": "ViewModels\\Admin\\Slider\\SliderImageEditVM.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-14T14:11:53.502Z",
+              "WhenOpened": "2024-12-15T10:25:45.521Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\vuqar\\Desktop\\Final Code\\FinalProjectMVC\\Areas\\Admin\\Views\\Slider\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Slider\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\vuqar\\Desktop\\Final Code\\FinalProjectMVC\\Areas\\Admin\\Views\\Slider\\Edit.cshtml",
+              "RelativeToolTip": "Areas\\Admin\\Views\\Slider\\Edit.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-15T10:22:10.058Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Detail.cshtml",
+              "DocumentMoniker": "C:\\Users\\vuqar\\Desktop\\Final Code\\FinalProjectMVC\\Areas\\Admin\\Views\\Slider\\Detail.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Slider\\Detail.cshtml",
+              "ToolTip": "C:\\Users\\vuqar\\Desktop\\Final Code\\FinalProjectMVC\\Areas\\Admin\\Views\\Slider\\Detail.cshtml",
+              "RelativeToolTip": "Areas\\Admin\\Views\\Slider\\Detail.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-15T10:22:03.565Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\vuqar\\Desktop\\Final Code\\FinalProjectMVC\\Areas\\Admin\\Views\\Slider\\Create.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Slider\\Create.cshtml",
+              "ToolTip": "C:\\Users\\vuqar\\Desktop\\Final Code\\FinalProjectMVC\\Areas\\Admin\\Views\\Slider\\Create.cshtml",
+              "RelativeToolTip": "Areas\\Admin\\Views\\Slider\\Create.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-15T10:21:51.305Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SliderVM.cs",
+              "DocumentMoniker": "C:\\Users\\vuqar\\Desktop\\Final Code\\FinalProjectMVC\\ViewModels\\Admin\\Slider\\SliderVM.cs",
+              "RelativeDocumentMoniker": "ViewModels\\Admin\\Slider\\SliderVM.cs",
+              "ToolTip": "C:\\Users\\vuqar\\Desktop\\Final Code\\FinalProjectMVC\\ViewModels\\Admin\\Slider\\SliderVM.cs",
+              "RelativeToolTip": "ViewModels\\Admin\\Slider\\SliderVM.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-15T10:20:35.475Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SliderController.cs",
+              "DocumentMoniker": "C:\\Users\\vuqar\\Desktop\\Final Code\\FinalProjectMVC\\Areas\\Admin\\Controllers\\SliderController.cs",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Controllers\\SliderController.cs",
+              "ToolTip": "C:\\Users\\vuqar\\Desktop\\Final Code\\FinalProjectMVC\\Areas\\Admin\\Controllers\\SliderController.cs",
+              "RelativeToolTip": "Areas\\Admin\\Controllers\\SliderController.cs",
+              "ViewState": "AQIAABQAAAAAAAAAAAAYwCQAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-15T09:41:53.665Z",
               "EditorCaption": ""
             },
             {
@@ -201,196 +175,40 @@
               "RelativeDocumentMoniker": "ViewModels\\Home\\HomePageViewModel.cs",
               "ToolTip": "C:\\Users\\vuqar\\Desktop\\Final Code\\FinalProjectMVC\\ViewModels\\Home\\HomePageViewModel.cs",
               "RelativeToolTip": "ViewModels\\Home\\HomePageViewModel.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAwwBUAAAAyAAAA",
+              "ViewState": "AQIAAAgAAAAAAAAAAAA3wAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-14T14:10:42.515Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\vuqar\\Desktop\\Final Code\\FinalProjectMVC\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\Users\\vuqar\\Desktop\\Final Code\\FinalProjectMVC\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "Views\\Home\\Index.cshtml",
-              "ViewState": "AQIAAE0AAAAAAAAAAAAcwI8AAAAOAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-14T14:20:22.687Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "UserService.cs",
-              "DocumentMoniker": "C:\\Users\\vuqar\\Desktop\\Final Code\\Services.Implementations\\Implementations\\UserService.cs",
-              "RelativeDocumentMoniker": "..\\Services.Implementations\\Implementations\\UserService.cs",
-              "ToolTip": "C:\\Users\\vuqar\\Desktop\\Final Code\\Services.Implementations\\Implementations\\UserService.cs",
-              "RelativeToolTip": "..\\Services.Implementations\\Implementations\\UserService.cs",
-              "ViewState": "AQIAAAoAAAAAAAAAAAAAABYAAAA2AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-14T15:24:12.659Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "AppDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\vuqar\\Desktop\\Final Code\\Persistence\\Data\\AppDbContext.cs",
-              "RelativeDocumentMoniker": "..\\Persistence\\Data\\AppDbContext.cs",
-              "ToolTip": "C:\\Users\\vuqar\\Desktop\\Final Code\\Persistence\\Data\\AppDbContext.cs",
-              "RelativeToolTip": "..\\Persistence\\Data\\AppDbContext.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-14T15:25:21.364Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "ReservationService.cs",
-              "DocumentMoniker": "C:\\Users\\vuqar\\Desktop\\Final Code\\Services.Implementations\\Implementations\\ReservationService.cs",
-              "RelativeDocumentMoniker": "..\\Services.Implementations\\Implementations\\ReservationService.cs",
-              "ToolTip": "C:\\Users\\vuqar\\Desktop\\Final Code\\Services.Implementations\\Implementations\\ReservationService.cs",
-              "RelativeToolTip": "..\\Services.Implementations\\Implementations\\ReservationService.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAEQAAAA/AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-14T15:20:59.641Z",
+              "WhenOpened": "2024-12-15T10:25:59.488Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 11,
-              "Title": "home.css",
-              "DocumentMoniker": "C:\\Users\\vuqar\\Desktop\\Final Code\\FinalProjectMVC\\wwwroot\\assets\\css\\home.css",
-              "RelativeDocumentMoniker": "wwwroot\\assets\\css\\home.css",
-              "ToolTip": "C:\\Users\\vuqar\\Desktop\\Final Code\\FinalProjectMVC\\wwwroot\\assets\\css\\home.css",
-              "RelativeToolTip": "wwwroot\\assets\\css\\home.css",
-              "ViewState": "AQIAABQBAAAAAAAAAAAAACABAAARAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-12-14T14:58:32.118Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "VehicleController.cs",
-              "DocumentMoniker": "C:\\Users\\vuqar\\Desktop\\Final Code\\FinalProjectMVC\\Controllers\\VehicleController.cs",
-              "RelativeDocumentMoniker": "Controllers\\VehicleController.cs",
-              "ToolTip": "C:\\Users\\vuqar\\Desktop\\Final Code\\FinalProjectMVC\\Controllers\\VehicleController.cs",
-              "RelativeToolTip": "Controllers\\VehicleController.cs",
-              "ViewState": "AQIAAA0AAAAAAAAAAAAzwB4AAAAPAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-14T14:44:21.623Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "SliderImage.cs",
-              "DocumentMoniker": "C:\\Users\\vuqar\\Desktop\\Final Code\\Domain\\Models\\SliderImage.cs",
-              "RelativeDocumentMoniker": "..\\Domain\\Models\\SliderImage.cs",
-              "ToolTip": "C:\\Users\\vuqar\\Desktop\\Final Code\\Domain\\Models\\SliderImage.cs",
-              "RelativeToolTip": "..\\Domain\\Models\\SliderImage.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-14T14:02:00.313Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "SliderImageRepository.cs",
-              "DocumentMoniker": "C:\\Users\\vuqar\\Desktop\\Final Code\\Persistence\\Repositories\\Implementations\\SliderImageRepository.cs",
-              "RelativeDocumentMoniker": "..\\Persistence\\Repositories\\Implementations\\SliderImageRepository.cs",
-              "ToolTip": "C:\\Users\\vuqar\\Desktop\\Final Code\\Persistence\\Repositories\\Implementations\\SliderImageRepository.cs",
-              "RelativeToolTip": "..\\Persistence\\Repositories\\Implementations\\SliderImageRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAWAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-14T13:47:05.133Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "ISliderImageService.cs",
-              "DocumentMoniker": "C:\\Users\\vuqar\\Desktop\\Final Code\\Services\\Interfaces\\ISliderImageService.cs",
-              "RelativeDocumentMoniker": "..\\Services\\Interfaces\\ISliderImageService.cs",
-              "ToolTip": "C:\\Users\\vuqar\\Desktop\\Final Code\\Services\\Interfaces\\ISliderImageService.cs",
-              "RelativeToolTip": "..\\Services\\Interfaces\\ISliderImageService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAhAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-14T13:44:15.205Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Car.cs",
-              "DocumentMoniker": "C:\\Users\\vuqar\\Desktop\\Final Code\\Domain\\Models\\Car.cs",
-              "RelativeDocumentMoniker": "..\\Domain\\Models\\Car.cs",
-              "ToolTip": "C:\\Users\\vuqar\\Desktop\\Final Code\\Domain\\Models\\Car.cs",
-              "RelativeToolTip": "..\\Domain\\Models\\Car.cs",
-              "ViewState": "AQIAAA4AAAAAAAAAAAA4wCMAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-14T14:46:27.757Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "VehicleVM.cs",
-              "DocumentMoniker": "C:\\Users\\vuqar\\Desktop\\Final Code\\FinalProjectMVC\\ViewModels\\Admin\\Car\\VehicleVM.cs",
-              "RelativeDocumentMoniker": "ViewModels\\Admin\\Car\\VehicleVM.cs",
-              "ToolTip": "C:\\Users\\vuqar\\Desktop\\Final Code\\FinalProjectMVC\\ViewModels\\Admin\\Car\\VehicleVM.cs",
-              "RelativeToolTip": "ViewModels\\Admin\\Car\\VehicleVM.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAA8AAAApAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-14T14:51:25.171Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "Vehicle.cshtml",
-              "DocumentMoniker": "C:\\Users\\vuqar\\Desktop\\Final Code\\FinalProjectMVC\\Views\\Vehicle\\Vehicle.cshtml",
-              "RelativeDocumentMoniker": "Views\\Vehicle\\Vehicle.cshtml",
-              "ToolTip": "C:\\Users\\vuqar\\Desktop\\Final Code\\FinalProjectMVC\\Views\\Vehicle\\Vehicle.cshtml",
-              "RelativeToolTip": "Views\\Vehicle\\Vehicle.cshtml",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\vuqar\\Desktop\\Final Code\\FinalProjectMVC\\Areas\\Admin\\Views\\SliderImage\\Index.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\SliderImage\\Index.cshtml",
+              "ToolTip": "C:\\Users\\vuqar\\Desktop\\Final Code\\FinalProjectMVC\\Areas\\Admin\\Views\\SliderImage\\Index.cshtml",
+              "RelativeToolTip": "Areas\\Admin\\Views\\SliderImage\\Index.cshtml",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-14T14:51:06.453Z",
+              "WhenOpened": "2024-12-15T10:18:09.391Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "SliderImageService.cs",
-              "DocumentMoniker": "C:\\Users\\vuqar\\Desktop\\Final Code\\Services.Implementations\\Implementations\\SliderImageService.cs",
-              "RelativeDocumentMoniker": "..\\Services.Implementations\\Implementations\\SliderImageService.cs",
-              "ToolTip": "C:\\Users\\vuqar\\Desktop\\Final Code\\Services.Implementations\\Implementations\\SliderImageService.cs",
-              "RelativeToolTip": "..\\Services.Implementations\\Implementations\\SliderImageService.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAADEAAAA5AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-14T13:51:54.657Z",
+              "DocumentIndex": 7,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\vuqar\\Desktop\\Final Code\\FinalProjectMVC\\Areas\\Admin\\Views\\Slider\\Index.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Slider\\Index.cshtml",
+              "ToolTip": "C:\\Users\\vuqar\\Desktop\\Final Code\\FinalProjectMVC\\Areas\\Admin\\Views\\Slider\\Index.cshtml",
+              "RelativeToolTip": "Areas\\Admin\\Views\\Slider\\Index.cshtml",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAB4AAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-15T10:17:41.053Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "Reservation.cs",
-              "DocumentMoniker": "C:\\Users\\vuqar\\Desktop\\Final Code\\Domain\\Models\\Reservation.cs",
-              "RelativeDocumentMoniker": "..\\Domain\\Models\\Reservation.cs",
-              "ToolTip": "C:\\Users\\vuqar\\Desktop\\Final Code\\Domain\\Models\\Reservation.cs",
-              "RelativeToolTip": "..\\Domain\\Models\\Reservation.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-14T14:04:36.471Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 10,
               "Title": "Slider.cs",
               "DocumentMoniker": "C:\\Users\\vuqar\\Desktop\\Final Code\\Domain\\Models\\Slider.cs",
               "RelativeDocumentMoniker": "..\\Domain\\Models\\Slider.cs",
@@ -398,111 +216,7 @@
               "RelativeToolTip": "..\\Domain\\Models\\Slider.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-14T13:51:44.201Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "FaqService.cs",
-              "DocumentMoniker": "C:\\Users\\vuqar\\Desktop\\Final Code\\Services.Implementations\\Implementations\\FaqService.cs",
-              "RelativeDocumentMoniker": "..\\Services.Implementations\\Implementations\\FaqService.cs",
-              "ToolTip": "C:\\Users\\vuqar\\Desktop\\Final Code\\Services.Implementations\\Implementations\\FaqService.cs",
-              "RelativeToolTip": "..\\Services.Implementations\\Implementations\\FaqService.cs",
-              "ViewState": "AQIAABcAAAAAAAAAAAAgwCgAAAA4AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-14T13:49:12.531Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "SliderService.cs",
-              "DocumentMoniker": "C:\\Users\\vuqar\\Desktop\\Final Code\\Services.Implementations\\Implementations\\SliderService.cs",
-              "RelativeDocumentMoniker": "..\\Services.Implementations\\Implementations\\SliderService.cs",
-              "ToolTip": "C:\\Users\\vuqar\\Desktop\\Final Code\\Services.Implementations\\Implementations\\SliderService.cs",
-              "RelativeToolTip": "..\\Services.Implementations\\Implementations\\SliderService.cs",
-              "ViewState": "AQIAAB0AAAAAAAAAAAAgwDIAAAA+AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-14T13:30:06.103Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "SliderRepository.cs",
-              "DocumentMoniker": "C:\\Users\\vuqar\\Desktop\\Final Code\\Persistence\\Repositories\\Implementations\\SliderRepository.cs",
-              "RelativeDocumentMoniker": "..\\Persistence\\Repositories\\Implementations\\SliderRepository.cs",
-              "ToolTip": "C:\\Users\\vuqar\\Desktop\\Final Code\\Persistence\\Repositories\\Implementations\\SliderRepository.cs",
-              "RelativeToolTip": "..\\Persistence\\Repositories\\Implementations\\SliderRepository.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAA4AAAAVAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-14T13:44:49.16Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "NewsRepository.cs",
-              "DocumentMoniker": "C:\\Users\\vuqar\\Desktop\\Final Code\\Persistence\\Repositories\\Implementations\\NewsRepository.cs",
-              "RelativeDocumentMoniker": "..\\Persistence\\Repositories\\Implementations\\NewsRepository.cs",
-              "ToolTip": "C:\\Users\\vuqar\\Desktop\\Final Code\\Persistence\\Repositories\\Implementations\\NewsRepository.cs",
-              "RelativeToolTip": "..\\Persistence\\Repositories\\Implementations\\NewsRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAACAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-14T13:46:37.613Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "AboutUsRepository.cs",
-              "DocumentMoniker": "C:\\Users\\vuqar\\Desktop\\Final Code\\Persistence\\Repositories\\Implementations\\AboutUsRepository.cs",
-              "RelativeDocumentMoniker": "..\\Persistence\\Repositories\\Implementations\\AboutUsRepository.cs",
-              "ToolTip": "C:\\Users\\vuqar\\Desktop\\Final Code\\Persistence\\Repositories\\Implementations\\AboutUsRepository.cs",
-              "RelativeToolTip": "..\\Persistence\\Repositories\\Implementations\\AboutUsRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-14T13:46:11.805Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "ISliderRepository.cs",
-              "DocumentMoniker": "C:\\Users\\vuqar\\Desktop\\Final Code\\Repositories\\Repositories\\ISliderRepository.cs",
-              "RelativeDocumentMoniker": "..\\Repositories\\Repositories\\ISliderRepository.cs",
-              "ToolTip": "C:\\Users\\vuqar\\Desktop\\Final Code\\Repositories\\Repositories\\ISliderRepository.cs",
-              "RelativeToolTip": "..\\Repositories\\Repositories\\ISliderRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAxAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-14T13:44:25.652Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "NewsService.cs",
-              "DocumentMoniker": "C:\\Users\\vuqar\\Desktop\\Final Code\\Services.Implementations\\Implementations\\NewsService.cs",
-              "RelativeDocumentMoniker": "..\\Services.Implementations\\Implementations\\NewsService.cs",
-              "ToolTip": "C:\\Users\\vuqar\\Desktop\\Final Code\\Services.Implementations\\Implementations\\NewsService.cs",
-              "RelativeToolTip": "..\\Services.Implementations\\Implementations\\NewsService.cs",
-              "ViewState": "AQIAACIAAAAAAAAAAAAkwDgAAAAyAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-14T13:43:20.338Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "ISliderService.cs",
-              "DocumentMoniker": "C:\\Users\\vuqar\\Desktop\\Final Code\\Services\\Interfaces\\ISliderService.cs",
-              "RelativeDocumentMoniker": "..\\Services\\Interfaces\\ISliderService.cs",
-              "ToolTip": "C:\\Users\\vuqar\\Desktop\\Final Code\\Services\\Interfaces\\ISliderService.cs",
-              "RelativeToolTip": "..\\Services\\Interfaces\\ISliderService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-14T13:44:16.17Z",
+              "WhenOpened": "2024-12-15T10:16:45.101Z",
               "EditorCaption": ""
             }
           ]

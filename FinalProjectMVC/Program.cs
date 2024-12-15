@@ -51,16 +51,14 @@ namespace FinalProjectMVC
             
             builder.Services.AddScoped<INewsService, NewsService>();
             builder.Services.AddScoped<IUserService, UserService>();
-            builder.Services.AddScoped<ISliderService, SliderService>();
-            builder.Services.AddScoped<ISliderImageService, SliderImageService>();
             builder.Services.AddScoped<IReservationService, ReservationService>();
             builder.Services.AddScoped<IEmailService, EmailService>();
+            builder.Services.AddScoped<ISliderService, SliderService>();
             builder.Services.AddScoped<IHomePreviewService, HomePreviewService>();
             builder.Services.AddScoped<IAboutUsService, AboutUsService>();
             builder.Services.AddScoped<IfaqService, FaqService>();
             builder.Services.AddScoped<IVehicleService, VehicleService>();
             builder.Services.AddScoped<ISliderRepository, SliderRepository>();
-            builder.Services.AddScoped<ISliderImageRepository, SliderImageRepository>();
             builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
             builder.Services.AddScoped<IFaqRepository, FAQRepository>();
             builder.Services.AddScoped<IVehicleRepository, VehicleRepository>();

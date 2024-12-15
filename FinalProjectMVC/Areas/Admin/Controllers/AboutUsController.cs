@@ -28,7 +28,7 @@ namespace FinalProjectMVC.Areas.Admin.Controllers
                 Subtitle = a.Subtitle,
                 Description = a.Description,
                 Points = a.Points,
-                ImageUrls = a.ImageUrls
+                
             }).ToList();
 
             return View(aboutVMs);
@@ -49,7 +49,7 @@ namespace FinalProjectMVC.Areas.Admin.Controllers
                 Subtitle = aboutus.Subtitle,
                 Description = aboutus.Description,
                 Points = aboutus.Points,
-                ImageUrls = aboutus.ImageUrls
+                
             };
 
             return View(aboutVM);
@@ -72,7 +72,7 @@ namespace FinalProjectMVC.Areas.Admin.Controllers
                     Subtitle = aboutUsVM.Subtitle,
                     Description = aboutUsVM.Description,
                     Points = aboutUsVM.Points,
-                    ImageUrls = aboutUsVM.ImageUrls
+                    
                 };
 
                 await _aboutUsService.AddAboutUsAsync(aboutUsmodel);
@@ -99,7 +99,7 @@ namespace FinalProjectMVC.Areas.Admin.Controllers
                 Subtitle = aboutus.Subtitle,
                 Description = aboutus.Description,
                 Points = aboutus.Points,
-                ImageUrls = aboutus.ImageUrls
+              
             };
 
             return View(aboutusVM);
@@ -125,7 +125,7 @@ namespace FinalProjectMVC.Areas.Admin.Controllers
                         Subtitle = aboutusVM.Subtitle,
                         Description = aboutusVM.Description,
                         Points = aboutusVM.Points,
-                        ImageUrls = aboutusVM.ImageUrls
+                     
                     };
 
                     await _aboutUsService.UpdateAboutUsAsync(id, aboutUsModel);
@@ -157,7 +157,7 @@ namespace FinalProjectMVC.Areas.Admin.Controllers
                 Subtitle = aboutus.Subtitle,
                 Description = aboutus.Description,
                 Points = aboutus.Points,
-                ImageUrls = aboutus.ImageUrls
+           
             };
 
             return View(aboutusVM);

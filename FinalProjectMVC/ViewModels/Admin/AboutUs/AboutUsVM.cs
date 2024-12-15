@@ -7,7 +7,6 @@
         public string Subtitle { get; set; }
         public string Description { get; set; }
         public List<string> Points { get; set; }
-        public List<string> ImageUrls { get; set; }
 
 
     }

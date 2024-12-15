@@ -36,7 +36,7 @@ namespace FinalProjectMVC.Services.Implementations
             existingaboutus.Subtitle = aboutUsmodel.Subtitle;
             existingaboutus.Description = aboutUsmodel.Description;
             existingaboutus.Points = aboutUsmodel.Points;
-            existingaboutus.ImageUrls = aboutUsmodel.ImageUrls;
+
           
             
 

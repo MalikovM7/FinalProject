@@ -122,25 +122,31 @@
                             <button class="btn-black">RESERVATION NOW</button>
                         </div>
                     </div>
-                    <div class="simple-slider">
-                        <div class="simple-slides">
-                            @if (aboutUs.ImageUrls != null && aboutUs.ImageUrls.Any())
-                            {
-                                foreach (var imageUrl in aboutUs.ImageUrls)
-                                {
-                                    <img src="@imageUrl" alt="Image">
-                                }
-                            }
-                        </div>
-                        <button class="prev" onclick="prevSlide()">&#10094;</button>
-                        <button class="next" onclick="nextSlide()">&#10095;</button>
-                    </div>
                 }
             }
             else
             {
                 <p>No About Us content is available at the moment.</p>
             }
+
+            <div class="simple-slider">
+                <div class="simple-slides">
+                    @if (Model.SliderImages != null && Model.SliderImages.Any())
+                    {
+                        @foreach (var item in Model.SliderImages)
+                        {                     
+                                <img src="~/assets/img/@item.Image" class="d-block w-100 img-fluid" alt="Slide Image">
+
+                        }
+                    }
+                    else
+                    {
+                        <p>No Slider Images available.</p>
+                    }
+                </div>
+                <button class="prev" onclick="prevSlide()">&#10094;</button>
+                <button class="next" onclick="nextSlide()">&#10095;</button>
+            </div>
         </div>
 
 

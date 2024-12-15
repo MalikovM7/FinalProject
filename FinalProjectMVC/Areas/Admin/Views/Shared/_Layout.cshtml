@@ -86,6 +86,18 @@
                             <span class="menu-title">News</span>
                         </a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" asp-controller="Slider" asp-action="Index" asp-area="Admin">
+                            <i class="mdi mdi-format-slider menu-icon"></i>
+                            <span class="menu-title">Slider</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" asp-controller="SliderImage" asp-action="Index" asp-area="Admin">
+                            <i class="mdi mdi-image menu-icon"></i>
+                            <span class="menu-title">Slider Image</span>
+                        </a>
+                    </li>
                 </ul>
             </nav>
             @RenderBody()

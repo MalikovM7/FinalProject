@@ -1,9 +1,12 @@
 ﻿using Domain.Exceptions;
 using Domain.Models;
-using Persistence.Repositories.Implementations;
 using Repositories.Repositories;
 using Services.Interfaces;
-
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace Services.Implementations.Implementations
 {
@@ -20,7 +23,7 @@ namespace Services.Implementations.Implementations
 
         public async Task AddSliderAsync(Slider Slider)
         {
-           await _sliderrepository.CreateAsync(Slider);
+            await _sliderrepository.CreateAsync(Slider);
         }
 
         public async Task DeleteSliderAsync(int id)
@@ -30,12 +33,12 @@ namespace Services.Implementations.Implementations
 
         public async Task<Slider> GetSliderByIdAsync(int id)
         {
-           return (await _sliderrepository.GetByIdAsync(id));
+            return (await _sliderrepository.GetByIdAsync(id));
         }
 
         public async Task<List<Slider>> GetSliderSAsync()
         {
-           return (await _sliderrepository.GetAllAsync()).ToList();
+            return (await _sliderrepository.GetAllAsync()).ToList();
         }
 
         public async Task UpdateSliderAsync(int id, Slider Slider)

@@ -429,6 +429,14 @@
       "PackagePath": "staticwebassets\\assets\\css\\vehicles.css"
     },
     {
+      "Id": "C:\\Users\\vuqar\\Desktop\\Final Code\\FinalProjectMVC\\wwwroot\\assets\\img\\4b5cedef-65d1-4884-87d5-dd305bd58bc0_car-img.png",
+      "PackagePath": "staticwebassets\\assets\\img\\4b5cedef-65d1-4884-87d5-dd305bd58bc0_car-img.png"
+    },
+    {
+      "Id": "C:\\Users\\vuqar\\Desktop\\Final Code\\FinalProjectMVC\\wwwroot\\assets\\img\\baf8a6c1-4637-4888-a660-ca2acaa5ffac_image.png",
+      "PackagePath": "staticwebassets\\assets\\img\\baf8a6c1-4637-4888-a660-ca2acaa5ffac_image.png"
+    },
+    {
       "Id": "C:\\Users\\vuqar\\Desktop\\Final Code\\FinalProjectMVC\\wwwroot\\assets\\img\\car-img.png",
       "PackagePath": "staticwebassets\\assets\\img\\car-img.png"
     },
