@@ -87,15 +87,31 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" asp-controller="Slider" asp-action="Index" asp-area="Admin">
+                        <a class="nav-link" data-toggle="collapse" href="#sliderMenu" aria-expanded="false" aria-controls="sliderMenu">
                             <i class="mdi mdi-format-slider menu-icon"></i>
                             <span class="menu-title">Slider</span>
+                            <i class="menu-arrow"></i>
                         </a>
+                        <div class="collapse" id="sliderMenu">
+                            <ul class="nav flex-column sub-menu">
+                                <li class="nav-item">
+                                    <a class="nav-link" asp-controller="Slider" asp-action="Index" asp-area="Admin">
+                                         Manage Slider
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" asp-controller="SliderImage" asp-action="Index" asp-area="Admin">
+                                        Manage Slider Images
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
                     </li>
+
                     <li class="nav-item">
-                        <a class="nav-link" asp-controller="SliderImage" asp-action="Index" asp-area="Admin">
-                            <i class="mdi mdi-image menu-icon"></i>
-                            <span class="menu-title">Slider Image</span>
+                        <a class="nav-link" asp-controller="Contact" asp-action="Index" asp-area="Admin">
+                            <i class="mdi mdi-email-outline menu-icon"></i>
+                            <span class="menu-title">Contact Messages</span>
                         </a>
                     </li>
                 </ul>

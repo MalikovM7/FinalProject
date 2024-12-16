@@ -61,29 +61,37 @@ nav ul {
 
 
 .slider {
-    position: relative;
-    margin: 0 auto;
+    margin: 0; 
+    padding: 0; 
     overflow: hidden;
 }
+
+    .slider h2 {
+        margin: 0 0 30px; /* Slightly larger bottom spacing */
+        text-align: center; /* Center the heading */
+        font-size: 2.5rem; /* Larger and prominent text */
+        font-weight: bold; /* Make the text bold */
+        color: #333; /* Dark grey for elegance */
+        letter-spacing: 2px; /* Add spacing between letters */
+        text-transform: uppercase; /* All caps for a modern look */
+        position: relative; /* Enable underline effect */
+        display: inline-block; /* Prevent stretching */
+    }
+
+        .slider h2::after {
+            content: '';
+            display: block;
+            width: 60px; /* Width of the underline */
+            height: 4px; /* Thickness of the underline */
+            background-color: #ff416c; /* Highlight color */
+            margin: 8px auto 0; /* Space between text and underline */
+            border-radius: 2px; /* Rounded edges for underline */
+        }
 
 .slides {
     display: flex;
     transition: 0.5s ease;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -266,38 +274,67 @@ nav ul {
 
 .car-slide img {
     width: 100%;
-    height: auto;
+    height: 200px; /* Uniform image size */
+    object-fit: contain;
+    margin-bottom: 10px;
 }
 
+.car-slide h3 {
+    margin: 10px 0 5px;
+    font-size: 1.5em;
+}
+
+.car-slide p {
+    margin: 0 0 15px;
+    font-size: 1em;
+    color: #555;
+}
 
 .car-slides {
-    width: 100%;
     display: flex;
     justify-content: space-between;
-    transition: 0.8s all;
+    transition: transform 0.8s ease;
+    gap: 20px;
 }
 
 .car-slide {
-    width: 100%;
-    min-width: 33.1%;
-    padding: 0 20px;
+    flex: 0 0 33.1%;
+    display: flex;
+    flex-direction: column; /* Arrange children vertically */
+    justify-content: flex-start; /* Content starts at the top */
+    align-items: center; /* Center horizontally */
+    text-align: center;
+    padding: 15px;
+    background: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    height: 400px; /* Fixed height for uniform layout */
+    overflow: hidden; /* Prevent overlap */
 }
 
+
+
 .rent-btn {
-    background-color: #e60000;
+  
+    background: linear-gradient(135deg, #ff416c, #ff4b2b);
     color: #fff;
     border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    border-radius: 5px;
+    padding: 12px 25px;
+    border-radius: 30px;
     font-size: 16px;
-    margin-bottom: 10px;
-    margin-top: 10px;
-    width: 100%;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(255, 65, 108, 0.3);
+    transition: all 0.3s ease;
+    
 }
 
     .rent-btn:hover {
-        background-color: #c50000;
+        background: linear-gradient(135deg, #ff4b2b, #ff416c);
+        box-shadow: 0 8px 20px rgba(255, 75, 43, 0.4);
+        transform: scale(1.05);
     }
 
 
@@ -332,9 +369,25 @@ footer h3 {
 
     .faq-container h2 {
         margin-top: 30px;
-        font-size: 2em;
-        margin-bottom: 50px;
+        text-align: center; /* Center the heading */
+        font-size: 2.5rem; /* Larger and prominent text */
+        font-weight: bold; /* Make the text bold */
+        color: #333; /* Dark grey for elegance */
+        letter-spacing: 2px; /* Add spacing between letters */
+        text-transform: uppercase; /* All caps for a modern look */
+        position: relative; /* Enable underline effect */
+        display: inline-block; /* Prevent stretching */
     }
+
+        .faq-container h2::after {
+            content: '';
+            display: block;
+            width: 60px; /* Width of the underline */
+            height: 4px; /* Thickness of the underline */
+            background-color: #ff416c; /* Highlight color */
+            margin: 8px auto 0; /* Space between text and underline */
+            border-radius: 2px; /* Rounded edges for underline */
+        }
 
 .faq-item {
     border-bottom: 1px solid #ccc;
@@ -652,15 +705,6 @@ footer h3 {
     }
 
 
-
-
-
-
-
-
-
-
-
 .info-container {
     display: flex;
     justify-content: space-between;
@@ -715,18 +759,10 @@ footer h3 {
     }
 
 
-
-
     .btn-black:hover {
         background-color: #333;
         color: #fff;
     }
-
-
-
-
-
-
 
 
 .simple-slider {
@@ -762,10 +798,6 @@ footer h3 {
 }
 
 
-.slider h2 {
-    display: flex;
-    justify-content: center;
-}
 
 
 .blog-posts {

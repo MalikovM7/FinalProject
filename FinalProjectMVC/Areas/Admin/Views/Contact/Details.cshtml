@@ -1,0 +1,26 @@
+﻿@model FinalProjectMVC.ViewModels.Contact.ContactViewModel
+
+<div class="container mt-5">
+    <h1 class="text-center">Message Details</h1>
+
+    <div class="card mt-4">
+        <div class="card-body">
+            <h4 class="card-title">Name</h4>
+            <p class="card-text">@Model.Name</p>
+
+            <h4 class="card-title">Email</h4>
+            <p class="card-text">@Model.Email</p>
+
+            <h4 class="card-title mt-4">Subject</h4>
+            <p class="card-text">@Model.Subject</p>
+
+            <h4 class="card-title mt-4">Message</h4>
+            <p class="card-text">@Model.Message</p>
+            
+        </div>
+    </div>
+
+    <div class="mt-4 text-center">
+        <a asp-action="Index" class="btn btn-primary">Back to List</a>
+    </div>
+</div>

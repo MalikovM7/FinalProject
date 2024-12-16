@@ -1,12 +1,49 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using FinalProjectMVC.ViewModels.Contact;
+using Microsoft.AspNetCore.Mvc;
+using System.Net.Mail;
+using System.Net;
+using Domain.Models;
+using Services.Interfaces;
 
 namespace FinalProjectMVC.Controllers
 {
     public class ContactController : Controller
     {
-        public IActionResult Index()
+        private readonly IContactService _service;
+
+        public ContactController(IContactService service)
         {
-            return View();
+            _service = service;
+        }
+
+        [HttpGet]
+        public ActionResult Index()
+        {
+            return View(new ContactViewModel());
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult Index(ContactViewModel viewModel)
+        {
+            
+                var contact = new Contact
+                {
+                    Name = viewModel.Name,
+                    Email = viewModel.Email,
+                    Subject = viewModel.Subject,
+                    Message = viewModel.Message
+                };
+
+                _service.SaveContact(contact);
+
+                // Set success message
+                viewModel.SuccessMessage = "Your message has been sent successfully!";
+                ModelState.Clear(); // Clear the form
+                return View(new ContactViewModel { SuccessMessage = viewModel.SuccessMessage });
+            
+
+            //return View(viewModel);
         }
     }
 }

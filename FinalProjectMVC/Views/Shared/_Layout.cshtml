@@ -18,19 +18,29 @@
     <link rel="stylesheet" href="~/assets/css/vehicles.css">
     <style>
         .header-container {
+            padding: 0 60px;
+        }
+
+        .site-header {
+            background-color: #f8f9fa;
+            display: flex;
+            justify-items: space-between;
+            align-items: center;
+            height: 85px;
             position: fixed;
-            top: 0;
-            left: 0;
+            top: 0px;
             width: 100%;
-            z-index: 1030;
-            background-color: #fff;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: 0.3s all;
+            z-index: 999;
         }
 
         body {
-            padding-top: 80px;
+            margin: 0;
+            font-family: Arial, sans-serif;
         }
     </style>
+
+  
 </head>
 <body>
     <!-- Header Navbar -->

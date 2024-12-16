@@ -50,6 +50,7 @@ namespace FinalProjectMVC
                 .AddDefaultTokenProviders();
             
             builder.Services.AddScoped<INewsService, NewsService>();
+            builder.Services.AddScoped<IContactService, ContactService>();
             builder.Services.AddScoped<IUserService, UserService>();
             builder.Services.AddScoped<IReservationService, ReservationService>();
             builder.Services.AddScoped<IEmailService, EmailService>();
@@ -65,6 +66,7 @@ namespace FinalProjectMVC
             builder.Services.AddScoped<IHomePreviewRepository, HomePreviewRepository>();
             builder.Services.AddScoped<IAboutUsRepository, AboutUsRepository>();
             builder.Services.AddScoped<INewsRepository, NewsRepository>();
+            builder.Services.AddScoped<IContactRepository, ContactRepository>();
 
 
             // Add services to the container.

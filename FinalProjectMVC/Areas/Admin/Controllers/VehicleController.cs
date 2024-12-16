@@ -92,10 +92,7 @@ namespace FinalProjectMVC.Areas.Admin.Controllers
 
             //if (carVM.Brand is null || carVM.Color is null || carVM.Fueltype is null) return View(carVM);
 
-            if (!ModelState.IsValid)
-            {
-                  return View(carVM);
-            }
+            
 
             var car = new Car
             {
