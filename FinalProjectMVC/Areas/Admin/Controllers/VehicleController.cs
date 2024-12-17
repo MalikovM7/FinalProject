@@ -85,15 +85,6 @@ namespace FinalProjectMVC.Areas.Admin.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create(VehicleVM carVM)
         {
-            //if (carVM.CategoryId == 0)
-            //{
-            //    ModelState.AddModelError("CategoryId", "Please select a category.");
-            //}
-
-            //if (carVM.Brand is null || carVM.Color is null || carVM.Fueltype is null) return View(carVM);
-
-            
-
             var car = new Car
             {
                 Brand = carVM.Brand,
@@ -103,14 +94,12 @@ namespace FinalProjectMVC.Areas.Admin.Controllers
                 Fueltype = carVM.Fueltype,
                 LicensePlate = carVM.LicensePlate,
                 PricePerDay = carVM.PricePerDay,
-                IsAvailable = carVM.IsAvailable,
+                IsAvailable = true, // Ensure new vehicle is always available
                 ImagePath = carVM.ImagePath,
                 Location = carVM.Location,
-                AvailabilityStart = carVM.AvailabilityStart,
-                AvailabilityEnd = carVM.AvailabilityEnd,
+                AvailabilityStart = DateTime.Now, // Default to now
+                AvailabilityEnd = null, // No end by default
                 CategoryId = carVM.CategoryId
-
-                
             };
 
             await _vehicleService.AddCarAsync(car);
@@ -260,5 +249,58 @@ namespace FinalProjectMVC.Areas.Admin.Controllers
 
             return View("AvailableCarsList", carVMs);
         }
+
+        [HttpGet]
+        public async Task<IActionResult> Adjust(int id)
+        {
+            var car = await _vehicleService.GetCarByIdAsync(id);
+            if (car == null)
+            {
+                return NotFound();
+            }
+
+            var carVM = new VehicleVM
+            {
+                Id = car.Id,
+                Brand = car.Brand,
+                Model = car.Model,
+                IsAvailable = car.IsAvailable,
+                AvailabilityStart = car.AvailabilityStart,
+                AvailabilityEnd = car.AvailabilityEnd
+            };
+
+            return View(carVM);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Adjust(VehicleVM carVM)
+        {
+            var car = await _vehicleService.GetCarByIdAsync(carVM.Id);
+            if (car == null)
+            {
+                return NotFound();
+            }
+
+            // Update availability details
+            car.IsAvailable = carVM.IsAvailable;
+            car.AvailabilityStart = carVM.AvailabilityStart ?? DateTime.Now;
+            car.AvailabilityEnd = carVM.AvailabilityEnd;
+
+            await _vehicleService.UpdateCarAsync(carVM.Id, car);
+
+            return RedirectToAction(nameof(Index));
+        }
+
+
+
+
+
+
+
+
+
+
+
     }
 }

@@ -16,11 +16,12 @@
                 <th scope="col">Model</th>
                 <th scope="col">Year</th>
                 <th scope="col">Fuel Type</th>
-                <th scope="col">LicensePlate</th>
+                <th scope="col">License Plate</th>
                 <th scope="col">Price Per Day</th>
                 <th scope="col">Color</th>
                 <th scope="col">Category</th>
                 <th scope="col">Image</th>
+                <th scope="col">Availability</th>
                 <th scope="col" class="text-center">Actions</th>
             </tr>
         </thead>
@@ -36,10 +37,23 @@
                         <td>@car.Year</td>
                         <td>@car.Fueltype</td>
                         <td>@car.LicensePlate</td>
-                        <td>@car.PricePerDay</td>
+                        <td>@car.PricePerDay.ToString("C")</td>
                         <td>@car.Color</td>
                         <td>@car.CategoryName</td>
-                        <td><img src="@car.ImagePath" alt="@car.Brand" style="width: 100px;"></td>
+                        <td><img src="@car.ImagePath" alt="@car.Brand" style="width: 100px; height: auto;"></td>
+                        <td>
+                            @if (car.IsAvailable)
+                            {
+                                <span class="text-success">Available</span>
+                            }
+                            else
+                            {
+                                <span class="text-danger">Not Available</span>
+                            }
+                            <div class="mt-2">
+                                <a asp-action="Adjust" asp-route-id="@car.Id" class="btn btn-sm btn-secondary">Adjust</a>
+                            </div>
+                        </td>
                         <td class="text-center">
                             <a asp-action="Details" asp-route-id="@car.Id" class="btn btn-info btn-sm">Details</a>
                             <a asp-action="Edit" asp-route-id="@car.Id" class="btn btn-warning btn-sm mx-1">Edit</a>
@@ -53,7 +67,7 @@
             else
             {
                 <tr>
-                    <td colspan="9" class="text-center text-muted">No Vehicles available. Please add new Vehicles.</td>
+                    <td colspan="12" class="text-center text-muted">No Vehicles available. Please add new Vehicles.</td>
                 </tr>
             }
         </tbody>

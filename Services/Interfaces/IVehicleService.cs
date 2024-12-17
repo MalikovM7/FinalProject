@@ -14,5 +14,7 @@ namespace Services.Interfaces
         Task<List<Category>> GetCategoriesAsync();
         Task<List<Car>> GetAvailableCarsAsync(DateTime startDate, DateTime endDate);
 
+
+
     }
 }

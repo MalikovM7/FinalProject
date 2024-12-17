@@ -1,31 +1,27 @@
-﻿@model IEnumerable<Domain.Models.Car>
+﻿@model FinalProjectMVC.ViewModels.Reservation.ReservePageViewModel
 
-<h1>Available Cars</h1>
+<form asp-action="AvailableCars" method="get">
+    <label>Start Date:</label>
+    <input type="date" name="startDate" value="@Model.Reservation.StartDate.ToString("yyyy-MM-dd")" />
+    <label>End Date:</label>
+    <input type="date" name="endDate" value="@Model.Reservation.EndDate.ToString("yyyy-MM-dd")" />
+    <button type="submit">Search</button>
+</form>
 
-<table class="table table-striped">
-    <thead>
-        <tr>
-            <th>Brand</th>
-            <th>Model</th>
-            <th>Year</th>
-            <th>Price Per Day</th>
-            <th>Location</th>
-            <th>Action</th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var car in Model)
+@if (Model.AvailableCars.Any())
+{
+    <h3>Available Cars</h3>
+    <ul>
+        @foreach (var car in Model.AvailableCars)
         {
-            <tr>
-                <td>@car.Brand</td>
-                <td>@car.Model</td>
-                <td>@car.Year</td>
-                <td>@car.PricePerDay.ToString("C")</td>
-                <td>@car.Location</td>
-                <td>
-                    <a asp-controller="Reservation" asp-action="Reserve" asp-route-carId="@car.Id" class="btn btn-primary">Reserve</a>
-                </td>
-            </tr>
+            <li>
+                @car.Brand @car.Model - $@car.PricePerDay/day - @car.Location
+                <a asp-action="Reserve" asp-route-carId="@car.Id" asp-route-startDate="@Model.Reservation.StartDate" asp-route-endDate="@Model.Reservation.EndDate">Reserve</a>
+            </li>
         }
-    </tbody>
-</table>
+    </ul>
+}
+else
+{
+    <p>No cars available for the selected dates.</p>
+}

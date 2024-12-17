@@ -34,7 +34,12 @@
 
                         @if (car.IsAvailable)
                         {
-                            <button class="btn btn-dark">Rent It</button>
+                            <a asp-action="Reserve"
+                               asp-controller="Reservation"
+                               asp-route-carId="@car.Id"
+                               asp-route-startDate="@DateTime.Now.ToString("yyyy-MM-dd")"
+                               asp-route-endDate="@DateTime.Now.AddDays(1).ToString("yyyy-MM-dd")"
+                               class="btn btn-dark">Rent It</a>
                         }
                         else
                         {

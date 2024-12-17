@@ -1,72 +1,88 @@
 ﻿using Domain.Models;
-using Persistence.Data;
 using Domain.Identity;
-using Domain.Models;
 using Microsoft.EntityFrameworkCore;
 using Services.Interfaces;
 using System;
 using System.Collections.Generic;
+
 using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
+using Persistence.Data;
+using Microsoft.AspNetCore.Identity;
 
 namespace Services.Implementations.Implementations
 {
     public class ReservationService : IReservationService
     {
         private readonly AppDbContext _context;
+        private readonly UserManager<AppUser> _userManager;
 
-        public ReservationService(AppDbContext context)
+        public ReservationService(AppDbContext context, UserManager<AppUser> userManager)
         {
             _context = context;
+            _userManager = userManager;
         }
 
-        public async Task<IEnumerable<Car>> GetAvailableCarsAsync()
+        /// <summary>
+        /// Retrieves a list of available cars for a given date range.
+        /// </summary>
+        public async Task<List<Car>> GetAvailableCarsAsync(DateTime startDate, DateTime endDate)
         {
-            return await _context.Cars
-                .Where(c => c.IsAvailable && c.AvailabilityStart <= DateTime.Now && c.AvailabilityEnd >= DateTime.Now)
+            // Query cars that are available and have no overlapping reservations
+            var availableCars = await _context.Cars
+                .Where(c => c.IsAvailable &&
+                            !_context.Reservations.Any(r => r.CarId == c.Id &&
+                                                            r.StartDate < endDate &&
+                                                            r.EndDate > startDate))
                 .ToListAsync();
+
+            return availableCars;
         }
 
-        public async Task<Reservation> ReserveCarAsync(int carId, AppUser user, DateTime startDate, DateTime endDate)
+
+        public async Task<Reservation> ReserveCarAsync(Reservation reserve , AppUser user)
         {
-            var car = await _context.Cars.FirstOrDefaultAsync(c => c.Id == carId);
-            if (car == null || !car.IsAvailable || startDate >= endDate || startDate < car.AvailabilityStart || endDate > car.AvailabilityEnd)
-            {
-                throw new InvalidOperationException("Invalid reservation details.");
-            }
+            var car = await _context.Cars.FindAsync(reserve.CarId);
+            var totalDays = (reserve.EndDate - reserve.StartDate).Days;
+            var totalPrice = totalDays * car.PricePerDay;
 
-            var days = (endDate - startDate).Days;
-            var totalPrice = days * car.PricePerDay;
 
-            var reservation = new Reservation
+            var data = new Reservation
             {
-                CarId = carId,
+                CarId = reserve.CarId,
+                StartDate = reserve.StartDate,
+                EndDate = reserve.EndDate,
+                CreatedDate = DateTime.Now,
+                TotalPrice = totalPrice,
                 UserId = user.Id,
-                StartDate = startDate,
-                EndDate = endDate,
-                TotalPrice = totalPrice
             };
-
-            car.IsAvailable = false;
-
-            _context.Reservations.Add(reservation);
+            
+            await _context.Reservations.AddAsync(data);
             await _context.SaveChangesAsync();
 
-            return reservation;
+            return data;
         }
+
 
         public async Task<IEnumerable<Reservation>> GetUserReservationsAsync(string userId)
         {
-            return await _context.Reservations
+            var userReservations = await _context.Reservations
                 .Include(r => r.Car)
                 .Where(r => r.UserId == userId)
                 .ToListAsync();
+
+            return userReservations;
         }
+
 
         public async Task<IEnumerable<Reservation>> GetReservationsAsync()
         {
-            return (await _context.Reservations.ToListAsync());
+            var allReservations = await _context.Reservations
+                .Include(r => r.Car)
+                .Include(r => r.AppUser)
+                .ToListAsync();
+
+            return allReservations;
         }
     }
 }

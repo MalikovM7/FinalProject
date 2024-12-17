@@ -1,25 +1,16 @@
-﻿@model FinalProjectMVC.ViewModels.Reservation.CarReservationViewModel
+﻿@model CarReservationViewModel
 
-<h1>Reserve Car</h1>
+<h3>Reserve Car</h3>
+<form asp-action="Reserve" asp-controller="Reservation" method="post">
+    <input type="text" asp-for="CarId" />
+    <input type="hidden" asp-for="StartDate" />
+    <input type="hidden" asp-for="EndDate" />
 
-@if (Model != null)
-{
-    <h2>@Model.Brand @Model.Model</h2>
-    <p>Price Per Day: @Model.PricePerDay</p>
-    <p>Available From: @Model.AvailabilityStart</p>
-    <p>Available To: @Model.AvailabilityEnd</p>
-    <p>Location: @Model.Location</p>
+    <label>Brand:</label> <span>@Model.Brand</span><br />
+    <label>Model:</label> <span>@Model.Model</span><br />
+    <label>Location:</label> <span>@Model.Location</span><br />
+    <label>Price per Day:</label> <span>@Model.PricePerDay</span><br />
+    <label>Total Price:</label> <span>@Model.TotalPrice</span><br />
 
-    <form asp-action="Reserve" method="post">
-        <input type="hidden" name="CarId" value="@Model.CarId" />
-        <label for="startDate">Start Date:</label>
-        <input type="date" id="startDate" name="startDate" required />
-        <label for="endDate">End Date:</label>
-        <input type="date" id="endDate" name="endDate" required />
-        <button type="submit">Reserve</button>
-    </form>
-}
-else
-{
-    <p>Car details are not available.</p>
-}
+    <button type="submit">Confirm Reservation</button>
+</form>

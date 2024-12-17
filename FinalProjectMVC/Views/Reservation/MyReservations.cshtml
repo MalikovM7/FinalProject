@@ -1,25 +1,36 @@
-﻿@model IEnumerable<Domain.Models.Reservation>
+﻿@model FinalProjectMVC.ViewModels.Reservation.ReservePageViewModel
 
-<h1>My Reservations</h1>
+<h2>My Active Reservations</h2>
 
-<table class="table table-bordered">
-    <thead>
-        <tr>
-            <th>Car</th>
-            <th>Start Date</th>
-            <th>End Date</th>
-            <th>Total Price</th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var reservation in Model)
-        {
+@if (Model.ReservationList == null || !Model.ReservationList.Any())
+{
+    <p>No active reservations found.</p>
+}
+else
+{
+    <table class="table table-striped">
+        <thead>
             <tr>
-                <td>@reservation.Car.Brand @reservation.Car.Model</td>
-                <td>@reservation.StartDate.ToShortDateString()</td>
-                <td>@reservation.EndDate.ToShortDateString()</td>
-                <td>@reservation.TotalPrice.ToString("C")</td>
+                <th>Brand</th>
+                <th>Model</th>
+                <th>Start Date</th>
+                <th>End Date</th>
+                <th>Location</th>
+                <th>Total Price</th>
             </tr>
-        }
-    </tbody>
-</table>
+        </thead>
+        <tbody>
+            @foreach (var reservation in Model.ReservationList)
+            {
+                <tr>
+                    <td>@reservation.Brand</td>
+                    <td>@reservation.Model</td>
+                    <td>@reservation.StartDate.ToString("yyyy-MM-dd")</td>
+                    <td>@reservation.EndDate.ToString("yyyy-MM-dd")</td>
+                    <td>@reservation.Location</td>
+                    <td>$@reservation.TotalPrice</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
