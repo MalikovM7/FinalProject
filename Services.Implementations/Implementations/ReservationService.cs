@@ -9,23 +9,24 @@ using System.Linq;
 using System.Threading.Tasks;
 using Persistence.Data;
 using Microsoft.AspNetCore.Identity;
+using Repositories.Repositories;
 
 namespace Services.Implementations.Implementations
 {
     public class ReservationService : IReservationService
     {
         private readonly AppDbContext _context;
+        private readonly IReservationRepository _reservationRepository;
         private readonly UserManager<AppUser> _userManager;
 
-        public ReservationService(AppDbContext context, UserManager<AppUser> userManager)
+        public ReservationService(AppDbContext context, UserManager<AppUser> userManager, IReservationRepository reservationRepository)
         {
             _context = context;
             _userManager = userManager;
+            _reservationRepository = reservationRepository;
         }
 
-        /// <summary>
-        /// Retrieves a list of available cars for a given date range.
-        /// </summary>
+ 
         public async Task<List<Car>> GetAvailableCarsAsync(DateTime startDate, DateTime endDate)
         {
             // Query cars that are available and have no overlapping reservations
@@ -83,6 +84,16 @@ namespace Services.Implementations.Implementations
                 .ToListAsync();
 
             return allReservations;
+        }
+
+        public async Task<Reservation> GetReservationByIdAsync(int id)
+        {
+           return (await _reservationRepository.GetByIdAsync(id));
+        }
+
+        public async Task DeleteReservationAsync(int id)
+        {
+            await _reservationRepository.DeleteAsync(id);
         }
     }
 }

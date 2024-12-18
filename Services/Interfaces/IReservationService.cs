@@ -20,6 +20,10 @@ namespace Services.Interfaces
         // Get all reservations (e.g., for administrative purposes)
         Task<IEnumerable<Reservation>> GetReservationsAsync();
 
+        Task<Reservation> GetReservationByIdAsync(int id);
+
+        Task DeleteReservationAsync(int id);
+
 
 
     }

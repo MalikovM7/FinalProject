@@ -5,6 +5,8 @@ namespace FinalProjectMVC.ViewModels.Reservation
     public class CarReservationViewModel
     {
         public int CarId { get; set; } // Car ID being reserved
+
+        public string UserId { get; set; }
         public string Brand { get; set; } // Car Brand
         public string Model { get; set; } // Car Model
         public decimal PricePerDay { get; set; } // Price per day for the car

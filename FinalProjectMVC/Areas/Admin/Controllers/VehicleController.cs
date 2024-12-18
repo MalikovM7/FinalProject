@@ -1,5 +1,6 @@
 ﻿using Domain.Models;
 using FinalProjectMVC.ViewModels.Admin.Car;
+using FinalProjectMVC.ViewModels.Reservation;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
@@ -219,35 +220,19 @@ namespace FinalProjectMVC.Areas.Admin.Controllers
         // POST: Admin/Vehicle/AvailableCars
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> AvailableCars(DateTime startDate, DateTime endDate)
+        public IActionResult AvailableCars(DateTime? startDate, DateTime? endDate)
         {
-            if (startDate > endDate)
+            var model = new ReservePageViewModel
             {
-                ModelState.AddModelError("", "Start date cannot be later than the end date.");
-                return View();
-            }
+                Reservation = new CarReservationViewModel
+                {
+                    StartDate = startDate ?? DateTime.Today,
+                    EndDate = endDate ?? DateTime.Today.AddDays(1)
+                },
+                AvailableCars = new List<VehicleVM>() // Initialize an empty list to avoid null
+            };
 
-            var availableCars = await _vehicleService.GetAvailableCarsAsync(startDate, endDate);
-
-            // Ensure the list is not null
-            var carVMs = (availableCars ?? new List<Car>()).Select(c => new VehicleVM
-            {
-                Id = c.Id,
-                Brand = c.Brand,
-                Color = c.Color,
-                Year = c.Year,
-                Fueltype = c.Fueltype,
-                LicensePlate = c.LicensePlate,
-                PricePerDay = c.PricePerDay,
-                IsAvailable = c.IsAvailable,
-                ImagePath = c.ImagePath,
-                Location = c.Location,
-                AvailabilityStart = c.AvailabilityStart,
-                AvailabilityEnd = c.AvailabilityEnd,
-                CategoryName = c.Category?.Name
-            }).ToList();
-
-            return View("AvailableCarsList", carVMs);
+            return View(model);
         }
 
         [HttpGet]
