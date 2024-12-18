@@ -1,5 +1,7 @@
 ﻿@model IEnumerable<FinalProjectMVC.ViewModels.Admin.Reservation.ReservationVM>
 
+
+
 <h1>Reservations</h1>
 
 <table class="table table-bordered table-striped">
@@ -13,19 +15,19 @@
             <th>Actions</th>
         </tr>
     </thead>
-    <tbody>
+    <tbody id="reservationTableBody">
         @foreach (var reservation in Model)
         {
-            <tr>
+            <tr id="row-@reservation.Id">
                 <td>@reservation.CarId</td>
                 <td>@reservation.UserId</td>
                 <td>@reservation.TotalPrice.ToString("C")</td>
                 <td>@reservation.StartDate.ToString("yyyy-MM-dd")</td>
                 <td>@reservation.EndDate.ToString("yyyy-MM-dd")</td>
                 <td>
-                    <a asp-action="Delete" asp-route-id="@reservation.CarId" class="btn btn-danger btn-sm">
-                        Delete
-                    </a>
+                    <form asp-action="Delete" asp-route-id="@reservation.Id" method="post" class="d-inline">
+                        <button type="submit" class="btn btn-danger btn-sm">Delete</button>
+                    </form>
                 </td>
             </tr>
         }

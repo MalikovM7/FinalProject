@@ -7,10 +7,11 @@ using Domain.Common;
 
 namespace Domain.Models
 {
-    public class Reservation : BaseEntity
+    public class Reservation : BaseEntity 
     {
 
-        
+       
+
         [ForeignKey("Car")]
         public int CarId { get; set; }
 
@@ -25,6 +26,8 @@ namespace Domain.Models
 
         [Required]
         public decimal TotalPrice { get; set; }
+
+        
 
         // Navigation property
         public Car Car { get; set; }
