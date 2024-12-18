@@ -10,7 +10,7 @@ namespace Domain.Models
     public class Reservation : BaseEntity
     {
 
-
+        
         [ForeignKey("Car")]
         public int CarId { get; set; }
 

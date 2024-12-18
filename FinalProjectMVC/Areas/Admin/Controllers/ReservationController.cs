@@ -1,7 +1,11 @@
-﻿using FinalProjectMVC.ViewModels.Admin.News;
+﻿using Domain.Exceptions;
+using Domain.Models;
+using FinalProjectMVC.ViewModels.Admin.News;
+using FinalProjectMVC.ViewModels.Admin.Reservation;
 using FinalProjectMVC.ViewModels.Reservation;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Services.Implementations.Implementations;
 using Services.Interfaces;
 
 namespace FinalProjectMVC.Areas.Admin.Controllers
@@ -17,31 +21,46 @@ namespace FinalProjectMVC.Areas.Admin.Controllers
         {
             _reservationService = reservationService;
         }
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
-            return View();
+            var reservation = await _reservationService.GetReservationsAsync();
+            var reservationVM = reservation.Select(x => new ReservationVM
+            {
+                Id = x.Id,
+                CarId = x.CarId,
+                UserId = x.UserId,
+                TotalPrice = x.TotalPrice,
+                StartDate = x.StartDate,
+                EndDate = x.EndDate,
+
+            }).ToList();
+
+            return View(reservationVM);
         }
 
 
         public async Task<IActionResult> Delete(int id)
         {
-            var reservation = await _reservationService.GetReservationByIdAsync(id);
+           
+                var reservation = await _reservationService.GetReservationByIdAsync(id);
             if (reservation == null)
             {
-                return NotFound();
+                return NotFound("Reservation not found.");
             }
 
-            var reservationVM = new CarReservationViewModel
-            {
-                   CarId = reservation.CarId,
-                   UserId = reservation.UserId,
-                   TotalPrice = reservation.TotalPrice,
-                   StartDate = reservation.StartDate,
-                   EndDate = reservation.EndDate,
+            var reservationVM = new ReservationVM
+                {
+                    Id= reservation.Id,
+                    CarId = reservation.CarId,
+                    UserId = reservation.UserId,
+                    TotalPrice = reservation.TotalPrice,
+                    StartDate = reservation.StartDate,
+                    EndDate = reservation.EndDate,
+                };
 
-            };
-
-            return View(reservationVM);
+                return View(reservationVM);
+            
+            
         }
 
 

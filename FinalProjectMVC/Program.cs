@@ -67,6 +67,7 @@ namespace FinalProjectMVC
             builder.Services.AddScoped<IAboutUsRepository, AboutUsRepository>();
             builder.Services.AddScoped<INewsRepository, NewsRepository>();
             builder.Services.AddScoped<IContactRepository, ContactRepository>();
+            builder.Services.AddScoped<IReservationRepository, ReservationRepository>();
 
 
             // Add services to the container.

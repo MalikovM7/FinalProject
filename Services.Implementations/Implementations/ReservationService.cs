@@ -88,7 +88,7 @@ namespace Services.Implementations.Implementations
 
         public async Task<Reservation> GetReservationByIdAsync(int id)
         {
-           return (await _reservationRepository.GetByIdAsync(id));
+           return await _reservationRepository.GetByIdAsync(id);
         }
 
         public async Task DeleteReservationAsync(int id)

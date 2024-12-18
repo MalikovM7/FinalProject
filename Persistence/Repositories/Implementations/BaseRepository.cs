@@ -74,7 +74,12 @@ namespace Persistence.Repositories.Implementations
             }
 
             var entity = await query.FirstOrDefaultAsync(e => e.Id == id);
-            return entity ?? throw new NotFoundException(ExceptionMessages.NotFoundMessage);
+            if (entity == null)
+            {
+                throw new NotFoundException($"Entity of type {typeof(T).Name} with ID {id} not found.");
+            }
+
+            return entity;
         }
 
         public async Task<T> GetWithExpression(Expression<Func<T, bool>> predicate)
