@@ -124,3 +124,17 @@ function prevSimpleSlide() {
 }
 
 showSimpleSlides();
+
+
+window.addEventListener('scroll', function () {
+    const header = document.querySelector('.site-header');
+    const logo = document.querySelector('.logo > img');
+
+    if (window.scrollY > 50) {
+        header.style.height = '50px';
+        logo.style.height = '40px'; // Adjusted to be proportionate to the header height
+    } else {
+        header.style.height = '85px';
+        logo.style.height = '60px'; // Adjusted to be proportionate to the header height
+    }
+});

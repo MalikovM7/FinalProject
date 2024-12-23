@@ -1,16 +1,15 @@
-window.addEventListener('scroll', function() {
+window.addEventListener('scroll', function () {
     const header = document.querySelector('.site-header');
-    const logo = this.document.querySelector(".logo > img");
-  
-  
+    const logo = document.querySelector('.logo > img');
+
     if (window.scrollY > 50) {
-        header.style.height = '50px'
-        logo.style.height ="60px"
+        header.style.height = '50px';
+        logo.style.height = '40px'; // Adjusted to be proportionate to the header height
     } else {
-      header.style.height = '85px'
-      logo.style.height ="80px"
+        header.style.height = '85px';
+        logo.style.height = '60px'; // Adjusted to be proportionate to the header height
     }
-  });
+});
 
   document.addEventListener("DOMContentLoaded", () => {
     // Update Price Range Display

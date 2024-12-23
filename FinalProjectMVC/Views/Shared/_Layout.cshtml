@@ -40,20 +40,23 @@
                     <li><a href="https://www.facebook.com"><i class="fa fa-facebook"></i></a></li>
                     <li><a href="https://www.twitter.com"><i class="fa fa-twitter"></i></a></li>
                     <li><a href="https://www.linkedin.com"><i class="fa fa-linkedin"></i></a></li>
-                    <li><a href="https://www.pinterest.com"><i class="fa fa-pinterest"></i></a></li>
+                 
                 </ul>
             </nav>
-            <div class="pe-3">
+            <div class="pe-3 ">
                 @if (User.Identity.IsAuthenticated)
                 {
-                    <form asp-controller="Account" asp-action="Logout" method="post" class="d-inline-flex align-items-center">
-                        <span class="nav-profile-name me-3 fw-bold">@User.Identity.Name</span>
-                        <button type="submit" class="btn btn-outline-danger btn-sm">Logout</button>
+                    <form asp-controller="Account" asp-action="Logout" method="post" class="d-inline-flex align-items-center meow">
+                     
+                            <span class="nav-profile-name me-3 fw-bold">@User.Identity.Name</span>
+                            <button type="submit" class="btn btn-outline-danger btn-sm">Logout</button>
+                     
+                       
                     </form>
                 }
                 else
                 {
-                    <div class="d-flex justify-content-end">
+                    <div class="d-flex justify-content-end gaf">
                         <a asp-controller="Account" asp-action="Register" class="btn btn-primary me-2">Register</a>
                         <a asp-controller="Account" asp-action="Login" class="btn btn-secondary">Login</a>
                     </div>
@@ -94,13 +97,25 @@
         <div class="social-media text-center my-2">
             <a href="#" class="me-2">Facebook</a>
             <a href="#" class="me-2">Twitter</a>
-            <a href="#" class="me-2">Pinterest</a>
             <a href="#">Google</a>
         </div>
         <div class="footer-bottom text-center">
             <p>© 2015 Rent It — A One Page Rental Car Theme made with passion by jThemes Studio</p>
         </div>
     </footer>
+
+ <style>
+
+     .meow {
+            position: relative;
+            left: -4vw !important;
+     }
+
+     .gaf {
+            position: relative;
+            left: -4vw !important;
+     }
+ </style>
 
 </body>
 </html>
