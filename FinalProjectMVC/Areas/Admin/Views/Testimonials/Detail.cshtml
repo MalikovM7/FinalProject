@@ -1,0 +1,27 @@
+﻿@model TestimonialVM
+
+<div class="container mt-5">
+    <h2 class="text-center">Testimonial Details</h2>
+
+    <div class="card mt-4 p-4">
+        <div class="card-body">
+            <h5 class="card-title">Description</h5>
+            <p class="card-text">@Model.Description</p>
+
+            <h5 class="card-title">Person Name</h5>
+            <p class="card-text">@Model.PersonName</p>
+
+            <h5 class="card-title">Person Job</h5>
+            <p class="card-text">@Model.PersonJob</p>
+
+            <h5 class="card-title">Picture</h5>
+            <div class="mb-3">
+                <img src="~/assets/img/@Model.Picture" alt="Profile picture of @Model.PersonName" class="img-thumbnail" style="max-width: 200px;">
+            </div>
+        </div>
+    </div>
+
+    <div class="mt-3">
+        <a asp-action="Index" class="btn btn-secondary">Back to List</a>
+    </div>
+</div>

@@ -281,3 +281,4 @@ C:\Users\vuqar\Desktop\Final Code\FinalProjectMVC\obj\Debug\net8.0\refint\FinalP
 C:\Users\vuqar\Desktop\Final Code\FinalProjectMVC\obj\Debug\net8.0\FinalProjectMVC.pdb
 C:\Users\vuqar\Desktop\Final Code\FinalProjectMVC\obj\Debug\net8.0\FinalProjectMVC.genruntimeconfig.cache
 C:\Users\vuqar\Desktop\Final Code\FinalProjectMVC\obj\Debug\net8.0\ref\FinalProjectMVC.dll
+C:\Users\vuqar\Desktop\Final Code\FinalProjectMVC\bin\Debug\net8.0\AutoMapper.dll

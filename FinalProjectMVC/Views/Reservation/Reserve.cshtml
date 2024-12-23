@@ -1,16 +1,41 @@
 ﻿@model CarReservationViewModel
 
-<h3>Reserve Car</h3>
-<form asp-action="Reserve" asp-controller="Reservation" method="post">
-    <input type="text" asp-for="CarId" />
-    <input type="hidden" asp-for="StartDate" />
-    <input type="hidden" asp-for="EndDate" />
+<div class="container mt-5">
+    <h3 class="text-center text-wrap">Reserve Car</h3>
 
-    <label>Brand:</label> <span>@Model.Brand</span><br />
-    <label>Model:</label> <span>@Model.Model</span><br />
-    <label>Location:</label> <span>@Model.Location</span><br />
-    <label>Price per Day:</label> <span>@Model.PricePerDay</span><br />
-    <label>Total Price:</label> <span>@Model.TotalPrice</span><br />
+    <form asp-action="Reserve" asp-controller="Reservation" method="post" class="mt-4">
+        <input type="text" asp-for="CarId" class="form-control d-none" />
+        <input type="hidden" asp-for="StartDate" />
+        <input type="hidden" asp-for="EndDate" />
 
-    <button type="submit">Confirm Reservation</button>
-</form>
+        <div class="mb-3">
+            <label class="form-label">Brand:</label>
+            <span class="form-control-plaintext">@Model.Brand</span>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Model:</label>
+            <span class="form-control-plaintext">@Model.Model</span>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Location:</label>
+            <span class="form-control-plaintext">@Model.Location</span>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Price per Day:</label>
+            <span class="form-control-plaintext">@Model.PricePerDay</span>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Total Price:</label>
+            <span class="form-control-plaintext">@Model.TotalPrice</span>
+        </div>
+
+        <div class="text-center">
+            <button type="submit" class="btn btn-primary">Confirm Reservation</button>
+        </div>
+    </form>
+</div>
+

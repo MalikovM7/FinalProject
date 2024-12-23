@@ -425,24 +425,24 @@
       "PackagePath": "staticwebassets\\assets\\css\\home.css"
     },
     {
+      "Id": "C:\\Users\\vuqar\\Desktop\\Final Code\\FinalProjectMVC\\wwwroot\\assets\\css\\reservations.css",
+      "PackagePath": "staticwebassets\\assets\\css\\reservations.css"
+    },
+    {
       "Id": "C:\\Users\\vuqar\\Desktop\\Final Code\\FinalProjectMVC\\wwwroot\\assets\\css\\vehicles.css",
       "PackagePath": "staticwebassets\\assets\\css\\vehicles.css"
     },
     {
-      "Id": "C:\\Users\\vuqar\\Desktop\\Final Code\\FinalProjectMVC\\wwwroot\\assets\\img\\4b5cedef-65d1-4884-87d5-dd305bd58bc0_car-img.png",
-      "PackagePath": "staticwebassets\\assets\\img\\4b5cedef-65d1-4884-87d5-dd305bd58bc0_car-img.png"
+      "Id": "C:\\Users\\vuqar\\Desktop\\Final Code\\FinalProjectMVC\\wwwroot\\assets\\img\\2ecdff7f-a086-4b7d-ae90-22a1a0f41dbe_maxresdefault-removebg-preview.png",
+      "PackagePath": "staticwebassets\\assets\\img\\2ecdff7f-a086-4b7d-ae90-22a1a0f41dbe_maxresdefault-removebg-preview.png"
     },
     {
-      "Id": "C:\\Users\\vuqar\\Desktop\\Final Code\\FinalProjectMVC\\wwwroot\\assets\\img\\baf8a6c1-4637-4888-a660-ca2acaa5ffac_image.png",
-      "PackagePath": "staticwebassets\\assets\\img\\baf8a6c1-4637-4888-a660-ca2acaa5ffac_image.png"
+      "Id": "C:\\Users\\vuqar\\Desktop\\Final Code\\FinalProjectMVC\\wwwroot\\assets\\img\\cd1f9ab1-3fcd-475e-8c08-13dc4b4df8d1_maxresdefault-removebg-preview.png",
+      "PackagePath": "staticwebassets\\assets\\img\\cd1f9ab1-3fcd-475e-8c08-13dc4b4df8d1_maxresdefault-removebg-preview.png"
     },
     {
-      "Id": "C:\\Users\\vuqar\\Desktop\\Final Code\\FinalProjectMVC\\wwwroot\\assets\\img\\car-img.png",
-      "PackagePath": "staticwebassets\\assets\\img\\car-img.png"
-    },
-    {
-      "Id": "C:\\Users\\vuqar\\Desktop\\Final Code\\FinalProjectMVC\\wwwroot\\assets\\img\\image.png",
-      "PackagePath": "staticwebassets\\assets\\img\\image.png"
+      "Id": "C:\\Users\\vuqar\\Desktop\\Final Code\\FinalProjectMVC\\wwwroot\\assets\\img\\f5ff1b50-5329-4958-b6a8-4feac0253d0c_maxresdefault-removebg-preview.png",
+      "PackagePath": "staticwebassets\\assets\\img\\f5ff1b50-5329-4958-b6a8-4feac0253d0c_maxresdefault-removebg-preview.png"
     },
     {
       "Id": "C:\\Users\\vuqar\\Desktop\\Final Code\\FinalProjectMVC\\wwwroot\\assets\\img\\maxresdefault-removebg-preview.png",

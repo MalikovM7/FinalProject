@@ -21,6 +21,8 @@ namespace FinalProjectMVC
 
             var connectionString = builder.Configuration.GetConnectionString("AppDbContextConnection") ?? throw new InvalidOperationException("Connection string 'AppDbContextConnection' not found.");
 
+           
+
             builder.Services.Configure<AppSettings>(builder.Configuration.GetSection("Smtp"));
 
             builder.Services.AddDbContext<AppDbContext>(options => options.UseSqlServer(connectionString));

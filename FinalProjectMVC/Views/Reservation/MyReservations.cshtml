@@ -1,36 +1,38 @@
 ﻿@model FinalProjectMVC.ViewModels.Reservation.ReservePageViewModel
 
-<h2>My Active Reservations</h2>
+<div class="container mt-5">
+    <h2 class="text-center text-wrap">My Active Reservations</h2>
 
-@if (Model.ReservationList == null || !Model.ReservationList.Any())
-{
-    <p>No active reservations found.</p>
-}
-else
-{
-    <table class="table table-striped">
-        <thead>
-            <tr>
-                <th>Brand</th>
-                <th>Model</th>
-                <th>Start Date</th>
-                <th>End Date</th>
-                <th>Location</th>
-                <th>Total Price</th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var reservation in Model.ReservationList)
-            {
+    @if (Model.ReservationList == null || !Model.ReservationList.Any())
+    {
+        <p class="text-danger text-center">No active reservations found.</p>
+    }
+    else
+    {
+        <table class="table table-striped mt-4">
+            <thead>
                 <tr>
-                    <td>@reservation.Brand</td>
-                    <td>@reservation.Model</td>
-                    <td>@reservation.StartDate.ToString("yyyy-MM-dd")</td>
-                    <td>@reservation.EndDate.ToString("yyyy-MM-dd")</td>
-                    <td>@reservation.Location</td>
-                    <td>$@reservation.TotalPrice</td>
+                    <th>Brand</th>
+                    <th>Model</th>
+                    <th>Start Date</th>
+                    <th>End Date</th>
+                    <th>Location</th>
+                    <th>Total Price</th>
                 </tr>
-            }
-        </tbody>
-    </table>
-}
+            </thead>
+            <tbody>
+                @foreach (var reservation in Model.ReservationList)
+                {
+                    <tr>
+                        <td>@reservation.Brand</td>
+                        <td>@reservation.Model</td>
+                        <td>@reservation.StartDate.ToString("yyyy-MM-dd")</td>
+                        <td>@reservation.EndDate.ToString("yyyy-MM-dd")</td>
+                        <td>@reservation.Location</td>
+                        <td>$@reservation.TotalPrice</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+</div>

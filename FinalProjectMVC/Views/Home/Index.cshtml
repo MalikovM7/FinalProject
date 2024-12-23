@@ -1,5 +1,6 @@
 ﻿@model FinalProjectMVC.ViewModels.Home.HomePageViewModel
 
+
 <body>
    
 <main> 
@@ -161,12 +162,12 @@
                         <img src="@car.ImagePath" alt="@car.Brand @car.Model">
                         <h3>@car.Brand @car.Model</h3>
                         <p>Starting at $@car.PricePerDay/day</p>
-                        <button class="rent-btn">Rent It</button>
+                        
                     </div>
                 }
             </div>
-            <button class="prev btn-prev-car sliderButton" onclick="prevSlide()">&#10094;</button>
-            <button class="next btn-next-car sliderButton" onclick="nextSlide()">&#10095;</button>
+            <button class="prev sliderButton btn-prev-car" aria-label="Previous Slide" onclick="prevSlide()">&#10094;</button>
+            <button class="next sliderButton btn-next-car" aria-label="Next Slide" onclick="nextSlide()">&#10095;</button>
         </div>
 
 
@@ -319,15 +320,9 @@
 
 
 
-
-
 </main>
 
 <button id="topBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
-
-
-
-
 
 
 </body>

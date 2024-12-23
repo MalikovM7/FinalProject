@@ -6,35 +6,34 @@ body {
     background-color: #f8f9fa;
 }
 
-
 /* Main Content */
 .container-main {
-    padding: 30px 15px;
+    padding: 2rem 1rem;
     background-color: #ffffff;
     border: 1px solid #ddd;
     border-radius: 5px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin: 2rem auto;
+    max-width: 90%; /* Ensure it doesn't exceed screen size */
 }
 
-.container-main .headof h1 {
-    font-size: 28px;
-    font-weight: bold;
-    margin-bottom: 10px;
-}
+    .container-main .headof h1 {
+        font-size: 1.75rem; /* Responsive font size */
+        font-weight: bold;
+        margin-bottom: 0.5rem;
+    }
 
-.container-main .nav1 {
-    font-size: 14px;
-}
+    .container-main .nav1 {
+        font-size: 0.875rem; /* Adjusts better for smaller screens */
+    }
 
-.container-main .nav1 a {
-    text-decoration: none;
-    color: #007bff;
-}
+        .container-main .nav1 a {
+            text-decoration: none;
+            color: #dc3545;
+        }
 
-.container-main .nav1 a:hover {
-    text-decoration: underline;
-}
+            .container-main .nav1 a:hover {
+                text-decoration: underline;
+            }
 
 /* Vehicle Listings */
 .row.border {
@@ -42,11 +41,16 @@ body {
     border: 1px solid #ddd;
     border-radius: 5px;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap; /* Wrap content for smaller screens */
 }
 
 img.img-fluid {
     border-radius: 5px;
+    max-width: 100%; /* Ensure images adapt to container */
+    height: auto;
 }
 
 .text-uppercase {
@@ -63,66 +67,69 @@ ul.list-inline {
     list-style: none;
 }
 
-ul.list-inline li {
-    display: inline-block;
-    margin-right: 10px;
-}
+    ul.list-inline li {
+        display: inline-block;
+        margin-right: 0.625rem;
+    }
 
 button.btn-dark {
     background-color: #343a40;
     color: #ffffff;
-    padding: 10px 20px;
+    padding: 0.625rem 1.25rem;
     border: none;
     border-radius: 5px;
     text-transform: uppercase;
 }
 
-button.btn-dark:hover {
-    background-color: #23272b;
-}
+    button.btn-dark:hover {
+        background-color: #23272b;
+    }
 
 /* Search Panel */
 .bg-light {
     background-color: #f9f9f9 !important;
-    padding: 20px;
+    padding: 1.25rem;
     border-radius: 5px;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1.25rem;
 }
 
 form label {
     font-weight: bold;
-    font-size: 14px;
+    font-size: 0.875rem;
 }
 
-form .form-control, form .form-select {
-    padding: 10px;
-    margin-bottom: 15px;
+form .form-control,
+form .form-select {
+    padding: 0.625rem;
+    margin-bottom: 0.9375rem;
     border-radius: 5px;
+    width: 100%; /* Ensure fields expand fully */
 }
 
 button.w-100 {
-    background-color: #007bff;
+    background-color: #dc3545;
     color: #ffffff;
-    padding: 10px;
+    padding: 0.625rem;
     font-weight: bold;
     border: none;
     border-radius: 5px;
     text-transform: uppercase;
+    width: 100%; /* Full width for smaller screens */
 }
 
-button.w-100:hover {
-    background-color: #0056b3;
-}
-
+    button.w-100:hover {
+        background-color: #dc3545;
+    }
 
 .price-slider {
     text-align: center;
 }
 
-.price-slider input[type="range"] {
-    width: 100%;
-    margin: 10px 0;
-}
+    .price-slider input[type="range"] {
+        width: 100%;
+        margin: 0.625rem 0;
+    }
 
 #priceRange {
     font-weight: bold;
@@ -131,29 +138,65 @@ button.w-100:hover {
 /* Testimonials */
 .testimonial {
     text-align: center;
-    font-size: 14px;
+    font-size: 0.875rem;
     line-height: 1.6;
+    padding: 1rem;
 }
 
-.testimonial p {
-    margin-bottom: 5px;
-}
+    .testimonial p {
+        margin-bottom: 0.3125rem;
+    }
 
 .testimonial-indicators {
     display: flex;
     justify-content: center;
-    gap: 10px;
+    gap: 0.625rem;
 }
 
-.testimonial-indicators .dot {
-    width: 10px;
-    height: 10px;
-    background-color: #ddd;
-    border-radius: 50%;
-    display: inline-block;
-    cursor: pointer;
+    .testimonial-indicators .dot {
+        width: 0.625rem;
+        height: 0.625rem;
+        background-color: #ddd;
+        border-radius: 50%;
+        display: inline-block;
+        cursor: pointer;
+    }
+
+        .testimonial-indicators .dot.active {
+            background-color: #dc3545;
+        }
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .container-main {
+        margin: 1rem auto;
+    }
+
+    .row.border {
+        flex-direction: column; /* Stack items vertically */
+    }
+
+    .testimonial {
+        font-size: 0.8125rem; /* Smaller font size for narrow screens */
+    }
+
+    button.btn-dark,
+    button.w-100 {
+        font-size: 0.875rem; /* Adjust button text size */
+    }
 }
 
-.testimonial-indicators .dot.active {
-    background-color: #007bff;
+@media (max-width: 480px) {
+    .container-main .headof h1 {
+        font-size: 1.5rem;
+    }
+
+    form label {
+        font-size: 0.75rem;
+    }
+
+    .testimonial-indicators .dot {
+        width: 0.5rem;
+        height: 0.5rem;
+    }
 }

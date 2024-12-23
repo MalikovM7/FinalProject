@@ -202,14 +202,6 @@ html{
 
 
 
-
-
-
-
-
-
-
-
 .slide-post{
 
 
@@ -276,13 +268,6 @@ html{
         right: 0;
       }
     
-
-
-
-
-
-
-
 
       .quote-section {
         font-family: Arial, sans-serif;
@@ -376,13 +361,6 @@ html{
         background-color: #eee;
         font-weight: bold;
     }
-
-
-
-
-
-
-
 
     .sidebar-section {
         margin-bottom: 20px;
@@ -571,3 +549,134 @@ html{
         font-size: 0.8em;
         margin-top: 5px;
     }
+
+    /* Responsive Design */
+@media screen and (max-width: 1200px) {
+    .headof h1 {
+      font-size: 50px;
+    }
+  
+    .main-content {
+      width: 70%;
+    }
+  
+    .sidebar {
+      width: 30%;
+    }
+  }
+  
+  @media screen and (max-width: 992px) {
+    .content {
+      flex-direction: column;
+    }
+  
+    .main-content,
+    .sidebar {
+      width: 100%;
+    }
+  
+    .post h2 {
+      font-size: 1.6em;
+    }
+  
+    .post p {
+      font-size: 0.9em;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .headof {
+      margin-top: 40px;
+    }
+  
+    .headof h1 {
+      font-size: 40px;
+    }
+  
+    .sidebar .search input {
+      padding: 8px;
+      margin-bottom: 15px;
+    }
+  
+    .sidebar .categories h2 {
+      font-size: 1em;
+    }
+  
+    .post-content {
+      padding: 15px;
+    }
+  
+    .post-title {
+      font-size: 20px;
+    }
+  
+    .post-meta {
+      font-size: 12px;
+    }
+  
+    .post-text {
+      font-size: 14px;
+    }
+  
+    .read-more {
+      padding: 8px 15px;
+      font-size: 0.9em;
+    }
+  }
+  
+  @media screen and (max-width: 576px) {
+    .nav1 {
+      justify-content: center;
+    }
+  
+    .sidebar .categories ul li ul {
+      padding-left: 10px;
+    }
+  
+    .video-header img,
+    .post-image img,
+    .slides img {
+      height: auto;
+    }
+  
+    .slider {
+      height: auto;
+    }
+  
+    .pagination-btn {
+      padding: 8px 10px;
+      font-size: 0.8em;
+    }
+  
+    .quote-section blockquote {
+      font-size: 1em;
+    }
+  
+    .footer .contact-form input,
+    .footer .contact-form textarea {
+      padding: 8px;
+    }
+  
+    .footer .contact-info p {
+      font-size: 0.9em;
+    }
+  
+    .footer-bottom {
+      font-size: 0.8em;
+    }
+  }
+  
+  @media screen and (max-width: 400px) {
+    .headof h1 {
+      font-size: 30px;
+    }
+  
+    .post-title {
+      font-size: 18px;
+    }
+  
+    .read-more {
+      padding: 6px 10px;
+      font-size: 0.8em;
+    }
+  }

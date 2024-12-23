@@ -16,42 +16,18 @@
     <link rel="stylesheet" href="~/assets/css/contact.css">
     <link rel="stylesheet" href="~/assets/css/blog.css">
     <link rel="stylesheet" href="~/assets/css/vehicles.css">
-    <style>
-        .header-container {
-            padding: 0 60px;
-        }
-
-        .site-header {
-            background-color: #f8f9fa;
-            display: flex;
-            justify-items: space-between;
-            align-items: center;
-            height: 85px;
-            position: fixed;
-            top: 0px;
-            width: 100%;
-            transition: 0.3s all;
-            z-index: 999;
-        }
-
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-        }
-    </style>
-
-  
+    <link rel="stylesheet" href="~/assets/css/reservations.css">
 </head>
 <body>
     <!-- Header Navbar -->
     <div class="header-container">
-        <header class="d-flex align-items-center justify-content-between px-4 py-2">
+        <header class="site-header d-flex align-items-center justify-content-between px-4 py-2">
             <div class="logo">
                 <img src="https://jthemes.net/themes/html/rentit/assets/img/logo-rentit.png" alt="Rent It Logo">
             </div>
             <nav>
                 <ul class="nav">
-                    <li ><a asp-controller="Home" asp-action="Index">Home</a></li>
+                    <li><a asp-controller="Home" asp-action="Index">Home</a></li>
                     <li><a asp-controller="Vehicle" asp-action="Vehicle">Vehicles</a></li>
                     <li><a asp-controller="Reservation" asp-action="AvailableCars">Reserve a Car</a></li>
                     <li><a asp-controller="Reservation" asp-action="MyReservations">My Reservations</a></li>
@@ -61,13 +37,13 @@
                     {
                         <li><a asp-controller="Admin" asp-action="Dashboard">Admin Dashboard</a></li>
                     }
-                    <li><a href="https://www.facebook.com" ><i class="fa fa-facebook"></i></a></li>
-                    <li><a href="https://www.twitter.com" ><i class="fa fa-twitter"></i></a></li>
-                    <li><a href="https://www.linkedin.com" ><i class="fa fa-linkedin"></i></a></li>
-                    <li><a href="https://www.pinterest.com" ><i class="fa fa-pinterest"></i></a></li>
+                    <li><a href="https://www.facebook.com"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="https://www.twitter.com"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="https://www.linkedin.com"><i class="fa fa-linkedin"></i></a></li>
+                    <li><a href="https://www.pinterest.com"><i class="fa fa-pinterest"></i></a></li>
                 </ul>
             </nav>
-            <div>
+            <div class="pe-3">
                 @if (User.Identity.IsAuthenticated)
                 {
                     <form asp-controller="Account" asp-action="Logout" method="post" class="d-inline-flex align-items-center">
@@ -83,6 +59,7 @@
                     </div>
                 }
             </div>
+
         </header>
     </div>
 
@@ -124,5 +101,6 @@
             <p>© 2015 Rent It — A One Page Rental Car Theme made with passion by jThemes Studio</p>
         </div>
     </footer>
+
 </body>
 </html>

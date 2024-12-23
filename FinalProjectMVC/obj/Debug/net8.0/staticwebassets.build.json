@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Ny0mxQnWGbnPOgRs96Y/xtNVlzYo/TpLF+4P0fEXuEM=",
+  "Hash": "23A6oGwWG4PhugzOn2rSldBwNAyTDyGkqIVNg/PZVeA=",
   "Source": "FinalProjectMVC",
   "BasePath": "_content/FinalProjectMVC",
   "Mode": "Default",
@@ -3190,6 +3190,25 @@
       "OriginalItemSpec": "wwwroot\\assets\\css\\home.css"
     },
     {
+      "Identity": "C:\\Users\\vuqar\\Desktop\\Final Code\\FinalProjectMVC\\wwwroot\\assets\\css\\reservations.css",
+      "SourceId": "FinalProjectMVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\vuqar\\Desktop\\Final Code\\FinalProjectMVC\\wwwroot\\",
+      "BasePath": "_content/FinalProjectMVC",
+      "RelativePath": "assets/css/reservations.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\css\\reservations.css"
+    },
+    {
       "Identity": "C:\\Users\\vuqar\\Desktop\\Final Code\\FinalProjectMVC\\wwwroot\\assets\\css\\vehicles.css",
       "SourceId": "FinalProjectMVC",
       "SourceType": "Discovered",
@@ -3209,12 +3228,12 @@
       "OriginalItemSpec": "wwwroot\\assets\\css\\vehicles.css"
     },
     {
-      "Identity": "C:\\Users\\vuqar\\Desktop\\Final Code\\FinalProjectMVC\\wwwroot\\assets\\img\\4b5cedef-65d1-4884-87d5-dd305bd58bc0_car-img.png",
+      "Identity": "C:\\Users\\vuqar\\Desktop\\Final Code\\FinalProjectMVC\\wwwroot\\assets\\img\\2ecdff7f-a086-4b7d-ae90-22a1a0f41dbe_maxresdefault-removebg-preview.png",
       "SourceId": "FinalProjectMVC",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\vuqar\\Desktop\\Final Code\\FinalProjectMVC\\wwwroot\\",
       "BasePath": "_content/FinalProjectMVC",
-      "RelativePath": "assets/img/4b5cedef-65d1-4884-87d5-dd305bd58bc0_car-img.png",
+      "RelativePath": "assets/img/2ecdff7f-a086-4b7d-ae90-22a1a0f41dbe_maxresdefault-removebg-preview.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -3225,15 +3244,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\assets\\img\\4b5cedef-65d1-4884-87d5-dd305bd58bc0_car-img.png"
+      "OriginalItemSpec": "wwwroot\\assets\\img\\2ecdff7f-a086-4b7d-ae90-22a1a0f41dbe_maxresdefault-removebg-preview.png"
     },
     {
-      "Identity": "C:\\Users\\vuqar\\Desktop\\Final Code\\FinalProjectMVC\\wwwroot\\assets\\img\\baf8a6c1-4637-4888-a660-ca2acaa5ffac_image.png",
+      "Identity": "C:\\Users\\vuqar\\Desktop\\Final Code\\FinalProjectMVC\\wwwroot\\assets\\img\\cd1f9ab1-3fcd-475e-8c08-13dc4b4df8d1_maxresdefault-removebg-preview.png",
       "SourceId": "FinalProjectMVC",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\vuqar\\Desktop\\Final Code\\FinalProjectMVC\\wwwroot\\",
       "BasePath": "_content/FinalProjectMVC",
-      "RelativePath": "assets/img/baf8a6c1-4637-4888-a660-ca2acaa5ffac_image.png",
+      "RelativePath": "assets/img/cd1f9ab1-3fcd-475e-8c08-13dc4b4df8d1_maxresdefault-removebg-preview.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -3244,15 +3263,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\assets\\img\\baf8a6c1-4637-4888-a660-ca2acaa5ffac_image.png"
+      "OriginalItemSpec": "wwwroot\\assets\\img\\cd1f9ab1-3fcd-475e-8c08-13dc4b4df8d1_maxresdefault-removebg-preview.png"
     },
     {
-      "Identity": "C:\\Users\\vuqar\\Desktop\\Final Code\\FinalProjectMVC\\wwwroot\\assets\\img\\car-img.png",
+      "Identity": "C:\\Users\\vuqar\\Desktop\\Final Code\\FinalProjectMVC\\wwwroot\\assets\\img\\f5ff1b50-5329-4958-b6a8-4feac0253d0c_maxresdefault-removebg-preview.png",
       "SourceId": "FinalProjectMVC",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\vuqar\\Desktop\\Final Code\\FinalProjectMVC\\wwwroot\\",
       "BasePath": "_content/FinalProjectMVC",
-      "RelativePath": "assets/img/car-img.png",
+      "RelativePath": "assets/img/f5ff1b50-5329-4958-b6a8-4feac0253d0c_maxresdefault-removebg-preview.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -3263,26 +3282,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\assets\\img\\car-img.png"
-    },
-    {
-      "Identity": "C:\\Users\\vuqar\\Desktop\\Final Code\\FinalProjectMVC\\wwwroot\\assets\\img\\image.png",
-      "SourceId": "FinalProjectMVC",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\vuqar\\Desktop\\Final Code\\FinalProjectMVC\\wwwroot\\",
-      "BasePath": "_content/FinalProjectMVC",
-      "RelativePath": "assets/img/image.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\assets\\img\\image.png"
+      "OriginalItemSpec": "wwwroot\\assets\\img\\f5ff1b50-5329-4958-b6a8-4feac0253d0c_maxresdefault-removebg-preview.png"
     },
     {
       "Identity": "C:\\Users\\vuqar\\Desktop\\Final Code\\FinalProjectMVC\\wwwroot\\assets\\img\\maxresdefault-removebg-preview.png",
