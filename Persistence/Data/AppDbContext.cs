@@ -26,7 +26,7 @@ public class AppDbContext : IdentityDbContext<AppUser>
 
     public DbSet<Reservation> Reservations { get; set; }
 
-    public DbSet<Testimomal> Testimomals { get; set; }
+    public DbSet<Testimonial> Testimonials { get; set; }
 
     public DbSet<DriverLicense> DriverLicenses { get; set; }
 

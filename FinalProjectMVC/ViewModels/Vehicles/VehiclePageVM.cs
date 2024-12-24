@@ -7,5 +7,7 @@ namespace FinalProjectMVC.ViewModels.Vehicles
 
         public IEnumerable<Car> Cars { get; set; }
 
+        public IEnumerable<Testimonial> Testimonials { get; set; }
+
     }
 }

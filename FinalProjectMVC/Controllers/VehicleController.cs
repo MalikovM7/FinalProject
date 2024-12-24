@@ -1,7 +1,9 @@
 ﻿using Domain.Models;
 using FinalProjectMVC.ViewModels.Admin.Car;
+using FinalProjectMVC.ViewModels.Admin.Testimonials;
 using FinalProjectMVC.ViewModels.Vehicles;
 using Microsoft.AspNetCore.Mvc;
+using Services.Implementations.Implementations;
 using Services.Interfaces;
 
 namespace FinalProjectMVC.Controllers
@@ -10,27 +12,27 @@ namespace FinalProjectMVC.Controllers
     {
         private readonly ILogger<VehicleController> _logger;
         private readonly IVehicleService _vehicleService;
+        private readonly ITestimonialService _testimonialService;
 
-        public VehicleController(ILogger<VehicleController> logger, IVehicleService vehicleService)
+        public VehicleController(ILogger<VehicleController> logger, IVehicleService vehicleService, ITestimonialService testimonialService)
         {
 
             _vehicleService = vehicleService;
+            _logger = logger;
+            _testimonialService = testimonialService;
         }
 
+        [HttpGet]
         public async Task<IActionResult> Vehicle()
         {
             var cars = await _vehicleService.GetCarSAsync();
-
-            if (cars == null || !cars.Any())
-            {
-                _logger.LogWarning("No Cars found in the database.");
-            }
+            var approvedTestimonials = (await _testimonialService.GetTestimonalAsync()).Where(t => t.IsApproved).ToList();
 
             var model = new VehiclePageVM
             {
                 Cars = cars ?? Enumerable.Empty<Car>(),
+                Testimonials = approvedTestimonials ?? Enumerable.Empty<Testimonial>(),
             };
-
 
             return View(model);
         }

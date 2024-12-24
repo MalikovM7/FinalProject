@@ -109,19 +109,33 @@
                     </div>
                 </div>
 
-                <!-- Testimonials -->
-                <div class="border p-4 bg-light mt-4">
-                    <h5 class="text-uppercase mb-4">Testimonials</h5>
-                    <div class="testimonial">
-                        <p>Vivamus eget nibh. Etiam cursus leo vel metus. Nulla facilisi. Aenean nec eros. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia.</p>
-                        <p><strong>John Doe</strong></p>
-                        <p>Co-founder at Rent It</p>
-                    </div>
+            <!-- Testimonials -->
+            <div class="border p-4 bg-light mt-4">
+                <h5 class="text-uppercase mb-4">Testimonials</h5>
+
+                @if (Model.Testimonials != null && Model.Testimonials.Any())
+                {
+                    @foreach (var testimonial in Model.Testimonials)
+                    {
+                        <div class="testimonial mb-3">
+                            <p>@testimonial.Comment</p>
+                            <p><strong>Rating: @testimonial.Rating/5</strong></p>
+                        </div>
+                    }
+
+                    <!-- Indicators -->
                     <div class="testimonial-indicators text-center mt-3">
-                        <span class="dot active" data-index="0"></span>
-                        <span class="dot" data-index="1"></span>
-                        <span class="dot" data-index="2"></span>
+                        @for (int i = 0; i < Model.Testimonials.Count(); i++)
+                        {
+                            <span class="dot @(i == 0 ? "active" : "")" data-index="@i"></span>
+                        }
                     </div>
-                </div>
+                }
+                else
+                {
+                    <p class="text-muted">No testimonials available at the moment.</p>
+                }
+            </div>
+
             </div>
     </main>

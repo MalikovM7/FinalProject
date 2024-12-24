@@ -13,7 +13,7 @@ namespace Persistence.Repositories.Implementations
         private readonly DbSet<T> _dbSet;
         public BaseRepository(AppDbContext context)
         {
-            _context = context;
+            _context = context ?? throw new ArgumentNullException(nameof(context));
             _dbSet = _context.Set<T>();
         }
         public async Task CreateAsync(T entity)

@@ -1,0 +1,59 @@
+﻿@model IEnumerable<AdminTestimonialViewModel>
+
+<div class="container mt-5">
+    <h1 class="text-center">Manage Testimonials</h1>
+
+    <table class="table table-striped table-bordered">
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col">ID</th>
+                <th scope="col">UserName</th>
+                <th scope="col">Comment</th>
+                <th scope="col">Rating</th>
+                <th scope="col">Approved</th>
+                <th scope="col" class="text-center">Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model != null && Model.Any())
+            {
+                foreach (var testimonial in Model)
+                {
+                    <tr>
+                        <td>@testimonial.Id</td>
+                        <td>@testimonial.UserId</td>
+                        <td>@testimonial.Comment</td>
+                        <td>@testimonial.Rating</td>
+                        <td>
+                            @if (testimonial.IsApproved)
+                            {
+                                <span class="text-success">Yes</span>
+                            }
+                            else
+                            {
+                                <span class="text-danger">No</span>
+                            }
+                        </td>
+                        <td class="text-center">
+                            @if (!testimonial.IsApproved)
+                            {
+                                <form asp-action="Approve" asp-route-id="@testimonial.Id" method="post" class="d-inline">
+                                    <button type="submit" class="btn btn-success btn-sm">Approve</button>
+                                </form>
+                            }
+                            <form asp-action="Delete" asp-route-id="@testimonial.Id" method="post" class="d-inline">
+                                <button type="submit" class="btn btn-danger btn-sm">Delete</button>
+                            </form>
+                        </td>
+                    </tr>
+                }
+            }
+            else
+            {
+                <tr>
+                    <td colspan="5" class="text-center text-muted">No Testimonials available.</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

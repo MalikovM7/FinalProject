@@ -50,8 +50,11 @@ namespace FinalProjectMVC
                 
                 .AddEntityFrameworkStores<AppDbContext>()
                 .AddDefaultTokenProviders();
-            
+            //Services
+
+
             builder.Services.AddScoped<INewsService, NewsService>();
+            builder.Services.AddScoped<ITestimonialService, TestimonialService>();
             builder.Services.AddScoped<IContactService, ContactService>();
             builder.Services.AddScoped<IUserService, UserService>();
             builder.Services.AddScoped<IReservationService, ReservationService>();
@@ -61,6 +64,10 @@ namespace FinalProjectMVC
             builder.Services.AddScoped<IAboutUsService, AboutUsService>();
             builder.Services.AddScoped<IfaqService, FaqService>();
             builder.Services.AddScoped<IVehicleService, VehicleService>();
+
+
+            //Repositories
+
             builder.Services.AddScoped<ISliderRepository, SliderRepository>();
             builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
             builder.Services.AddScoped<IFaqRepository, FAQRepository>();
@@ -70,6 +77,7 @@ namespace FinalProjectMVC
             builder.Services.AddScoped<INewsRepository, NewsRepository>();
             builder.Services.AddScoped<IContactRepository, ContactRepository>();
             builder.Services.AddScoped<IReservationRepository, ReservationRepository>();
+            builder.Services.AddScoped<ITestimonialRepository, TestimonialRepository>();
 
 
             // Add services to the container.
