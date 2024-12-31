@@ -136,30 +136,37 @@ button.w-100 {
 }
 
 /* Testimonials */
-.testimonial {
+.testimonial-slider {
+    position: relative;
     text-align: center;
-    font-size: 0.875rem;
-    line-height: 1.6;
-    padding: 1rem;
 }
 
-    .testimonial p {
-        margin-bottom: 0.3125rem;
+.testimonial {
+    display: none; /* Hide all testimonials initially */
+    transition: opacity 0.5s ease;
+}
+
+    .testimonial:first-child {
+        display: block; /* Show the first testimonial initially */
     }
 
 .testimonial-indicators {
-    display: flex;
-    justify-content: center;
-    gap: 0.625rem;
+    margin-top: 15px;
 }
 
-    .testimonial-indicators .dot {
-        width: 0.625rem;
-        height: 0.625rem;
-        background-color: #ddd;
-        border-radius: 50%;
-        display: inline-block;
-        cursor: pointer;
+.dot {
+    width: 10px;
+    height: 10px;
+    background-color: #ccc;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+    .dot.active {
+        background-color: #007bff;
     }
 
         .testimonial-indicators .dot.active {

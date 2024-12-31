@@ -1,19 +1,28 @@
 let slideIndex = 0;
 let carSlideIndex = 0;
-
-// Car slider navigation
-let prevCar = document.querySelector(".btn-prev-car");
-let nextCar = document.querySelector(".btn-next-car");
+let prevCar = document.querySelector(".btn-prev-car")
+let nextCar = document.querySelector(".btn-next-car")
 
 nextCar.addEventListener('click', () => {
-    carSlideIndex++;
+    carSlideIndex++
     showCarSlide();
-});
+})
 
 prevCar.addEventListener('click', () => {
-    carSlideIndex--;
+    carSlideIndex--
     showCarSlide();
-});
+})
+
+function showSlides() {
+    const slides = document.querySelectorAll('.slides img');
+    if (slideIndex >= slides.length) {
+        slideIndex = 0;
+    } else if (slideIndex < 0) {
+        slideIndex = slides.length - 1;
+    }
+    const offset = -slideIndex * 100;
+    document.querySelector('.slides').style.transform = `translateX(${offset}%)`;
+}
 
 function showCarSlide() {
     const slides = document.querySelectorAll('.car-slide');
@@ -29,32 +38,23 @@ function showCarSlide() {
     console.log(carSlideIndex);
 }
 
-// Main slides
-let mainSlideIndex = 0;
-
-function showMainSlides() {
-    const slides = document.querySelectorAll('.slides img');
-    if (mainSlideIndex >= slides.length) {
-        mainSlideIndex = 0;
-    } else if (mainSlideIndex < 0) {
-        mainSlideIndex = slides.length - 1;
-    }
-    const offset = -mainSlideIndex * 100;
-    document.querySelector('.slides').style.transform = `translateX(${offset}%)`;
+function nextSlide() {
+    slideIndex++;
+    showSlides();
 }
 
-function nextMainSlide() {
-    mainSlideIndex++;
-    showMainSlides();
+function prevSlide() {
+    slideIndex--;
+    showSlides();
 }
 
-function prevMainSlide() {
-    mainSlideIndex--;
-    showMainSlides();
-}
 
-// Top button
+
+
+
+
 let topBtn = document.getElementById("topBtn");
+
 
 window.onscroll = function () {
     scrollFunction();
@@ -68,6 +68,7 @@ function scrollFunction() {
     }
 }
 
+
 topBtn.onclick = function () {
     window.scrollTo({
         top: 0,
@@ -75,7 +76,10 @@ topBtn.onclick = function () {
     });
 };
 
-// FAQ toggle
+
+
+
+
 document.querySelectorAll('.faq-item').forEach(item => {
     item.querySelector('.faq-question').addEventListener('click', () => {
         const answer = item.querySelector('.faq-answer');
@@ -90,7 +94,11 @@ document.querySelectorAll('.faq-item').forEach(item => {
     });
 });
 
-// Car search
+
+
+
+
+
 document.getElementById('find-car').addEventListener('click', function () {
     alert('Searching for cars...');
 });
@@ -99,42 +107,43 @@ document.getElementById('find-car-bottom').addEventListener('click', function ()
     alert('Searching for cars...');
 });
 
-// Simple slides
-let simpleSlideIndex = 0;
 
-function showSimpleSlides() {
+
+
+
+
+/*let slideIndex1 = 0;*/
+
+function showSlides() {
     const slides = document.querySelectorAll('.simple-slides img');
-    if (simpleSlideIndex >= slides.length) {
-        simpleSlideIndex = 0;
-    } else if (simpleSlideIndex < 0) {
-        simpleSlideIndex = slides.length - 1;
+    if (slideIndex >= slides.length) {
+        slideIndex = 0;
+    } else if (slideIndex < 0) {
+        slideIndex = slides.length - 1;
     }
-    const offset = -simpleSlideIndex * 100;
+    const offset = -slideIndex * 100;
     document.querySelector('.simple-slides').style.transform = `translateX(${offset}%)`;
 }
 
-function nextSimpleSlide() {
-    simpleSlideIndex++;
-    showSimpleSlides();
+function nextSlide() {
+    slideIndex++;
+    showSlides();
 }
 
-function prevSimpleSlide() {
-    simpleSlideIndex--;
-    showSimpleSlides();
+function prevSlide() {
+    slideIndex--;
+    showSlides();
 }
 
-showSimpleSlides();
+showSlides();
 
 
-window.addEventListener('scroll', function () {
+window.addEventListener('scroll', () => {
     const header = document.querySelector('.site-header');
-    const logo = document.querySelector('.logo > img');
 
     if (window.scrollY > 50) {
-        header.style.height = '50px';
-        logo.style.height = '40px'; // Adjusted to be proportionate to the header height
+        header.classList.add('shrink');
     } else {
-        header.style.height = '85px';
-        logo.style.height = '60px'; // Adjusted to be proportionate to the header height
+        header.classList.remove('shrink');
     }
 });

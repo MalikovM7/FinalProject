@@ -1,15 +1,3 @@
-window.addEventListener('scroll', function () {
-    const header = document.querySelector('.site-header');
-    const logo = document.querySelector('.logo > img');
-
-    if (window.scrollY > 50) {
-        header.style.height = '50px';
-        logo.style.height = '40px'; // Adjusted to be proportionate to the header height
-    } else {
-        header.style.height = '85px';
-        logo.style.height = '60px'; // Adjusted to be proportionate to the header height
-    }
-});
 
   document.addEventListener("DOMContentLoaded", () => {
     // Update Price Range Display
@@ -27,48 +15,40 @@ window.addEventListener('scroll', function () {
     priceMax.addEventListener("input", updatePriceRange);
 
     // Testimonials Carousel
-    const testimonials = [
-        {
-            text: "Vivamus eget nibh. Etiam cursus leo vel metus. Nulla facilisi. Aenean nec eros. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia.",
-            author: "John Doe",
-            position: "Co-founder at Rent It",
-        },
-        {
-            text: "Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra.",
-            author: "Jane Smith",
-            position: "Marketing Manager",
-        },
-        {
-            text: "Fusce ac felis sit amet ligula pharetra condimentum. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi.",
-            author: "Michael Brown",
-            position: "Client",
-        },
-    ];
+      document.addEventListener("DOMContentLoaded", () => {
+          const testimonials = document.querySelectorAll(".testimonial");
+          const dots = document.querySelectorAll(".dot");
 
-    const testimonialContainer = document.querySelector(".testimonial");
-    const dots = document.querySelectorAll(".dot");
+          let currentIndex = 0;
 
-    let currentTestimonial = 0;
+          const updateTestimonial = (index) => {
+              // Hide all testimonials
+              testimonials.forEach((testimonial) => {
+                  testimonial.style.display = "none";
+              });
 
-    const updateTestimonial = (index) => {
-        const { text, author, position } = testimonials[index];
-        testimonialContainer.innerHTML = `
-            <p>${text}</p>
-            <p><strong>${author}</strong></p>
-            <p>${position}</p>
-        `;
+              // Remove active class from all dots
+              dots.forEach((dot) => {
+                  dot.classList.remove("active");
+              });
 
-        dots.forEach((dot, i) => {
-            dot.classList.toggle("active", i === index);
-        });
-    };
+              // Show the selected testimonial and activate the corresponding dot
+              testimonials[index].style.display = "block";
+              dots[index].classList.add("active");
 
-    dots.forEach((dot) => {
-        dot.addEventListener("click", (event) => {
-            currentTestimonial = parseInt(event.target.dataset.index, 10);
-            updateTestimonial(currentTestimonial);
-        });
-    });
+              currentIndex = index;
+          };
 
-    updateTestimonial(currentTestimonial);
-});
+          // Add click event to dots
+          dots.forEach((dot) => {
+              dot.addEventListener("click", (event) => {
+                  const index = parseInt(event.target.dataset.index, 10);
+                  updateTestimonial(index);
+              });
+          });
+
+          // Show the first testimonial on load
+          if (testimonials.length > 0) {
+              updateTestimonial(currentIndex);
+          }
+      });

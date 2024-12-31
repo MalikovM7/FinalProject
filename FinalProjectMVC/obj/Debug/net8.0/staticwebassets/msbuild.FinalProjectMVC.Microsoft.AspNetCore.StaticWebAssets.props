@@ -1760,12 +1760,12 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\img\7d153b17-f763-4942-9285-f9df2629ebc4_maxresdefault-removebg-preview.png))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\img\cd1f9ab1-3fcd-475e-8c08-13dc4b4df8d1_maxresdefault-removebg-preview.png))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\img\a642037a-0996-4680-9be7-ed4a34c34eca_75b6c2d5b103423197c0836e61087979.jpg))">
       <SourceType>Package</SourceType>
       <SourceId>FinalProjectMVC</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/FinalProjectMVC</BasePath>
-      <RelativePath>assets/img/cd1f9ab1-3fcd-475e-8c08-13dc4b4df8d1_maxresdefault-removebg-preview.png</RelativePath>
+      <RelativePath>assets/img/a642037a-0996-4680-9be7-ed4a34c34eca_75b6c2d5b103423197c0836e61087979.jpg</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -1774,14 +1774,14 @@
       <AssetTraitValue></AssetTraitValue>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\img\cd1f9ab1-3fcd-475e-8c08-13dc4b4df8d1_maxresdefault-removebg-preview.png))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\img\a642037a-0996-4680-9be7-ed4a34c34eca_75b6c2d5b103423197c0836e61087979.jpg))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\img\f5ff1b50-5329-4958-b6a8-4feac0253d0c_maxresdefault-removebg-preview.png))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\img\bd74e9c5-3394-42fb-a50d-41fbf383dab7_Mercedes-Benz_W_222_S_350_Bluetec.jpeg))">
       <SourceType>Package</SourceType>
       <SourceId>FinalProjectMVC</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/FinalProjectMVC</BasePath>
-      <RelativePath>assets/img/f5ff1b50-5329-4958-b6a8-4feac0253d0c_maxresdefault-removebg-preview.png</RelativePath>
+      <RelativePath>assets/img/bd74e9c5-3394-42fb-a50d-41fbf383dab7_Mercedes-Benz_W_222_S_350_Bluetec.jpeg</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -1790,7 +1790,7 @@
       <AssetTraitValue></AssetTraitValue>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\img\f5ff1b50-5329-4958-b6a8-4feac0253d0c_maxresdefault-removebg-preview.png))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\img\bd74e9c5-3394-42fb-a50d-41fbf383dab7_Mercedes-Benz_W_222_S_350_Bluetec.jpeg))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\img\maxresdefault-removebg-preview.png))">
       <SourceType>Package</SourceType>

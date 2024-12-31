@@ -1,33 +1,41 @@
-// Search filter functionality
+
 document.addEventListener('DOMContentLoaded', () => {
     const searchInput = document.querySelector('.search input');
-    const categories = document.querySelectorAll('.categories ul li');
-
     searchInput.addEventListener('input', (event) => {
         const searchTerm = event.target.value.toLowerCase();
+        const categories = document.querySelectorAll('.categories ul li');
         categories.forEach(category => {
-            category.style.display = category.textContent.toLowerCase().includes(searchTerm) ? '' : 'none';
+            if (category.textContent.toLowerCase().includes(searchTerm)) {
+                category.style.display = '';
+            } else {
+                category.style.display = 'none';
+            }
         });
     });
 });
 
-// Play button click handler
+
+
+
+
+
+
 document.addEventListener('DOMContentLoaded', () => {
     const playButton = document.querySelector('.play-button');
-    if (playButton) {
-        playButton.addEventListener('click', () => {
-            alert('Play video!');
-        });
-    }
+    playButton.addEventListener('click', () => {
+        alert('Play video!');
+    });
 });
 
-// Slide show functionality
+
+
+
+
+
 let slideIndex = 0;
 
 function showSlides() {
     const slides = document.querySelectorAll('.slides img');
-    if (!slides.length) return;
-
     if (slideIndex >= slides.length) {
         slideIndex = 0;
     } else if (slideIndex < 0) {
@@ -47,7 +55,14 @@ function prevSlide() {
     showSlides();
 }
 
-// Pagination functionality
+
+
+
+
+
+
+
+
 document.addEventListener('DOMContentLoaded', () => {
     const buttons = document.querySelectorAll('.pagination-btn');
     let currentPage = 1;
@@ -77,27 +92,30 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+
     updateActiveButton();
 });
 
-// Tab functionality
+
+
+
 document.addEventListener('DOMContentLoaded', () => {
     const tabButtons = document.querySelectorAll('.tab-button');
     const tabPanes = document.querySelectorAll('.tab-pane');
 
     tabButtons.forEach(button => {
         button.addEventListener('click', () => {
-            // Deactivate all buttons and panes
             tabButtons.forEach(btn => btn.classList.remove('active'));
-            tabPanes.forEach(pane => pane.classList.remove('active'));
-
-            // Activate the clicked button and corresponding pane
             button.classList.add('active');
+
             const target = button.getAttribute('data-tab');
-            const activePane = document.getElementById(target);
-            if (activePane) {
-                activePane.classList.add('active');
-            }
+            tabPanes.forEach(pane => {
+                if (pane.id === target) {
+                    pane.classList.add('active');
+                } else {
+                    pane.classList.remove('active');
+                }
+            });
         });
     });
 });

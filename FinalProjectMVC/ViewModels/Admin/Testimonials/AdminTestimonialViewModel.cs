@@ -1,6 +1,4 @@
-﻿using System.ComponentModel.DataAnnotations;
-using Microsoft.AspNetCore.Http;
-
+﻿
 namespace FinalProjectMVC.ViewModels.Admin.Testimonials
 {
     public class AdminTestimonialViewModel

@@ -26,7 +26,8 @@ namespace FinalProjectMVC.Controllers
         public async Task<IActionResult> Vehicle()
         {
             var cars = await _vehicleService.GetCarSAsync();
-            var approvedTestimonials = (await _testimonialService.GetTestimonalAsync()).Where(t => t.IsApproved).ToList();
+            var approvedTestimonials = (await _testimonialService.GetTestimonalAsync())
+     .Where(t => t.IsApproved).ToList();
 
             var model = new VehiclePageVM
             {

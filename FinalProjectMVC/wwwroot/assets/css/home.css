@@ -18,24 +18,48 @@ img {
 }
 
 .site-header {
-  background-color: #f8f9fa;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 85px;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  transition: 0.3s all;
-  z-index: 999;
-  padding: 0 20px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  flex-wrap: wrap;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 85px; /* Fixed height for the header */
+    background-color: #fff;
+    z-index: 1000; /* Ensures the header stays above other elements */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px; /* Adjust padding as needed */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional for visual separation */
+    transition: all 0.3s ease; /* Smooth transitions for any changes */
 }
 
-.site-header .logo img {
-  height: 50px;
+    .site-header.shrink {
+        height: 70px; /* Smaller height when scrolling */
+    }
+
+    .site-header .logo img {
+        height: 80px;
+        transition: height 0.3s ease;
+    }
+
+
+
+    .site-header.shrink .logo img {
+        height: 60px;
+    }
+
+.nav-profile-name {
+    white-space: nowrap; /* Prevents wrapping */
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
+
+.pe-3 {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Adds spacing between username and button */
+}
+
 
 nav ul {
   list-style: none;
@@ -59,6 +83,7 @@ nav ul li a {
 nav ul li a:hover {
   border-color: red;
 }
+
 
 .slider {
   margin-top: 85px;
@@ -770,38 +795,39 @@ footer h3 {
       color: #fff;
   }
 
-
 .simple-slider {
-  position: relative;
-  margin: 0 auto;
-  margin-top: 200px;
-  width: 50%;
-  overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 200px;
+    width: 50%;
+    overflow: hidden;
 }
 
 .simple-slides {
-  display: flex;
-  transition: transform 0.5s ease;
+    display: flex;
+    transition: transform 0.5s ease;
 }
 
-  .simple-slides img {
-      min-width: 100%;
-      display: block;
-  }
+    .simple-slides img {
+        min-width: 100%;
+        display: block;
+    }
 
 
 
 .simple-slider button {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: transparent;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  font-size: 24px;
-  z-index: 2;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 24px;
+    z-index: 2;
 }
+
+
 /* Responsive Styles for info-container */
 @media (min-width: 768px) {
   .info-container {

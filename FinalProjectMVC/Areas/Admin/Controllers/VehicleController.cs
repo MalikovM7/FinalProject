@@ -25,6 +25,7 @@ namespace FinalProjectMVC.Areas.Admin.Controllers
             {
                 Id = c.Id,
                 Brand = c.Brand,
+                Model = c.Model,
                 Color = c.Color,
                 Year = c.Year,
                 Fueltype = c.Fueltype,

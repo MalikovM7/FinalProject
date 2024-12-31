@@ -135,9 +135,8 @@
                     @if (Model.SliderImages != null && Model.SliderImages.Any())
                     {
                         @foreach (var item in Model.SliderImages)
-                        {                     
-                                <img src="~/assets/img/@item.Image" class="d-block w-100 img-fluid" alt="Slide Image">
-
+                        {
+                            <img src="~/assets/img/@item.Image" class="d-block w-100 img-fluid" alt="Slide Image">
                         }
                     }
                     else
@@ -150,7 +149,7 @@
             </div>
         </div>
 
-
+ 
 
 <!--Cars Slider -->
         <div class="slider">
@@ -326,5 +325,8 @@
 
 
 </body>
+
+
+
 </html>
 
