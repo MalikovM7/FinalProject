@@ -4,13 +4,9 @@ namespace Domain.Models
 {
     public class BlogPost : BaseEntity
     {
-       
         public string Title { get; set; }
         public string Content { get; set; }
-       
-        public int CarId { get; set; } // Foreign key to Car
-
-        // Navigation property
-        public Car Car { get; set; }
+        public string Author { get; set; }
+        public string ImageUrl { get; set; }
     }
 }

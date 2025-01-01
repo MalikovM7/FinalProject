@@ -8,6 +8,7 @@ namespace Persistence.Data;
 
 public class AppDbContext : IdentityDbContext<AppUser>
 {
+   
     public AppDbContext(DbContextOptions<AppDbContext> options)
         : base(options)
     {
@@ -50,7 +51,6 @@ public class AppDbContext : IdentityDbContext<AppUser>
 
         builder.ApplyConfiguration(new UserConfiguration());
         builder.ApplyConfiguration(new CarConfiguration());
-        builder.ApplyConfiguration(new BlogPostConfiguration());
         builder.ApplyConfiguration(new ContactFormConfiguration());
         builder.ApplyConfiguration(new FAQConfiguration());
 

@@ -41,7 +41,7 @@ img {
 }
 
     .site-header.shrink {
-        height: 70px; /* Smaller height when scrolling */
+        height: 100px; /* Smaller height when scrolling */
     }
 
     .site-header .logo img {

@@ -1,0 +1,21 @@
+﻿@model FinalProjectMVC.ViewModels.Blog.BlogPostVM
+
+<div class="container mt-5">
+    <div class="post">
+        <div class="post-image mb-4">
+            <img src="@Model.ImageUrl" alt="@Model.Title" style="width: 100%; height: auto;">
+        </div>
+        <div class="post-content">
+            <h1 class="post-title">@Model.Title</h1>
+            <p class="post-meta">
+                By @Model.Author / @Model.CreatedAt.ToString("MMMM dd, yyyy")
+            </p>
+            <div class="post-text mt-4">
+                <p>@Model.Content</p>
+            </div>
+        </div>
+        <div class="mt-4">
+            <a href="@Url.Action("Index", "Blog")" class="btn btn-secondary">Back to Blog</a>
+        </div>
+    </div>
+</div>

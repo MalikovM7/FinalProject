@@ -1,0 +1,53 @@
+﻿@model IEnumerable<Domain.Models.BlogPost>
+
+<div class="container mt-5">
+    <h1 class="text-center">Manage Blog Posts</h1>
+
+    <div class="d-flex justify-content-between mb-4">
+        <a asp-action="Create" class="btn btn-primary">Add New Blog Post</a>
+        <a asp-action="PublishedPosts" class="btn btn-success">Check Published Posts</a>
+    </div>
+
+    <table class="table table-striped table-bordered">
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Title</th>
+                <th scope="col">Author</th>
+                <th scope="col">Created Date</th>
+                <th scope="col">Image</th>
+                <th scope="col" class="text-center">Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model != null && Model.Any())
+            {
+                foreach (var post in Model)
+                {
+                    <tr>
+                        <td>@post.Id</td>
+                        <td>@post.Title</td>
+                        <td>@post.Author</td>
+                        <td>@post.CreatedDate.ToString("MMM dd, yyyy")</td>
+                        <td>
+                            <img src="@post.ImageUrl" alt="@post.Title" style="width: 100px; height: auto;">
+                        </td>
+                        <td class="text-center">
+                            <a asp-action="Details" asp-route-id="@post.Id" class="btn btn-info btn-sm">Details</a>
+                            <a asp-action="Edit" asp-route-id="@post.Id" class="btn btn-warning btn-sm mx-1">Edit</a>
+                            <form asp-action="Delete" asp-route-id="@post.Id" method="post" class="d-inline">
+                                <button type="submit" class="btn btn-danger btn-sm">Delete</button>
+                            </form>
+                        </td>
+                    </tr>
+                }
+            }
+            else
+            {
+                <tr>
+                    <td colspan="7" class="text-center text-muted">No Blog Posts available. Please add new posts.</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
