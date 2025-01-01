@@ -17,6 +17,13 @@ img {
   height: auto;
 }
 
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .site-header {
     position: fixed;
     top: 0;
@@ -48,10 +55,44 @@ img {
         height: 60px;
     }
 
-.nav-profile-name {
-    white-space: nowrap; /* Prevents wrapping */
-    overflow: hidden;
-    text-overflow: ellipsis;
+
+.user-info {
+    background-color: #f8f9fa; /* Light gray background */
+    padding: 5px 10px;
+    border-radius: 20px;
+    display: inline-flex;
+    align-items: center;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow */
+}
+
+    .user-info .username {
+        font-size: 1rem; /* Adjust font size */
+        color: #333; /* Darker text */
+    }
+
+    .user-info i {
+        font-size: 1.2rem;
+        color: #007bff; /* Optional icon color (Bootstrap primary color) */
+    }
+
+
+
+.dropdown-toggle {
+    background-color: #f8f9fa; /* Light background for the dropdown button */
+    border: none;
+    border-radius: 20px;
+    padding: 5px 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+    .dropdown-toggle .username {
+        font-size: 1rem;
+        color: #333; /* Darker text color */
+    }
+
+.dropdown-item.text-danger {
+    font-weight: bold;
+    font-size: 0.9rem;
 }
 
 .pe-3 {

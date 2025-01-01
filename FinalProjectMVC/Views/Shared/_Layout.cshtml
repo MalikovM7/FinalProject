@@ -40,16 +40,32 @@
                     }
                     <li><a href="https://www.facebook.com" target="_blank" rel="noopener"><i class="fa fa-facebook"></i></a></li>
                     <li><a href="https://www.twitter.com" target="_blank" rel="noopener"><i class="fa fa-twitter"></i></a></li>
-                    <li><a href="https://www.linkedin.com" target="_blank" rel="noopener"><i class="fa fa-linkedin"></i></a></li>
+                 
                 </ul>
             </nav>
             <div class="pe-3">
                 @if (User.Identity.IsAuthenticated)
                 {
-                    <form asp-controller="Account" asp-action="Logout" method="post" class="d-flex align-items-center">
-                        <span class="nav-profile-name me-3 fw-bold">@User.Identity.Name</span>
-                        <button type="submit" class="btn btn-outline-danger btn-sm">Logout</button>
-                    </form>
+                    <div class="d-flex justify-content-end align-items-center">
+                        <div class="dropdown">
+                            <button class="btn btn-light dropdown-toggle d-flex align-items-center"
+                                    type="button"
+                                    id="userDropdown"
+                                    data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                <i class="fa fa-user-circle me-2"></i>
+                                <span class="username fw-bold">@User.Identity.Name</span>
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+                                <li>
+                                    <form asp-controller="Account" asp-action="Logout" method="post" class="d-inline">
+                                        <button type="submit" class="dropdown-item text-danger">Logout</button>
+                                    </form>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
                 }
                 else
                 {
