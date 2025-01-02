@@ -29,6 +29,9 @@ namespace Domain.Models
         // Navigation property
         public Category Category { get; set; }
 
+        [NotMapped] // Use NotMapped to exclude it from the database table
+        public string CategoryName => Category?.Name;
+
 
 
     }

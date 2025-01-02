@@ -14,5 +14,10 @@ namespace Persistence.Repositories.Implementations
         public VehicleRepository(AppDbContext context) : base(context)
         {
         }
+
+        public IQueryable<Car> Query()
+        {
+            return _context.Cars.AsQueryable();
+        }
     }
 }

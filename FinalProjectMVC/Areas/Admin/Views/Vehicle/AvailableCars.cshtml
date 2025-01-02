@@ -1,27 +1,49 @@
 ﻿@model FinalProjectMVC.ViewModels.Reservation.ReservePageViewModel
 
-<form asp-action="AvailableCars" method="get">
-    <label>Start Date:</label>
-    <input type="date" name="startDate" value="@(Model?.Reservation?.StartDate != null ? Model.Reservation.StartDate.ToString("yyyy-MM-dd") : "")" />
-    <label>End Date:</label>
-    <input type="date" name="endDate" value="@(Model?.Reservation?.EndDate != null ? Model.Reservation.EndDate.ToString("yyyy-MM-dd") : "")" />
-    <button type="submit">Search</button>
+<h2>Search Available Cars</h2>
+
+<form asp-action="AvailableCars" method="get" class="mb-4">
+    <div class="form-group">
+        <label for="startDate">Start Date:</label>
+        <input type="date" id="startDate" name="startDate" class="form-control"
+               value="@(Model?.Reservation?.StartDate != null ? Model.Reservation.StartDate.ToString("yyyy-MM-dd") : "")" />
+    </div>
+    <div class="form-group">
+        <label for="endDate">End Date:</label>
+        <input type="date" id="endDate" name="endDate" class="form-control"
+               value="@(Model?.Reservation?.EndDate != null ? Model.Reservation.EndDate.ToString("yyyy-MM-dd") : "")" />
+    </div>
+    <button type="submit" class="btn btn-primary">Search</button>
 </form>
 
 @if (Model?.AvailableCars?.Any() == true)
 {
     <h3>Available Cars</h3>
-    <ul>
+    <div class="row">
         @foreach (var car in Model.AvailableCars)
         {
-            <li>
-                @car.Brand @car.Model - $@car.PricePerDay/day - @car.Location
-                <a asp-action="Reserve" asp-route-carId="@car.Id" asp-route-startDate="@Model.Reservation.StartDate" asp-route-endDate="@Model.Reservation.EndDate">Reserve</a>
-            </li>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">@car.Brand @car.Model</h5>
+                        <p class="card-text">
+                            <strong>Price Per Day:</strong> $@car.PricePerDay/day <br />
+                            <strong>Location:</strong> @car.Location
+                        </p>
+                        <a asp-action="Reserve"
+                           asp-route-carId="@car.Id"
+                           asp-route-startDate="@Model.Reservation.StartDate"
+                           asp-route-endDate="@Model.Reservation.EndDate"
+                           class="btn btn-success">Reserve</a>
+                    </div>
+                </div>
+            </div>
         }
-    </ul>
+    </div>
 }
 else
 {
-    <p>No cars available for the selected dates.</p>
+    <div class="alert alert-warning" role="alert">
+        No cars available for the selected dates.
+    </div>
 }

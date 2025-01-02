@@ -18,7 +18,7 @@ namespace FinalProjectMVC.Areas.Admin.Controllers
         {
           _vehicleService = vehicleService;
         }
-        public async Task<IActionResult>Index()
+        public async Task<IActionResult> Index()
         {
             var cars = await _vehicleService.GetCarSAsync();
             var carVMs = cars.Select(c => new VehicleVM
@@ -36,11 +36,7 @@ namespace FinalProjectMVC.Areas.Admin.Controllers
                 Location = c.Location,
                 AvailabilityStart = c.AvailabilityStart,
                 AvailabilityEnd = c.AvailabilityEnd,
-                CategoryName = c.Category?.Name
-
-
-
-
+                CategoryName = c.Category?.Name // Map the Category Name here
             }).ToList();
 
             return View(carVMs);
@@ -87,6 +83,39 @@ namespace FinalProjectMVC.Areas.Admin.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create(VehicleVM carVM)
         {
+            if (!ModelState.IsValid)
+            {
+                // Return the view with the current data to show validation errors
+                return View(carVM);
+            }
+
+            // Custom validations
+            if (carVM.Year > DateTime.Now.Year || carVM.Year < 1900)
+            {
+                ModelState.AddModelError("Year", "The year must be between 1900 and the current year.");
+            }
+
+            if (carVM.PricePerDay <= 0)
+            {
+                ModelState.AddModelError("PricePerDay", "Price per day must be a positive value.");
+            }
+
+            if (!IsValidLicensePlate(carVM.LicensePlate))
+            {
+                ModelState.AddModelError("LicensePlate", "Invalid license plate format.");
+            }
+
+            if (!string.IsNullOrEmpty(carVM.ImagePath) && !IsValidImagePath(carVM.ImagePath))
+            {
+                ModelState.AddModelError("ImagePath", "Invalid image path.");
+            }
+
+            if (!ModelState.IsValid)
+            {
+                // Return the view with the current data to show validation errors
+                return View(carVM);
+            }
+
             var car = new Car
             {
                 Brand = carVM.Brand,
@@ -96,16 +125,30 @@ namespace FinalProjectMVC.Areas.Admin.Controllers
                 Fueltype = carVM.Fueltype,
                 LicensePlate = carVM.LicensePlate,
                 PricePerDay = carVM.PricePerDay,
-                IsAvailable = true, // Ensure new vehicle is always available
+                IsAvailable = true,
                 ImagePath = carVM.ImagePath,
                 Location = carVM.Location,
-                AvailabilityStart = DateTime.Now, // Default to now
-                AvailabilityEnd = null, // No end by default
+                AvailabilityStart = DateTime.Now,
+                AvailabilityEnd = null,
                 CategoryId = carVM.CategoryId
             };
 
             await _vehicleService.AddCarAsync(car);
             return RedirectToAction(nameof(Index));
+        }
+
+        
+        private bool IsValidLicensePlate(string licensePlate)
+        {
+          
+            return !string.IsNullOrEmpty(licensePlate) && licensePlate.Length > 3;
+        }
+
+        private bool IsValidImagePath(string imagePath)
+        {
+          
+            string[] validExtensions = { ".jpg", ".jpeg", ".png", ".gif" };
+            return validExtensions.Any(ext => imagePath.EndsWith(ext, StringComparison.OrdinalIgnoreCase));
         }
 
 
@@ -132,7 +175,8 @@ namespace FinalProjectMVC.Areas.Admin.Controllers
                 Location = car.Location,
                 AvailabilityStart = car.AvailabilityStart,
                 AvailabilityEnd = car.AvailabilityEnd,
-                CategoryId = car.CategoryId
+                CategoryId = car.CategoryId,
+                CategoryName = car.Category?.Name
             };
 
             var categories = await _vehicleService.GetCategoriesAsync();
@@ -173,7 +217,7 @@ namespace FinalProjectMVC.Areas.Admin.Controllers
             return RedirectToAction(nameof(Index));
         }
 
-        // GET: Admin/Car/Delete/5
+       
         public async Task<IActionResult> Delete(int id)
         {
             var car = await _vehicleService.GetCarByIdAsync(id);
@@ -203,7 +247,7 @@ namespace FinalProjectMVC.Areas.Admin.Controllers
             return View(carVM);
         }
 
-        // POST: Admin/Car/Delete/5
+        
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
@@ -218,19 +262,36 @@ namespace FinalProjectMVC.Areas.Admin.Controllers
             return View();
         }
 
-        // POST: Admin/Vehicle/AvailableCars
+
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult AvailableCars(DateTime? startDate, DateTime? endDate)
+        public async Task<IActionResult> AvailableCars(DateTime? startDate, DateTime? endDate)
         {
+            // Default dates if not provided
+            var reservationStartDate = startDate ?? DateTime.Today;
+            var reservationEndDate = endDate ?? DateTime.Today.AddDays(1);
+
+            // Fetch available cars asynchronously and map to VehicleVM
+            var availableCars = (await _vehicleService.GetAvailableCarsAsync(reservationStartDate, reservationEndDate))
+                .Select(car => new VehicleVM
+                {
+                    Id = car.Id,
+                    Brand = car.Brand,
+                    Model = car.Model,
+                    PricePerDay = car.PricePerDay,
+                    Location = car.Location,
+                    IsAvailable = car.IsAvailable
+                }).ToList();
+
+            // Create the model
             var model = new ReservePageViewModel
             {
                 Reservation = new CarReservationViewModel
                 {
-                    StartDate = startDate ?? DateTime.Today,
-                    EndDate = endDate ?? DateTime.Today.AddDays(1)
+                    StartDate = reservationStartDate,
+                    EndDate = reservationEndDate
                 },
-                AvailableCars = new List<VehicleVM>() // Initialize an empty list to avoid null
+                AvailableCars = availableCars // Assign the mapped cars
             };
 
             return View(model);

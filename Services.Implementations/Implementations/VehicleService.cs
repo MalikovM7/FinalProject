@@ -31,22 +31,11 @@ namespace FinalProjectMVC.Services.Implementations
 
         public async Task<List<Car>> GetAvailableCarsAsync(DateTime startDate, DateTime endDate)
         {
-            if (startDate > endDate)
-            {
-                throw new ArgumentException("Start date cannot be later than the end date.");
-            }
-
-            // Retrieve all cars from the repository
-            var allCars = await _vehicleRepository.GetAllAsync();
-
-            // Filter cars based on availability dates
-            var availableCars = allCars
-                .Where(car => car.IsAvailable &&
-                              car.AvailabilityStart <= startDate &&
-                              car.AvailabilityEnd >= endDate)
-                .ToList();
-
-            return availableCars;
+            return await _vehicleRepository.Query()
+       .Where(car => car.IsAvailable &&
+                     (!car.AvailabilityStart.HasValue || car.AvailabilityStart <= startDate) &&
+                     (!car.AvailabilityEnd.HasValue || car.AvailabilityEnd >= endDate))
+       .ToListAsync();
         }
 
         public async Task<Car> GetCarByIdAsync(int id)
@@ -56,7 +45,10 @@ namespace FinalProjectMVC.Services.Implementations
 
         public async Task<List<Car>> GetCarSAsync()
         {
-            return (await _vehicleRepository.GetAllAsync()).ToList();
+            var cars = await _vehicleRepository.Query()
+       .Include(c => c.Category) // Ensure Category is included
+       .ToListAsync();
+            return cars;
         }
 
         public async Task<List<Category>> GetCategoriesAsync()

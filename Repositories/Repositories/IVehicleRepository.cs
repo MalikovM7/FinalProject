@@ -9,5 +9,9 @@ namespace Repositories.Repositories
 {
     public interface IVehicleRepository : IBaseRepository<Car>
     {
+
+        IQueryable<Car> Query();
     }
+
+
 }
