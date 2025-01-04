@@ -5,7 +5,8 @@
         <div class="headof">
             <h1>VEHICLES</h1>
             <div class="nav1">
-                <a href="#">Home</a> &gt; <a href="#">Vehicles</a>
+            <a asp-action="Index" asp-controller="Home">Home</a> &gt;
+            <a asp-action="Vehicle" asp-controller="Vehicle">Vehicles</a>
             </div>
         </div>
     </div>
@@ -98,16 +99,18 @@
                     </form>
                 </div>
 
-                <!-- Price Filter -->
-                <div class="border p-4 bg-light mt-4">
-                    <h5 class="text-uppercase mb-4">Price</h5>
-                    <div class="price-slider">
-                        <input type="range" id="priceMin" class="form-range" min="100" max="278" value="100">
-                        <input type="range" id="priceMax" class="form-range" min="100" max="278" value="278">
-                        <button class="btn btn-dark w-100 mt-3">Filter</button>
-                        <p class="mt-2 text-center"><span id="priceRange">$100 - $278</span></p>
-                    </div>
+            <!-- Price Filter -->
+            <div class="border p-4 bg-light mt-4">
+                <h5 class="text-uppercase mb-4">Price</h5>
+                <div class="price-slider">
+                    <input type="range" id="priceMin" class="form-range" min="@Model.MinPrice" max="@Model.MaxPrice" value="@Model.MinPrice">
+                    <input type="range" id="priceMax" class="form-range" min="@Model.MinPrice" max="@Model.MaxPrice" value="@Model.MaxPrice">
+                    <button class="btn btn-dark w-100 mt-3" id="filterButton">Filter</button>
+                    <p class="mt-2 text-center">
+                        <span id="priceRange">$@Model.MinPrice - $@Model.MaxPrice</span>
+                    </p>
                 </div>
+            </div>
 
             <!-- Testimonials -->
             <div class="border p-4 bg-light mt-4">

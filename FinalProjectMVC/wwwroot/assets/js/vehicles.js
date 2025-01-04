@@ -1,54 +1,64 @@
-
-  document.addEventListener("DOMContentLoaded", () => {
-    // Update Price Range Display
+document.addEventListener("DOMContentLoaded", () => {
+    // Price Filter Logic
     const priceMin = document.getElementById("priceMin");
     const priceMax = document.getElementById("priceMax");
     const priceRange = document.getElementById("priceRange");
+    const filterButton = document.getElementById("filterButton");
 
-    const updatePriceRange = () => {
-        const min = Math.min(priceMin.value, priceMax.value);
-        const max = Math.max(priceMin.value, priceMax.value);
-        priceRange.textContent = `$${min} - $${max}`;
-    };
+    if (priceMin && priceMax && priceRange && filterButton) {
+        // Update the displayed price range
+        const updatePriceRange = () => {
+            priceRange.textContent = `$${priceMin.value} - $${priceMax.value}`;
+        };
 
-    priceMin.addEventListener("input", updatePriceRange);
-    priceMax.addEventListener("input", updatePriceRange);
+        priceMin.addEventListener("input", updatePriceRange);
+        priceMax.addEventListener("input", updatePriceRange);
 
-    // Testimonials Carousel
-      document.addEventListener("DOMContentLoaded", () => {
-          const testimonials = document.querySelectorAll(".testimonial");
-          const dots = document.querySelectorAll(".dot");
+        // Trigger filtering when clicking the filter button
+        filterButton.addEventListener("click", () => {
+            const minPrice = priceMin.value;
+            const maxPrice = priceMax.value;
 
-          let currentIndex = 0;
+            // Redirect to the filtered URL
+            const url = `/Vehicle/Vehicle?minPrice=${minPrice}&maxPrice=${maxPrice}`;
+            window.location.href = url;
+        });
+    }
 
-          const updateTestimonial = (index) => {
-              // Hide all testimonials
-              testimonials.forEach((testimonial) => {
-                  testimonial.style.display = "none";
-              });
+    // Testimonials Carousel Logic
+    const testimonials = document.querySelectorAll(".testimonial");
+    const dots = document.querySelectorAll(".dot");
 
-              // Remove active class from all dots
-              dots.forEach((dot) => {
-                  dot.classList.remove("active");
-              });
+    if (testimonials.length > 0 && dots.length > 0) {
+        let currentIndex = 0;
 
-              // Show the selected testimonial and activate the corresponding dot
-              testimonials[index].style.display = "block";
-              dots[index].classList.add("active");
+        const updateTestimonial = (index) => {
+            // Hide all testimonials
+            testimonials.forEach((testimonial) => {
+                testimonial.style.display = "none";
+            });
 
-              currentIndex = index;
-          };
+            // Remove active class from all dots
+            dots.forEach((dot) => {
+                dot.classList.remove("active");
+            });
 
-          // Add click event to dots
-          dots.forEach((dot) => {
-              dot.addEventListener("click", (event) => {
-                  const index = parseInt(event.target.dataset.index, 10);
-                  updateTestimonial(index);
-              });
-          });
+            // Show the selected testimonial and activate the corresponding dot
+            testimonials[index].style.display = "block";
+            dots[index].classList.add("active");
 
-          // Show the first testimonial on load
-          if (testimonials.length > 0) {
-              updateTestimonial(currentIndex);
-          }
-      });
+            currentIndex = index;
+        };
+
+        // Add click event to dots
+        dots.forEach((dot) => {
+            dot.addEventListener("click", (event) => {
+                const index = parseInt(event.target.dataset.index, 10);
+                updateTestimonial(index);
+            });
+        });
+
+        // Show the first testimonial on load
+        updateTestimonial(currentIndex);
+    }
+});

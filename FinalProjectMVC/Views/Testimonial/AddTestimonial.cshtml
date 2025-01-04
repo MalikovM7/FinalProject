@@ -7,9 +7,11 @@
 <div class="container mt-5 pt-5">
     <h2 class="mb-4">Add Testimonial</h2>
 
-    @if (TempData["Message"] != null)
+    @if (!string.IsNullOrEmpty(Model.SuccessMessage))
     {
-        <div class="alert alert-success">@TempData["Message"]</div>
+        <div class="alert alert-success">
+            @Model.SuccessMessage
+        </div>
     }
 
     <form asp-action="AddTestimonial" method="post">
@@ -20,9 +22,9 @@
         </div>
 
         <div class="form-group mb-3">
-            <label asp-for="UserId" class="form-label"></label>
-            <textarea asp-for="UserId" class="form-control"></textarea>
-            <span asp-validation-for="UserId" class="text-danger"></span>
+            <label asp-for="UserName" class="form-label"></label>
+            <textarea asp-for="UserName" class="form-control"></textarea>
+            <span asp-validation-for="UserName" class="text-danger"></span>
         </div>
 
         <div class="form-group mb-3">

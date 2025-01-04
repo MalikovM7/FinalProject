@@ -4,6 +4,8 @@ using Microsoft.AspNetCore.Mvc;
 using Domain.Helpers.Enums;
 using Domain.Identity;
 using Services.Interfaces;
+using Microsoft.AspNetCore.Authorization;
+using System.Security.Claims;
 
 namespace FinalProjectMVC.Controllers
 {
@@ -191,6 +193,51 @@ namespace FinalProjectMVC.Controllers
             }
             return Ok();
         }
+
+
+
+
+
+
+        // GET: /Account/ChangePassword
+        [HttpGet]
+        [Authorize]
+        public ActionResult ChangePassword()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        [Authorize]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> ChangePassword(ChangePasswordViewModel model)
+        {
+            if (!ModelState.IsValid)
+            {
+                return View(model);
+            }
+
+            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            var result = await _userManager.ChangePasswordAsync(await _userManager.FindByIdAsync(userId), model.CurrentPassword, model.NewPassword);
+
+            if (result.Succeeded)
+            {
+                TempData["SuccessMessage"] = "Your password has been changed successfully.";
+                return RedirectToAction("Index", "Home");
+            }
+
+            foreach (var error in result.Errors)
+            {
+                ModelState.AddModelError("", error.Description);
+            }
+
+            return View(model);
+        }
+
+
+
+
+
 
     }
 }

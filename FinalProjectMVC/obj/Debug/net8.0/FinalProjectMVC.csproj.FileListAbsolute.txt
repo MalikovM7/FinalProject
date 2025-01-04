@@ -282,3 +282,6 @@ C:\Users\vuqar\Desktop\Final Code\FinalProjectMVC\obj\Debug\net8.0\FinalProjectM
 C:\Users\vuqar\Desktop\Final Code\FinalProjectMVC\obj\Debug\net8.0\FinalProjectMVC.genruntimeconfig.cache
 C:\Users\vuqar\Desktop\Final Code\FinalProjectMVC\obj\Debug\net8.0\ref\FinalProjectMVC.dll
 C:\Users\vuqar\Desktop\Final Code\FinalProjectMVC\bin\Debug\net8.0\AutoMapper.dll
+C:\Users\vuqar\Desktop\Final Code\FinalProjectMVC\bin\Debug\net8.0\FluentValidation.dll
+C:\Users\vuqar\Desktop\Final Code\FinalProjectMVC\bin\Debug\net8.0\FluentValidation.AspNetCore.dll
+C:\Users\vuqar\Desktop\Final Code\FinalProjectMVC\bin\Debug\net8.0\FluentValidation.DependencyInjectionExtensions.dll

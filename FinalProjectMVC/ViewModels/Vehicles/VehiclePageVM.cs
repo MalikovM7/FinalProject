@@ -9,5 +9,8 @@ namespace FinalProjectMVC.ViewModels.Vehicles
 
         public IEnumerable<Testimonial> Testimonials { get; set; }
 
+        public decimal MinPrice { get; set; }
+        public decimal MaxPrice { get; set; }
+
     }
 }

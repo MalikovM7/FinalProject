@@ -48,18 +48,26 @@
                 {
                     <div class="d-flex justify-content-end align-items-center">
                         <div class="dropdown">
-                            <button class="btn btn-light dropdown-toggle d-flex align-items-center"
+                            <button class="btn dropdown-toggle d-flex align-items-center"
                                     type="button"
                                     id="userDropdown"
                                     data-bs-toggle="dropdown"
-                                    aria-expanded="false">
-                                <i class="fa fa-user-circle me-2"></i>
-                                <span class="username fw-bold">@User.Identity.Name</span>
+                                    aria-expanded="false"
+                                    style="background-color: black; color: white;">
+                                <i class="fa fa-user-circle me-2 text-white"></i>
+                                <span class="username fw-bold text-white">@User.Identity.Name</span>
                             </button>
                             <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
                                 <li>
+                                    <a asp-controller="Account" asp-action="ChangePassword" class="dropdown-item">
+                                        <i class="fa fa-key me-2"></i> Change Password
+                                    </a>
+                                </li>
+                                <li>
                                     <form asp-controller="Account" asp-action="Logout" method="post" class="d-inline">
-                                        <button type="submit" class="dropdown-item text-danger">Logout</button>
+                                        <button type="submit" class="dropdown-item text-danger">
+                                            <i class="fa fa-sign-out-alt me-2"></i> Logout
+                                        </button>
                                     </form>
                                 </li>
                             </ul>

@@ -9,6 +9,9 @@ using Services.Interfaces;
 using Repositories.Repositories;
 using Services.Implementations.Implementations;
 using Microsoft.AspNetCore.Authentication.Cookies;
+using FluentValidation.AspNetCore;
+using FluentValidation;
+using FinalProjectMVC.FluentValidation.TestimonialsValidation;
 namespace FinalProjectMVC
 {
     public class Program
@@ -50,6 +53,16 @@ namespace FinalProjectMVC
                 
                 .AddEntityFrameworkStores<AppDbContext>()
                 .AddDefaultTokenProviders();
+
+
+            builder.Services.AddFluentValidationAutoValidation(options =>
+            {
+                options.DisableDataAnnotationsValidation = true;
+
+
+            });
+            builder.Services.AddValidatorsFromAssemblyContaining<TestimonialAddValidation>();
+
             //Services
 
 

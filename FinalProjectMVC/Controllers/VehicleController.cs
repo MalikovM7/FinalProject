@@ -22,21 +22,34 @@ namespace FinalProjectMVC.Controllers
             _testimonialService = testimonialService;
         }
 
+    
         [HttpGet]
-        public async Task<IActionResult> Vehicle()
+        public async Task<IActionResult> Vehicle(decimal? minPrice, decimal? maxPrice)
         {
-            var cars = await _vehicleService.GetCarSAsync();
+            var cars = (await _vehicleService.GetCarSAsync())?.ToList() ?? new List<Car>();
+
+            var minAvailablePrice = cars.Any() ? cars.Min(car => car.PricePerDay) : 0;
+            var maxAvailablePrice = cars.Any() ? cars.Max(car => car.PricePerDay) : 0;
+
+            if (minPrice.HasValue && maxPrice.HasValue)
+            {
+                cars = cars.Where(car => car.PricePerDay >= minPrice && car.PricePerDay <= maxPrice).ToList();
+            }
+
             var approvedTestimonials = (await _testimonialService.GetTestimonalAsync())
-     .Where(t => t.IsApproved).ToList();
+                .Where(t => t.IsApproved).ToList();
 
             var model = new VehiclePageVM
             {
-                Cars = cars ?? Enumerable.Empty<Car>(),
-                Testimonials = approvedTestimonials ?? Enumerable.Empty<Testimonial>(),
+                Cars = cars,
+                Testimonials = approvedTestimonials,
+                MinPrice = minAvailablePrice,
+                MaxPrice = maxAvailablePrice
             };
 
             return View(model);
         }
+
 
         [HttpGet]
         public async Task<IActionResult> Detail(int id)
