@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using NuGet.Protocol;
+using System.ComponentModel.DataAnnotations;
 
 namespace FinalProjectMVC.ViewModels.Reservation
 {
@@ -14,5 +15,14 @@ namespace FinalProjectMVC.ViewModels.Reservation
         public DateTime EndDate { get; set; } // Reservation end date
         public string? Location { get; set; } // Location of the car
         public decimal TotalPrice { get; set; } // Total reservation price
+
+        [Required(ErrorMessage = "Phone number is required.")]
+        [Phone(ErrorMessage = "Please enter a valid phone number.")]
+        public string PhoneNumber { get; set; }
+
+        [Required(ErrorMessage = "Driving license upload is required.")]
+        public IFormFile DrivingLicense { get; set; }
+
+        public string Status { get; set; }
     }
 }

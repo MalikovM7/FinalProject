@@ -27,7 +27,11 @@ namespace Domain.Models
         [Required]
         public decimal TotalPrice { get; set; }
 
-        
+        public string? PhoneNumber { get; set; }
+        public string? DrivingLicensePath { get; set; }
+        public string? Status { get; set; } // Pending, Approved, Declined
+
+
 
         // Navigation property
         public Car Car { get; set; }

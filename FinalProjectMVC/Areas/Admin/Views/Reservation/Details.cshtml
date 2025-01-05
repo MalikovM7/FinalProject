@@ -1,0 +1,29 @@
+﻿@model FinalProjectMVC.ViewModels.Admin.Reservation.ReservationVM
+
+<div class="container mt-5">
+    <h2>Reservation Details</h2>
+    <div class="card">
+        <div class="card-body">
+            <h5 class="card-title">Reservation ID: @Model.Id</h5>
+            <p><strong>Car ID:</strong> @Model.CarId</p>
+            <p><strong>User ID:</strong> @Model.UserId</p>
+            <p><strong>Total Price:</strong> @Model.TotalPrice.ToString("C")</p>
+            <p><strong>Start Date:</strong> @Model.StartDate.ToString("yyyy-MM-dd")</p>
+            <p><strong>End Date:</strong> @Model.EndDate.ToString("yyyy-MM-dd")</p>
+            <p><strong>Status:</strong> @Model.Status</p>
+            <p><strong>Phone Number:</strong> @Model.PhoneNumber</p>
+            <p>
+                <strong>Driving License:</strong>
+                @if (!string.IsNullOrEmpty(Model.DrivingLicensePath))
+                {
+                    <img src="@Model.DrivingLicensePath" alt="Driving License" class="img-fluid" style="max-width: 300px;" />
+                }
+                else
+                {
+                    <span class="text-danger">No driving license uploaded.</span>
+                }
+            </p>
+            <a asp-action="Index" class="btn btn-primary">Back to List</a>
+        </div>
+    </div>
+</div>

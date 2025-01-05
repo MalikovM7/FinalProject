@@ -1,7 +1,6 @@
 ﻿@model IEnumerable<FinalProjectMVC.ViewModels.Admin.Reservation.ReservationVM>
 
 
-
 <h1>Reservations</h1>
 
 <table class="table table-bordered table-striped">
@@ -12,6 +11,7 @@
             <th>Total Price</th>
             <th>Start Date</th>
             <th>End Date</th>
+            <th>Status</th>
             <th>Actions</th>
         </tr>
     </thead>
@@ -24,10 +24,18 @@
                 <td>@reservation.TotalPrice.ToString("C")</td>
                 <td>@reservation.StartDate.ToString("yyyy-MM-dd")</td>
                 <td>@reservation.EndDate.ToString("yyyy-MM-dd")</td>
+                <td>@reservation.Status</td>
                 <td>
+                    <form asp-action="Approve" asp-route-id="@reservation.Id" method="post" class="d-inline">
+                        <button type="submit" class="btn btn-success btn-sm">Approve</button>
+                    </form>
+                    <form asp-action="Decline" asp-route-id="@reservation.Id" method="post" class="d-inline">
+                        <button type="submit" class="btn btn-warning btn-sm">Decline</button>
+                    </form>
                     <form asp-action="Delete" asp-route-id="@reservation.Id" method="post" class="d-inline">
                         <button type="submit" class="btn btn-danger btn-sm">Delete</button>
                     </form>
+                    <a asp-action="Details" asp-route-id="@reservation.Id" class="btn btn-info btn-sm">Details</a>
                 </td>
             </tr>
         }

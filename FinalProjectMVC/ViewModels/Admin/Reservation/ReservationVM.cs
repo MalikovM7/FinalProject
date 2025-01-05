@@ -12,5 +12,10 @@
         public DateTime EndDate { get; set; } // Reservation end date
 
         public decimal TotalPrice { get; set; } // Total price for the reservation
+
+        public string Status { get; set; }
+
+        public string PhoneNumber { get; set; }
+        public string DrivingLicensePath { get; set; } // Path to the driving license file
     }
 }

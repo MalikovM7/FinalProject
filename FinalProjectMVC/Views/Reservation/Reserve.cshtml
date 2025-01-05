@@ -1,36 +1,51 @@
 ﻿@model CarReservationViewModel
 
 <div class="container mt-5">
-    <h3 class="text-center text-wrap">Reserve Car</h3>
+    <h3 class="text-center">Reserve Your Car</h3>
 
-    <form asp-action="Reserve" asp-controller="Reservation" method="post" class="mt-4">
-        <input type="text" asp-for="CarId" class="form-control d-none" />
+    <form asp-action="Reserve" asp-controller="Reservation" method="post" enctype="multipart/form-data" class="mt-4">
+        <input type="hidden" asp-for="CarId" />
         <input type="hidden" asp-for="StartDate" />
         <input type="hidden" asp-for="EndDate" />
 
-        <div class="mb-3">
-            <label class="form-label">Brand:</label>
-            <span class="form-control-plaintext">@Model.Brand</span>
+        <div class="row mb-3">
+            <div class="col-md-6">
+                <label class="form-label">Brand:</label>
+                <span class="form-control-plaintext">@Model.Brand</span>
+            </div>
+            <div class="col-md-6">
+                <label class="form-label">Model:</label>
+                <span class="form-control-plaintext">@Model.Model</span>
+            </div>
         </div>
 
-        <div class="mb-3">
-            <label class="form-label">Model:</label>
-            <span class="form-control-plaintext">@Model.Model</span>
-        </div>
-
-        <div class="mb-3">
-            <label class="form-label">Location:</label>
-            <span class="form-control-plaintext">@Model.Location</span>
-        </div>
-
-        <div class="mb-3">
-            <label class="form-label">Price per Day:</label>
-            <span class="form-control-plaintext">@Model.PricePerDay</span>
+        <div class="row mb-3">
+            <div class="col-md-6">
+                <label class="form-label">Location:</label>
+                <span class="form-control-plaintext">@Model.Location</span>
+            </div>
+            <div class="col-md-6">
+                <label class="form-label">Price per Day:</label>
+                <span class="form-control-plaintext">@Model.PricePerDay.ToString("C")</span>
+            </div>
         </div>
 
         <div class="mb-3">
             <label class="form-label">Total Price:</label>
-            <span class="form-control-plaintext">@Model.TotalPrice</span>
+            <span class="form-control-plaintext">@Model.TotalPrice.ToString("C")</span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="PhoneNumber" class="form-label">Phone Number:</label>
+            <input asp-for="PhoneNumber" class="form-control" placeholder="Enter your phone number" />
+            <span asp-validation-for="PhoneNumber" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="DrivingLicense" class="form-label">Upload Driving License:</label>
+            <input asp-for="DrivingLicense" type="file" class="form-control" accept=".jpg,.jpeg,.png,.pdf" />
+            <small class="form-text text-muted">Accepted formats: JPG, PNG, PDF. Max size: 5MB.</small>
+            <span asp-validation-for="DrivingLicense" class="text-danger"></span>
         </div>
 
         <div class="text-center">
@@ -39,3 +54,6 @@
     </form>
 </div>
 
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

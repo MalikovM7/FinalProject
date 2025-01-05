@@ -23,19 +23,19 @@ namespace FinalProjectMVC.Areas.Admin.Controllers
         }
         public async Task<IActionResult> Index()
         {
-            var reservation = await _reservationService.GetReservationsAsync();
-            var reservationVM = reservation.Select(x => new ReservationVM
+            var reservations = await _reservationService.GetReservationsAsync();
+            var reservationVMs = reservations.Select(r => new ReservationVM
             {
-                Id = x.Id,
-                CarId = x.CarId,
-                UserId = x.UserId,
-                TotalPrice = x.TotalPrice,
-                StartDate = x.StartDate,
-                EndDate = x.EndDate,
-
+                Id = r.Id,
+                CarId = r.CarId,
+                UserId = r.UserId,
+                TotalPrice = r.TotalPrice,
+                StartDate = r.StartDate,
+                EndDate = r.EndDate,
+                Status = r.Status
             }).ToList();
 
-            return View(reservationVM);
+            return View(reservationVMs);
         }
 
 
@@ -71,5 +71,67 @@ namespace FinalProjectMVC.Areas.Admin.Controllers
             await _reservationService.DeleteReservationAsync(id);
             return RedirectToAction(nameof(Index));
         }
+
+        [HttpPost]
+        public async Task<IActionResult> Approve(int id)
+        {
+            var reservation = await _reservationService.GetReservationByIdAsync(id);
+            if (reservation == null)
+            {
+                return NotFound("Reservation not found.");
+            }
+
+            reservation.Status = "Approved";
+            await _reservationService.UpdateReservationAsync(reservation);
+
+            TempData["SuccessMessage"] = "Reservation approved successfully!";
+            return RedirectToAction(nameof(Index));
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Decline(int id)
+        {
+            var reservation = await _reservationService.GetReservationByIdAsync(id);
+            if (reservation == null)
+            {
+                return NotFound("Reservation not found.");
+            }
+
+            reservation.Status = "Declined";
+            await _reservationService.UpdateReservationAsync(reservation);
+
+            TempData["SuccessMessage"] = "Reservation declined successfully!";
+            return RedirectToAction(nameof(Index));
+        }
+
+
+        public async Task<IActionResult> Details(int id)
+        {
+            var reservation = await _reservationService.GetReservationByIdAsync(id);
+            if (reservation == null)
+            {
+                return NotFound("Reservation not found.");
+            }
+
+            var reservationVM = new ReservationVM
+            {
+                Id = reservation.Id,
+                CarId = reservation.CarId,
+                UserId = reservation.UserId,
+                TotalPrice = reservation.TotalPrice,
+                StartDate = reservation.StartDate,
+                EndDate = reservation.EndDate,
+                Status = reservation.Status,
+                PhoneNumber = reservation.PhoneNumber,
+                DrivingLicensePath = reservation.DrivingLicensePath
+            };
+
+            return View(reservationVM);
+        }
+
+
+
+
+
     }
 }

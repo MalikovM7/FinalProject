@@ -29,7 +29,7 @@ namespace Services.Implementations.Implementations
  
         public async Task<List<Car>> GetAvailableCarsAsync(DateTime startDate, DateTime endDate)
         {
-            // Query cars that are available and have no overlapping reservations
+            
             var availableCars = await _context.Cars
                 .Where(c => c.IsAvailable &&
                             !_context.Reservations.Any(r => r.CarId == c.Id &&
@@ -56,6 +56,9 @@ namespace Services.Implementations.Implementations
                 CreatedDate = DateTime.Now,
                 TotalPrice = totalPrice,
                 UserId = user.Id,
+                PhoneNumber = reserve.PhoneNumber,
+                DrivingLicensePath = reserve.DrivingLicensePath,
+               
             };
             
             await _context.Reservations.AddAsync(data);
@@ -95,5 +98,28 @@ namespace Services.Implementations.Implementations
         {
             await _reservationRepository.DeleteAsync(id);
         }
+
+
+
+
+        public async Task UpdateReservationAsync(Reservation reservation)
+        {
+            var existingReservation = await _context.Reservations.FindAsync(reservation.Id);
+            if (existingReservation == null)
+            {
+                throw new KeyNotFoundException("Reservation not found.");
+            }
+
+            
+            existingReservation.Status = reservation.Status;
+
+            
+            _context.Reservations.Update(existingReservation);
+            await _context.SaveChangesAsync();
+        }
+
+
+
+
     }
 }
