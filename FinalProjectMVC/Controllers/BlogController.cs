@@ -1,23 +1,31 @@
-﻿using FinalProjectMVC.ViewModels.Blog;
+﻿using Domain.Models;
+using FinalProjectMVC.ViewModels.Blog;
 using Microsoft.AspNetCore.Mvc;
 using Persistence.Data;
+
+using Services.Interfaces;
 
 namespace FinalProjectMVC.Controllers
 {
     public class BlogController : Controller
     {
         private readonly AppDbContext _context;
+        private readonly ITestimonialService _testimonialService;
 
-        public BlogController(AppDbContext context) 
+        public BlogController(AppDbContext context, ITestimonialService testimonialService) 
         {
             _context = context; 
+            _testimonialService = testimonialService;
         }
 
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
-            // Fetch blog posts from the database
+           
+            var testimonials = await _testimonialService.GetTestimonalAsync();
+
+            
             var blogPosts = _context.BlogPosts
-                .OrderByDescending(p => p.CreatedDate) // Order by most recent
+                .OrderByDescending(p => p.CreatedDate)
                 .Select(p => new BlogPostVM
                 {
                     Id = p.Id,
@@ -28,7 +36,14 @@ namespace FinalProjectMVC.Controllers
                     Content = p.Content,
                 }).ToList();
 
-            return View(blogPosts);
+         
+            var model = new BlogIndexModel
+            {
+                BlogPosts = blogPosts,
+                Testimonials = testimonials ?? Enumerable.Empty<Testimonial>()
+            };
+
+            return View(model); 
         }
 
         public IActionResult Details(int id)

@@ -93,49 +93,45 @@
         </main>
     </div>
 
+   
     <!-- Footer -->
-    <footer class="border-top footer text-muted py-4">
-        <div class="footer-content d-flex justify-content-between px-4">
-            <div class="contact-form">
-                <h2>Get in Touch with Us</h2>
-                <form>
-                    <input type="text" name="name" placeholder="Name" class="form-control mb-2" required>
-                    <input type="email" name="email" placeholder="Email" class="form-control mb-2" required>
-                    <input type="text" name="subject" placeholder="Subject" class="form-control mb-2" required>
-                    <textarea name="message" placeholder="Message" class="form-control mb-2" required></textarea>
-                    <button type="submit" class="btn btn-primary">Send Message</button>
-                </form>
+    <footer class="footer bg-dark text-light py-4">
+        <div class="container">
+            <div class="row">
+                <!-- Contact Information -->
+                <div class="col-md-6 mb-4">
+                    <h4 class="text-uppercase mb-3">Contact Information</h4>
+                    <p>Address: 1600 Pennsylvania Ave NW, Washington, D.C. DC 20500, USA</p>
+                    <p>Support Phone: 01865 339665</p>
+                    <p>Email: <a href="mailto:info@example.com" class="text-light">info@example.com</a></p>
+                    <p>Working Hours: 09:30-21:00 (Closed on Sundays)</p>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-md-3 mb-4">
+                    <h4 class="text-uppercase mb-3">Quick Links</h4>
+                    <ul class="list-unstyled">
+                        <li><a asp-controller="Home" asp-action="Index">Home</a></li>
+                        <li><a asp-controller="Blog" asp-action="Index">Blog</a></li>
+                        <li><a asp-controller="Contact" asp-action="Index">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Social Media Links -->
+                <div class="col-md-3 mb-4 text-center">
+                    <h4 class="text-uppercase mb-3">Follow Us</h4>
+                    <a href="#" class="text-light me-3 fs-5"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-light me-3 fs-5"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-light fs-5"><i class="fab fa-google"></i></a>
+                </div>
             </div>
-            <div class="contact-info">
-                <p>Address: 1600 Pennsylvania Ave NW, Washington, D.C. DC 20500, USA</p>
-                <p>Support Phone: 01865 339665</p>
-                <p>Emails: info@example.com</p>
-                <p>Working Hours: 09:30-21:00 except on Sundays</p>
-            
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom text-center mt-4">
+                <p class="m-0">© 2024 Rent It — A One Page Rental Car Theme made with passion</p>
             </div>
-        </div>
-        <div class="social-media text-center my-2">
-            <a href="#" class="me-2">Facebook</a>
-            <a href="#" class="me-2">Twitter</a>
-            <a href="#">Google</a>
-        </div>
-        <div class="footer-bottom text-center">
-            <p>© 2015 Rent It — A One Page Rental Car Theme made with passion by jThemes Studio</p>
         </div>
     </footer>
-
-@*   <style>
-
-     .meow {
-            position: relative;
-            left: -4vw !important;
-     }
-
-     .gaf {
-            position: relative;
-            left: -4vw !important;
-     }
- </style> *@
 
     @RenderSection("Scripts", required: false)
 </body>

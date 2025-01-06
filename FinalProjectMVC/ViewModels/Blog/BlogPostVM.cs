@@ -1,4 +1,5 @@
-﻿namespace FinalProjectMVC.ViewModels.Blog
+﻿
+namespace FinalProjectMVC.ViewModels.Blog
 {
     public class BlogPostVM
     {
@@ -8,5 +9,6 @@
         public DateTime CreatedAt { get; set; }
         public string ImageUrl { get; set; }
         public string Content { get; set; }
+
     }
 }

@@ -187,81 +187,68 @@ nav ul li a:hover {
   right: 0;
 }
 
+/* Footer General Styles */
 .footer {
-  background: #222;
-  color: #fff;
-  padding: 40px 20px;
-  text-align: center;
+    background-color: #212529; /* Dark background */
+    color: #f8f9fa; /* Light text */
 }
 
-.footer-content {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
+    .footer h4 {
+        font-size: 16px;
+        text-transform: uppercase;
+        margin-bottom: 15px;
+        color: #f8f9fa; /* Ensure headings are clearly visible */
+        border-bottom: 2px solid #f8d7da; /* Light red underline */
+        display: inline-block;
+        padding-bottom: 5px;
+    }
 
-.contact-form,
-.contact-info {
-  max-width: 500px;
-  margin: 20px;
-  width: 100%;
-}
+    .footer a {
+        color: #adb5bd; /* Muted white for links */
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
 
-.contact-form h2 {
-  margin-bottom: 20px;
-}
+        .footer a:hover {
+            color: #f8d7da; /* Light red on hover */
+        }
 
-.contact-form form {
-  display: flex;
-  flex-direction: column;
-}
+    .footer ul {
+        padding: 0;
+        list-style: none;
+        line-height: 2;
+    }
 
-.contact-form input,
-.contact-form textarea {
-  width: 100%;
-  margin: 10px 0;
-  padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-}
+    .footer .social-media a {
+        text-decoration: none;
+        color: #adb5bd; /* Muted white for icons */
+        font-size: 18px;
+        margin: 0 10px;
+        transition: color 0.3s ease;
+    }
 
-.contact-form button {
-  padding: 10px;
-  border: none;
-  border-radius: 5px;
-  background: #ff4747;
-  color: #fff;
-  cursor: pointer;
-  transition: background 0.3s ease, transform 0.3s ease;
-}
-
-.contact-form button:hover {
-  background: #e04343;
-  transform: scale(1.05);
-}
-
-.contact-info p {
-  margin: 10px 0;
-}
-
-.social-media {
-  margin: 20px 0;
-}
-
-.social-media a {
-  margin: 0 10px;
-  color: #fff;
-  text-decoration: none;
-  transition: color 0.3s;
-}
-
-.social-media a:hover {
-  color: #ff4747;
-}
+        .footer .social-media a:hover {
+            color: #f8d7da; /* Light red on hover */
+        }
 
 .footer-bottom {
-  margin-top: 20px;
-  font-size: 0.9em;
+    border-top: 1px solid #495057; /* Light border for separation */
+    margin-top: 20px;
+    padding-top: 15px;
+    font-size: 14px;
+    color: #adb5bd; /* Muted white for footer bottom */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+        .footer-content div {
+            margin-bottom: 20px;
+        }
 }
 
 #topBtn {

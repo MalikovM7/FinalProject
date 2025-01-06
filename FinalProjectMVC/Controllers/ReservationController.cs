@@ -2,10 +2,12 @@
 using Domain.Models;
 using FinalProjectMVC.ViewModels.Admin.Car;
 using FinalProjectMVC.ViewModels.Reservation;
+using FluentValidation;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Services.Interfaces;
+using System.Text.RegularExpressions;
 
 namespace FinalProjectMVC.Controllers
 {
@@ -13,11 +15,13 @@ namespace FinalProjectMVC.Controllers
     {
         private readonly IReservationService _reservationService;
         private readonly UserManager<AppUser> _userManager;
+        //private readonly IValidator<CarReservationViewModel> _validator;
 
         public ReservationController(IReservationService reservationService, UserManager<AppUser> userManager)
         {
             _reservationService = reservationService;
             _userManager = userManager;
+            
         }
 
         // Display available cars based on date range
@@ -89,6 +93,20 @@ namespace FinalProjectMVC.Controllers
             // Validate model state
             if (!ModelState.IsValid)
             {
+                return View(model);
+            }
+
+            // Validate phone number
+            if (string.IsNullOrWhiteSpace(model.PhoneNumber))
+            {
+                ModelState.AddModelError("PhoneNumber", "Phone number is required.");
+                return View(model);
+            }
+
+            var phoneRegex = @"^\+994(50|51|55|70|77|10)[1-9][0-9]{6}$";
+            if (!Regex.IsMatch(model.PhoneNumber, phoneRegex))
+            {
+                ModelState.AddModelError("PhoneNumber", "Invalid phone number format. Example: +994514443024.");
                 return View(model);
             }
 

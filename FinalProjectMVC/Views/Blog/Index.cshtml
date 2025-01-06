@@ -1,4 +1,4 @@
-﻿@model IEnumerable<FinalProjectMVC.ViewModels.Blog.BlogPostVM>
+﻿@model FinalProjectMVC.ViewModels.Blog.BlogIndexModel
 
 <body>
     <div class="container-main">
@@ -24,16 +24,37 @@
                     </div>
                 </div>
                 <div class="sidebar-section">
+
                     <h3>TESTIMONIALS</h3>
-                    <div class="testimonials">
-                        <p>Vivamus eget nibh. Etiam cursus leo vel metus. Nulla facilisi. Aenean nec eros. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia.</p>
-                        <p>John Doe<br>Co-founder at Rent It</p>
-                        <div class="testimonial-dots">
-                            <span class="dot active"></span>
-                            <span class="dot"></span>
-                            <span class="dot"></span>
-                        </div>
+                    <div class="border p-4 bg-light mt-4">
+                        <h5 class="text-uppercase mb-4">Testimonials</h5>
+
+                        @if (Model.Testimonials != null && Model.Testimonials.Any())
+                        {
+                            <div class="testimonial-slider">
+                                @for (int i = 0; i < Model.Testimonials.Count(); i++)
+                                {
+                                    var testimonial = Model.Testimonials.ElementAt(i);
+                                    <div class="testimonial mb-3" data-index="@i" style="display: @(i == 0 ? "block" : "none");">
+                                        <p>@testimonial.Comment</p>
+                                        <p><strong>Rating: @testimonial.Rating/5</strong></p>
+                                    </div>
+                                }
+                            </div>
+
+                            <div class="testimonial-indicators text-center mt-3">
+                                @for (int i = 0; i < Model.Testimonials.Count(); i++)
+                                {
+                                    <span class="dot @(i == 0 ? "active" : "")" data-index="@i"></span>
+                                }
+                            </div>
+                        }
+                        else
+                        {
+                            <p class="text-muted">No testimonials available at the moment.</p>
+                        }
                     </div>
+
                 </div>
               
 
@@ -60,46 +81,36 @@
                 <div class="post">
                 <div class="container mt-5">
 
-                    @if (Model != null && Model.Any())
-                    {
-                        @foreach (var post in Model)
+                        @if (Model.BlogPosts != null && Model.BlogPosts.Any())
                         {
-                            <div class="post mb-5">
-                                <div class="post-image">
-                                    <img src="@post.ImageUrl" alt="@post.Title" style="width: 100%; height: auto;">
+                            @foreach (var post in Model.BlogPosts)
+                            {
+                                <div class="post mb-5">
+                                    <div class="post-image">
+                                        <img src="@post.ImageUrl" alt="@post.Title" style="width: 100%; height: auto;">
+                                    </div>
+                                    <div class="post-content mt-3">
+                                        <h1 class="post-title">@post.Title</h1>
+                                        <p class="post-meta">
+                                            By @post.Author / @post.CreatedAt.ToString("MMMM dd, yyyy")
+                                        </p>
+                                        <p class="post-text">
+                                            @post.Content.Substring(0, Math.Min(post.Content.Length, 200))...
+                                        </p>
+                                        <a href="@Url.Action("Details", "Blog", new { id = post.Id })" class="btn btn-primary">READ MORE</a>
+                                    </div>
                                 </div>
-                                <div class="post-content mt-3">
-                                    <h1 class="post-title">@post.Title</h1>
-                                    <p class="post-meta">
-                                        By @post.Author / @post.CreatedAt.ToString("MMMM dd, yyyy")
-                                    </p>
-                                    <p class="post-text">
-                                        @post.Content.Substring(0, Math.Min(post.Content.Length, 200))...
-                                    </p>
-                                    <a href="@Url.Action("Details", "Blog", new { id = post.Id })" class="btn btn-primary">READ MORE</a>
-                                </div>
-                            </div>
+                            }
                         }
-                    }
-                    else
-                    {
-                        <p class="text-center text-muted">No blog posts available at the moment.</p>
-                    }
+                        else
+                        {
+                            <p class="text-center text-muted">No blog posts available at the moment.</p>
+                        }
                 </div>
                 </div>
 
 
 
-                <div class="post">
-                <div class="quote-section">
-                    <blockquote>
-                        Fusce gravida interdum eros a mollis. Sed non lorem varius, volutpat nisl in, laoreet ante. Quisque suscipit mauris ipsum, eu mollis arcu laoreet vel.
-                    </blockquote>
-                    <cite>— ISA MERCAN</cite>
-                </div>
-                <p class="post-meta">By author name here / 6th June 2014 / in Design, Photography / 27 Comments / 18 Likes / Share This Post</p>
-                <button class="read-more">READ MORE</button>
-            </div>
 
             </main>
 

@@ -1,136 +1,123 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Authentication.Cookies;
+using FluentValidation.AspNetCore;
+using FluentValidation;
 using Domain.Helpers;
 using FinalProjectMVC.Services.Implementations;
 using Persistence.Data;
 using Domain.Identity;
+using FinalProjectMVC.FluentValidation.TestimonialsValidation;
 using Persistence.Repositories.Implementations;
-using Services.Interfaces;
 using Repositories.Repositories;
 using Services.Implementations.Implementations;
-using Microsoft.AspNetCore.Authentication.Cookies;
-using FluentValidation.AspNetCore;
-using FluentValidation;
-using FinalProjectMVC.FluentValidation.TestimonialsValidation;
+using Services.Interfaces;
+
 namespace FinalProjectMVC
 {
     public class Program
     {
         public static void Main(string[] args)
         {
-
             var builder = WebApplication.CreateBuilder(args);
 
+            // Configure services
+            ConfigureServices(builder);
 
-            var connectionString = builder.Configuration.GetConnectionString("AppDbContextConnection") ?? throw new InvalidOperationException("Connection string 'AppDbContextConnection' not found.");
+            var app = builder.Build();
 
-           
+            // Configure middleware
+            ConfigureMiddleware(app);
 
-            builder.Services.Configure<AppSettings>(builder.Configuration.GetSection("Smtp"));
+            app.Run();
+        }
 
+        private static void ConfigureServices(WebApplicationBuilder builder)
+        {
+            // Connection string
+            var connectionString = builder.Configuration.GetConnectionString("AppDbContextConnection")
+                ?? throw new InvalidOperationException("Connection string 'AppDbContextConnection' not found.");
+
+            // Database context
             builder.Services.AddDbContext<AppDbContext>(options => options.UseSqlServer(connectionString));
 
-            builder.Services.AddAuthentication(options =>
-            {
-                options.DefaultAuthenticateScheme = CookieAuthenticationDefaults.AuthenticationScheme;
-                options.DefaultChallengeScheme = CookieAuthenticationDefaults.AuthenticationScheme;
-            })
-            .AddCookie();
+            // SMTP Configuration
+            builder.Services.Configure<AppSettings>(builder.Configuration.GetSection("Smtp"));
 
+            // Authentication and Identity
+            builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme).AddCookie();
 
             builder.Services.AddIdentity<AppUser, IdentityRole>(options =>
             {
                 options.Password.RequireNonAlphanumeric = false;
                 options.Password.RequiredLength = 8;
-                options.Password.RequireUppercase = false;
-                options.Password.RequireLowercase = false;
                 options.User.RequireUniqueEmail = true;
                 options.SignIn.RequireConfirmedAccount = false;
-                options.SignIn.RequireConfirmedEmail = false;
-                options.SignIn.RequireConfirmedPhoneNumber = false;
-
             })
-                
-                .AddEntityFrameworkStores<AppDbContext>()
-                .AddDefaultTokenProviders();
+            .AddEntityFrameworkStores<AppDbContext>()
+            .AddDefaultTokenProviders();
 
-
-            builder.Services.AddFluentValidationAutoValidation(options =>
-            {
-                options.DisableDataAnnotationsValidation = true;
-
-
-            });
+            // FluentValidation
+            builder.Services.AddFluentValidationAutoValidation(options => options.DisableDataAnnotationsValidation = true);
             builder.Services.AddValidatorsFromAssemblyContaining<TestimonialAddValidation>();
 
-            //Services
+            // Add services and repositories
+            RegisterServices(builder.Services);
+            RegisterRepositories(builder.Services);
 
-
-            builder.Services.AddScoped<INewsService, NewsService>();
-            builder.Services.AddScoped<ITestimonialService, TestimonialService>();
-            builder.Services.AddScoped<IContactService, ContactService>();
-            builder.Services.AddScoped<IUserService, UserService>();
-            builder.Services.AddScoped<IReservationService, ReservationService>();
-            builder.Services.AddScoped<IEmailService, EmailService>();
-            builder.Services.AddScoped<ISliderService, SliderService>();
-            builder.Services.AddScoped<IHomePreviewService, HomePreviewService>();
-            builder.Services.AddScoped<IAboutUsService, AboutUsService>();
-            builder.Services.AddScoped<IfaqService, FaqService>();
-            builder.Services.AddScoped<IVehicleService, VehicleService>();
-
-
-            //Repositories
-
-            builder.Services.AddScoped<ISliderRepository, SliderRepository>();
-            builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
-            builder.Services.AddScoped<IFaqRepository, FAQRepository>();
-            builder.Services.AddScoped<IVehicleRepository, VehicleRepository>();
-            builder.Services.AddScoped<IHomePreviewRepository, HomePreviewRepository>();
-            builder.Services.AddScoped<IAboutUsRepository, AboutUsRepository>();
-            builder.Services.AddScoped<INewsRepository, NewsRepository>();
-            builder.Services.AddScoped<IContactRepository, ContactRepository>();
-            builder.Services.AddScoped<IReservationRepository, ReservationRepository>();
-            builder.Services.AddScoped<ITestimonialRepository, TestimonialRepository>();
-
-
-            // Add services to the container.
+            // Add controllers with views
             builder.Services.AddControllersWithViews();
+        }
 
-            var app = builder.Build();
-
-            // Configure the HTTP request pipeline.
+        private static void ConfigureMiddleware(WebApplication app)
+        {
             if (!app.Environment.IsDevelopment())
             {
                 app.UseExceptionHandler("/Home/Error");
-                // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
 
             app.UseHttpsRedirection();
             app.UseStaticFiles();
-
             app.UseRouting();
-
             app.UseAuthorization();
 
             app.MapControllerRoute(
-    name: "admin",
-    pattern: "{area:exists}/{controller=Dashboard}/{action=Index}/{id?}");
-
+                name: "admin",
+                pattern: "{area:exists}/{controller=Dashboard}/{action=Index}/{id?}");
 
             app.MapControllerRoute(
                 name: "default",
                 pattern: "{controller=Home}/{action=Index}/{id?}");
+        }
 
-            app.UseEndpoints(endpoints =>
-            {
-                endpoints.MapControllerRoute(
-                    name: "areas",
-                    pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}");
-                endpoints.MapDefaultControllerRoute();
-            });
+        private static void RegisterServices(IServiceCollection services)
+        {
+            services.AddScoped<INewsService, NewsService>();
+            services.AddScoped<ITestimonialService, TestimonialService>();
+            services.AddScoped<IContactService, ContactService>();
+            services.AddScoped<IUserService, UserService>();
+            services.AddScoped<IReservationService, ReservationService>();
+            services.AddScoped<IEmailService, EmailService>();
+            services.AddScoped<ISliderService, SliderService>();
+            services.AddScoped<IHomePreviewService, HomePreviewService>();
+            services.AddScoped<IAboutUsService, AboutUsService>();
+            services.AddScoped<IfaqService, FaqService>();
+            services.AddScoped<IVehicleService, VehicleService>();
+        }
 
-            app.Run();
+        private static void RegisterRepositories(IServiceCollection services)
+        {
+            services.AddScoped<ISliderRepository, SliderRepository>();
+            services.AddScoped<ICategoryRepository, CategoryRepository>();
+            services.AddScoped<IFaqRepository, FAQRepository>();
+            services.AddScoped<IVehicleRepository, VehicleRepository>();
+            services.AddScoped<IHomePreviewRepository, HomePreviewRepository>();
+            services.AddScoped<IAboutUsRepository, AboutUsRepository>();
+            services.AddScoped<INewsRepository, NewsRepository>();
+            services.AddScoped<IContactRepository, ContactRepository>();
+            services.AddScoped<IReservationRepository, ReservationRepository>();
+            services.AddScoped<ITestimonialRepository, TestimonialRepository>();
         }
     }
 }

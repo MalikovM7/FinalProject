@@ -56,8 +56,4 @@
     <ProjectReference Include="..\Services.Implementations\Services.Implementations.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="FluentValidation\FAQvalidation\" />
-  </ItemGroup>
-
 </Project>
