@@ -13,6 +13,13 @@
         </div>
     }
 
+    @if (TempData["SuccessMessage"] != null)
+    {
+        <div class="alert alert-success mt-3">
+            @TempData["SuccessMessage"]
+        </div>
+    }
+
     <div class="table-responsive pt-3 mt-3">
         <table class="table table-bordered">
             <thead>
@@ -21,6 +28,7 @@
                     <th>Full Name</th>
                     <th>Email</th>
                     <th>Role</th>
+                    <th>Actions</th>
                 </tr>
             </thead>
             <tbody>
@@ -35,6 +43,11 @@
                                 var roles = await UserManager.GetRolesAsync(user);
                                 <span>@string.Join(" ", roles)</span>
                             }
+                        </td>
+                        <td>
+                            <form asp-action="DeleteUser" method="post" asp-route-userId="@user.Id" onsubmit="return confirm('Are you sure you want to delete this user?');">
+                                <button type="submit" class="btn btn-danger btn-sm">Delete</button>
+                            </form>
                         </td>
                     </tr>
                 }

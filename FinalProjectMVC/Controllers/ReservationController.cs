@@ -24,7 +24,7 @@ namespace FinalProjectMVC.Controllers
             
         }
 
-        // Display available cars based on date range
+        
         [HttpGet]
         public async Task<IActionResult> AvailableCars(DateTime startDate, DateTime endDate)
         {
@@ -57,7 +57,7 @@ namespace FinalProjectMVC.Controllers
             return View(model);
         }
 
-        // Display the reservation page
+        
         [HttpGet]
         [Authorize]
         public async Task<IActionResult> Reserve(int carId, DateTime startDate, DateTime endDate)
@@ -90,13 +90,13 @@ namespace FinalProjectMVC.Controllers
         [Authorize]
         public async Task<IActionResult> Reserve(CarReservationViewModel model)
         {
-            // Validate model state
+           
             if (!ModelState.IsValid)
             {
                 return View(model);
             }
 
-            // Validate phone number
+            
             if (string.IsNullOrWhiteSpace(model.PhoneNumber))
             {
                 ModelState.AddModelError("PhoneNumber", "Phone number is required.");
@@ -110,7 +110,7 @@ namespace FinalProjectMVC.Controllers
                 return View(model);
             }
 
-            // Get the authenticated user
+            
             var user = await _userManager.GetUserAsync(User);
             if (user == null)
             {
@@ -191,7 +191,7 @@ namespace FinalProjectMVC.Controllers
 
             var reservations = await _reservationService.GetUserReservationsAsync(user.Id);
 
-            // Ensure reservations include the Status property
+           
             var reservationList = reservations
                 .Select(r => new CarReservationViewModel
                 {
@@ -203,7 +203,7 @@ namespace FinalProjectMVC.Controllers
                     PricePerDay = r.Car.PricePerDay,
                     TotalPrice = r.TotalPrice,
                     Location = r.Car.Location,
-                    Status = r.Status // Ensure Status is being passed correctly
+                    Status = r.Status 
                 })
                 .ToList();
 

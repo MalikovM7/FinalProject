@@ -21,6 +21,7 @@ namespace FinalProjectMVC.Controllers
         private readonly IVehicleService _vehicleService;
         private readonly IReservationService _reservationService;
         private readonly IUserService _userService;
+        
 
         public HomeController(ILogger<HomeController> logger, AppDbContext context, IHomePreviewService homePreviewService, IAboutUsService aboutUsService, IfaqService faqService, INewsService newsService, ISliderService sliderService, IVehicleService vehicleService, IReservationService reservationService, IUserService userService)
         {
@@ -51,6 +52,7 @@ namespace FinalProjectMVC.Controllers
             var reservations = await _reservationService.GetReservationsAsync();
             var users = await _userService.GetUsersAsync();
             var sliderimages = await _context.SliderImages.ToListAsync();
+           
 
 
 
@@ -98,7 +100,7 @@ namespace FinalProjectMVC.Controllers
 
 
 
-            // Populate ViewModel
+            
             var model = new HomePageViewModel
             {
                 Previews = selectedPreviews ?? Enumerable.Empty<HomePreview>(),
@@ -111,6 +113,7 @@ namespace FinalProjectMVC.Controllers
                 TotalCars = cars.Count(),
                 TotalUsers = users.Count(),
                 TotalReservations = reservations.Count()
+                
             };
 
             return View(model);

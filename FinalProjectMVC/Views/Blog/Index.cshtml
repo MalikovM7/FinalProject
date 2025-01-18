@@ -37,6 +37,7 @@
                                     var testimonial = Model.Testimonials.ElementAt(i);
                                     <div class="testimonial mb-3" data-index="@i" style="display: @(i == 0 ? "block" : "none");">
                                         <p>@testimonial.Comment</p>
+                                        <p>UserName:@testimonial.UserId</p>
                                         <p><strong>Rating: @testimonial.Rating/5</strong></p>
                                     </div>
                                 }

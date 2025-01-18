@@ -37,9 +37,9 @@ namespace FinalProjectMVC.Controllers
 
                 _service.SaveContact(contact);
 
-                // Set success message
+                
                 viewModel.SuccessMessage = "Your message has been sent successfully!";
-                ModelState.Clear(); // Clear the form
+                ModelState.Clear(); 
                 return View(new ContactViewModel { SuccessMessage = viewModel.SuccessMessage });
             
 

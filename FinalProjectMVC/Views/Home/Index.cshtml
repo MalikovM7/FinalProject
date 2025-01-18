@@ -6,7 +6,7 @@
 <main> 
     
 
-<!-- First form of the page -->
+
 
     <div class="deals-container">
             @foreach (var preview in Model.Previews.Where(p => p.IsSelected))
@@ -22,47 +22,30 @@
                     }
                 </div>
             }
-   
 
-   
-            
+
+
+
             <div class="search-container">
-            <div class="search-header">
-                <h3>Search for Cheap Rental Cars Wherever You Are</h3>
-            </div>
-            <div class="search-form">
-                <div class="form-group">
-                    <label for="pickup-location">Picking Up Location</label>
-                    <input type="text" id="pickup-location" placeholder="Airport or Anywhere">
+                <div class="search-header">
+                    <h3>Search for Cheap Rental Cars Wherever You Are</h3>
                 </div>
-                <div class="form-group">
-                    <label for="dropoff-location">Dropping Off Location</label>
-                    <input type="text" id="dropoff-location" placeholder="Airport or Anywhere">
-                </div>
-                <div class="form-group">
-                    <label for="pickup-date">Picking Up Date</label>
-                    <input type="date" id="pickup-date">
-                </div>
-                <div class="form-group">
-                    <label for="pickup-hour">Picking Up Hour</label>
-                    <input type="time" id="pickup-hour">
-                </div>
-                <div class="form-group">
-                    <label for="dropoff-date">Dropping Off Date</label>
-                    <input type="date" id="dropoff-date">
-                </div>
-                <div class="form-group">
-                    <label for="dropoff-hour">Dropping Off Hour</label>
-                    <input type="time" id="dropoff-hour">
-                </div>
-                <div class="form-group">
-                    <button id="find-car">FIND CAR</button>
-                </div>
-                <div class="advanced-search">
-                    <a href="#">Advanced Search</a>
+                <div class="search-form">
+                    <form action="/Reservation/AvailableCars" method="get">
+                        <div class="form-group">
+                            <label for="pickup-date">Picking Up Date</label>
+                            <input type="date" id="pickup-date" name="startDate" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="dropoff-date">Dropping Off Date</label>
+                            <input type="date" id="dropoff-date" name="endDate" required>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" id="find-car" class="btn btn-primary">FIND CAR</button>
+                        </div>
+                    </form>
                 </div>
             </div>
-        </div>
     </div>
            
 
@@ -247,34 +230,31 @@
 
 <!-- Search Panel -->
 
-    <div class="search-section-bottom">
-        <div class="search-text-bottom">
-            <h3>Great Rental Cars</h3>
-            <h1>FIND YOUR CAR</h1>
-        </div>
-        <div class="search-form-bottom">
-            <div class="form-group-bottom">
-                <label for="pickup-location">Picking Up Location</label>
-                <input type="text" id="pickup-location" placeholder="Airport or Anywhere">
+        <div class="search-section-bottom">
+            <div class="search-text-bottom text-center">
+                <h3>Great Rental Cars</h3>
+                <h1>FIND YOUR CAR</h1>
             </div>
-            <div class="form-group-bottom">
-                <label for="pickup-date">Picking Up Date</label>
-                <input type="date" id="pickup-date">
-            </div>
-            <div class="form-group-bottom">
-                <label for="price-category">Price Category</label>
-                <select id="price-category">
-                    <option value="" disabled selected>Select Car Group</option>
-                    <option value="economy">Economy</option>
-                    <option value="luxury">Luxury</option>
-                    <option value="suv">SUV</option>
-                </select>
-            </div>
-            <div class="form-group-bottom">
-                <button id="find-car-bottom">FIND CAR</button>
+            <div class="search-form-bottom">
+                <form action="/Reservation/AvailableCars" method="get">
+
+                    <div class="form-group-bottom">
+                        <label for="pickup-date">Picking Up Date</label>
+                        <input type="date" id="pickup-date" name="startDate" required>
+                    </div>
+
+                    <div class="form-group-bottom">
+                        <label for="dropoff-date">Dropping Off Date</label>
+                        <input type="date" id="dropoff-date" name="endDate" required>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <div class="form-group-bottom">
+                        <button type="submit" id="find-car-bottom" class="btn btn-primary w-100">FIND CAR</button>
+                    </div>
+                </form>
             </div>
         </div>
-    </div>
 
 
 

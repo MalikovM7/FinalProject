@@ -15,27 +15,70 @@
     }
 
     <form asp-action="AddTestimonial" method="post">
+        <!-- Comment Field -->
         <div class="form-group mb-3">
-            <label asp-for="Comment" class="form-label"></label>
+            <label asp-for="Comment" class="form-label">Comment</label>
             <textarea asp-for="Comment" class="form-control"></textarea>
             <span asp-validation-for="Comment" class="text-danger"></span>
         </div>
 
+        <!-- User Name Field -->
         <div class="form-group mb-3">
-            <label asp-for="UserName" class="form-label"></label>
-            <textarea asp-for="UserName" class="form-control"></textarea>
+            <label asp-for="UserName" class="form-label">User Name</label>
+            <input asp-for="UserName" class="form-control" />
             <span asp-validation-for="UserName" class="text-danger"></span>
         </div>
 
+        <!-- 5-Star Rating System -->
         <div class="form-group mb-3">
-            <label asp-for="Rating" class="form-label"></label>
-            <input asp-for="Rating" type="number" class="form-control" />
+            <label class="form-label">Rating</label>
+            <div class="rating">
+                @for (int i = 5; i >= 1; i--)
+                {
+                    <input type="radio" id="star-@i" name="Rating" value="@i" />
+                    <label for="star-@i" title="@i stars">
+                        ★
+                    </label>
+                }
+            </div>
             <span asp-validation-for="Rating" class="text-danger"></span>
         </div>
 
+        <!-- Submit Button -->
         <button type="submit" class="btn btn-primary">Submit</button>
     </form>
 </div>
+
+@section Styles {
+    <style>
+        .rating {
+            direction: rtl; 
+            font-size: 2em;
+            display: flex;
+            gap: 0.3em;
+        }
+
+            .rating input[type="radio"] {
+                display: none;
+            }
+
+            .rating label {
+                color: #ccc;
+                cursor: pointer;
+                user-select: none;
+            }
+
+            .rating input[type="radio"]:checked ~ label,
+            .rating input[type="radio"]:checked ~ label ~ label {
+                color: #FFD700; 
+            }
+
+            .rating label:hover,
+            .rating label:hover ~ label {
+                color: #FFD700; 
+            }
+    </style>
+}
 
 @section Scripts {
     <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.min.js"></script>

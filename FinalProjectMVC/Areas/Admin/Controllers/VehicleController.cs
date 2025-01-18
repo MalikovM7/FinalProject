@@ -85,7 +85,7 @@ namespace FinalProjectMVC.Areas.Admin.Controllers
         {
             if (!ModelState.IsValid)
             {
-                // Return the view with the current data to show validation errors
+               
                 return View(carVM);
             }
 
@@ -267,7 +267,7 @@ namespace FinalProjectMVC.Areas.Admin.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> AvailableCars(DateTime? startDate, DateTime? endDate)
         {
-            // Default dates if not provided
+          
             var reservationStartDate = startDate ?? DateTime.Today;
             var reservationEndDate = endDate ?? DateTime.Today.AddDays(1);
 

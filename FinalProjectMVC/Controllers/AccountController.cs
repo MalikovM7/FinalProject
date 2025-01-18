@@ -69,7 +69,7 @@ namespace FinalProjectMVC.Controllers
                 return View();
             }
 
-            // Ensure the role exists before adding the user to it
+            
             if (!await _roleManager.RoleExistsAsync(Roles.Member.ToString()))
             {
                 await _roleManager.CreateAsync(new IdentityRole(Roles.Member.ToString()));
@@ -102,30 +102,30 @@ namespace FinalProjectMVC.Controllers
         {
             if (string.IsNullOrEmpty(userId) || string.IsNullOrEmpty(token))
             {
-                // Handle error if userId or token is missing
-                return RedirectToAction("Error", "Home"); // Or any other page you prefer for errors
+                
+                return RedirectToAction("Error", "Home"); 
             }
 
             var user = await _userManager.FindByIdAsync(userId);
 
             if (user == null)
             {
-                // Handle case where the user cannot be found
-                return RedirectToAction("Error", "Home"); // Or a custom error page
+               
+                return RedirectToAction("Error", "Home"); 
             }
 
             var result = await _userManager.ConfirmEmailAsync(user, token);
 
             if (result.Succeeded)
             {
-                // Optionally sign the user in after confirming
+                
                 await _signInManager.SignInAsync(user, false);
 
                 return RedirectToAction("Index", "Home");
             }
 
-            // If confirmation failed, return an error page or message
-            return RedirectToAction("Error", "Home"); // Or handle failure as per your needs
+            
+            return RedirectToAction("Error", "Home"); 
         }
 
 
@@ -195,11 +195,6 @@ namespace FinalProjectMVC.Controllers
         }
 
 
-
-
-
-
-        // GET: /Account/ChangePassword
         [HttpGet]
         [Authorize]
         public ActionResult ChangePassword()

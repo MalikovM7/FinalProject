@@ -78,7 +78,7 @@ namespace FinalProjectMVC.Controllers
                 CategoryName = car.Category?.Name // Assuming category is a navigation property
             };
 
-            return View(viewModel); // Ensure this line passes the correct model
+            return View(viewModel); 
         }
 
 

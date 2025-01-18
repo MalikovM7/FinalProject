@@ -58,46 +58,25 @@
             <!-- Right: Search Panel -->
             <div class="col-md-4">
                 <!-- Search Panel -->
-                <div class="border p-4 bg-light">
-                    <h5 class="text-uppercase mb-4">Find Best Rental Car</h5>
-                    <form>
-                        <div class="mb-3">
-                            <label for="pickupLocation" class="form-label">Picking Up Location</label>
-                            <input type="text" class="form-control" id="pickupLocation" placeholder="Airport or Anywhere">
-                        </div>
-                        <div class="mb-3">
-                            <label for="dropoffLocation" class="form-label">Dropping Off Location</label>
-                            <input type="text" class="form-control" id="dropoffLocation" placeholder="Airport or Anywhere">
-                        </div>
-                        <div class="mb-3">
-                            <label for="pickupDate" class="form-label">Picking Up Date</label>
-                            <input type="date" class="form-control" id="pickupDate">
-                        </div>
-                        <div class="mb-3">
-                            <label for="pickupHour" class="form-label">Picking Up Hour</label>
-                            <input type="time" class="form-control" id="pickupHour">
-                        </div>
-                        <div class="mb-3">
-                            <label for="category" class="form-label">Select Category</label>
-                            <select class="form-select" id="category">
-                                <option selected>Select Category</option>
-                                <option value="1">Sedan</option>
-                                <option value="2">SUV</option>
-                                <option value="3">Truck</option>
-                            </select>
-                        </div>
-                        <div class="mb-3">
-                            <label for="type" class="form-label">Select Type</label>
-                            <select class="form-select" id="type">
-                                <option selected>Select Type</option>
-                                <option value="1">Luxury</option>
-                                <option value="2">Economy</option>
-                                <option value="3">Sport</option>
-                            </select>
-                        </div>
-                        <button type="submit" class="btn btn-primary w-100">Find Car</button>
-                    </form>
-                </div>
+            <div class="border p-4 bg-light">
+                <h5 class="text-uppercase mb-4">Find Best Rental Car</h5>
+                <form action="/Reservation/AvailableCars" method="get">
+                    <!-- Picking Up Date -->
+                    <div class="mb-3">
+                        <label for="pickupDate" class="form-label">Picking Up Date</label>
+                        <input type="date" class="form-control" id="pickupDate" name="startDate" required>
+                    </div>
+
+                    <!-- Dropping Off Date -->
+                    <div class="mb-3">
+                        <label for="dropoffDate" class="form-label">Dropping Off Date</label>
+                        <input type="date" class="form-control" id="dropoffDate" name="endDate" required>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <button type="submit" class="btn btn-primary w-100">Find Car</button>
+                </form>
+            </div>
 
             <!-- Price Filter -->
             <div class="border p-4 bg-light mt-4">
@@ -124,6 +103,7 @@
                             var testimonial = Model.Testimonials.ElementAt(i);
                             <div class="testimonial mb-3" data-index="@i" style="display: @(i == 0 ? "block" : "none");">
                                 <p>@testimonial.Comment</p>
+                                <p> UserName: @testimonial.UserId</p>
                                 <p><strong>Rating: @testimonial.Rating/5</strong></p>
                             </div>
                         }

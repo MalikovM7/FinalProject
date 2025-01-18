@@ -1,4 +1,5 @@
 ﻿using Domain.Models;
+using FinalProjectMVC.ViewModels.Reservation;
 
 namespace FinalProjectMVC.ViewModels.Home
 {
@@ -17,6 +18,9 @@ namespace FinalProjectMVC.ViewModels.Home
         public IEnumerable<Car> Cars { get; set; }
 
 
+        
+
+        //public IEnumerable<ReservePageViewModel> AvailableCars { get; set; }
         public int TotalCars { get; set; }
         public int TotalUsers { get; set; }
         public int TotalReservations { get; set; }

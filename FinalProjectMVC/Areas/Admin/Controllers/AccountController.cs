@@ -91,6 +91,32 @@ namespace FinalProjectMVC.Areas.Admin.Controllers
         }
 
 
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> DeleteUser(string userId)
+        {
+            if (string.IsNullOrEmpty(userId))
+            {
+                return BadRequest("Invalid user ID.");
+            }
+
+            var user = await _userManager.FindByIdAsync(userId);
+            if (user == null)
+            {
+                return NotFound("User not found.");
+            }
+
+            var result = await _userManager.DeleteAsync(user);
+            if (!result.Succeeded)
+            {
+                ModelState.AddModelError(string.Empty, "Error occurred while deleting the user.");
+                return RedirectToAction(nameof(Index));
+            }
+
+            TempData["SuccessMessage"] = "User successfully deleted.";
+            return RedirectToAction(nameof(Index));
+        }
+
 
 
 
