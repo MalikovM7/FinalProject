@@ -24,7 +24,7 @@ namespace FinalProjectMVC.Controllers
             
         }
 
-        
+
         [HttpGet]
         public async Task<IActionResult> AvailableCars(DateTime startDate, DateTime endDate)
         {
@@ -44,6 +44,7 @@ namespace FinalProjectMVC.Controllers
                 return View(model);
             }
 
+            // Fetch available cars for the selected date range
             var cars = await _reservationService.GetAvailableCarsAsync(startDate, endDate);
             model.AvailableCars = cars.Select(c => new VehicleVM
             {
@@ -57,7 +58,7 @@ namespace FinalProjectMVC.Controllers
             return View(model);
         }
 
-        
+
         [HttpGet]
         [Authorize]
         public async Task<IActionResult> Reserve(int carId, DateTime startDate, DateTime endDate)

@@ -26,15 +26,16 @@ namespace Services.Implementations.Implementations
             _reservationRepository = reservationRepository;
         }
 
- 
+
         public async Task<List<Car>> GetAvailableCarsAsync(DateTime startDate, DateTime endDate)
         {
-            
             var availableCars = await _context.Cars
                 .Where(c => c.IsAvailable &&
+                            c.AvailabilityStart <= startDate && 
+                            c.AvailabilityEnd >= endDate &&    
                             !_context.Reservations.Any(r => r.CarId == c.Id &&
-                                                            r.StartDate < endDate &&
-                                                            r.EndDate > startDate))
+                                                            r.StartDate < endDate && 
+                                                            r.EndDate > startDate))  
                 .ToListAsync();
 
             return availableCars;

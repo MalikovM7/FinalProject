@@ -533,8 +533,16 @@
       "PackagePath": "staticwebassets\\uploads\\licenses\\8678c509-e9e6-4087-af56-ca798359baef_Mercedes-Benz_W_222_S_350_Bluetec.jpeg"
     },
     {
+      "Id": "C:\\Users\\vuqar\\Desktop\\Final Code\\FinalProjectMVC\\wwwroot\\uploads\\licenses\\886d95a8-3e81-4494-a335-c72b2f8e5558_a642037a-0996-4680-9be7-ed4a34c34eca_75b6c2d5b103423197c0836e61087979.jpg",
+      "PackagePath": "staticwebassets\\uploads\\licenses\\886d95a8-3e81-4494-a335-c72b2f8e5558_a642037a-0996-4680-9be7-ed4a34c34eca_75b6c2d5b103423197c0836e61087979.jpg"
+    },
+    {
       "Id": "C:\\Users\\vuqar\\Desktop\\Final Code\\FinalProjectMVC\\wwwroot\\uploads\\licenses\\93104aa0-c0b0-4d6f-bcb1-5b569288b1df_photo_2024-12-22_16-13-13.jpg",
       "PackagePath": "staticwebassets\\uploads\\licenses\\93104aa0-c0b0-4d6f-bcb1-5b569288b1df_photo_2024-12-22_16-13-13.jpg"
+    },
+    {
+      "Id": "C:\\Users\\vuqar\\Desktop\\Final Code\\FinalProjectMVC\\wwwroot\\uploads\\licenses\\99c5ff41-f9b8-4de6-95e2-b7ef2c99df6f_a642037a-0996-4680-9be7-ed4a34c34eca_75b6c2d5b103423197c0836e61087979.jpg",
+      "PackagePath": "staticwebassets\\uploads\\licenses\\99c5ff41-f9b8-4de6-95e2-b7ef2c99df6f_a642037a-0996-4680-9be7-ed4a34c34eca_75b6c2d5b103423197c0836e61087979.jpg"
     },
     {
       "Id": "C:\\Users\\vuqar\\Desktop\\Final Code\\FinalProjectMVC\\wwwroot\\uploads\\licenses\\a0a19e80-1e37-4c52-9363-f4e9f32723d9_Mercedes-Benz_W_222_S_350_Bluetec.jpeg",
@@ -555,6 +563,10 @@
     {
       "Id": "C:\\Users\\vuqar\\Desktop\\Final Code\\FinalProjectMVC\\wwwroot\\uploads\\licenses\\e65b4db5-a9a4-4311-b163-45e56dae1e0f_75b6c2d5b103423197c0836e61087979.jpg",
       "PackagePath": "staticwebassets\\uploads\\licenses\\e65b4db5-a9a4-4311-b163-45e56dae1e0f_75b6c2d5b103423197c0836e61087979.jpg"
+    },
+    {
+      "Id": "C:\\Users\\vuqar\\Desktop\\Final Code\\FinalProjectMVC\\wwwroot\\uploads\\licenses\\f9788674-3d9d-442c-914c-9905379610d0_75b6c2d5b103423197c0836e61087979.jpg",
+      "PackagePath": "staticwebassets\\uploads\\licenses\\f9788674-3d9d-442c-914c-9905379610d0_75b6c2d5b103423197c0836e61087979.jpg"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.FinalProjectMVC.Microsoft.AspNetCore.StaticWebAssets.props",
