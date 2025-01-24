@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "ZZbDGQvXhipeIW4/0WsLGF5J9D6dGnaOHJ+9mOpOtrM=",
+  "Hash": "R3Q/yo2RSoiMe7WXPRiROmSNfN0stYL7WPG2H/dBT9c=",
   "Source": "FinalProjectMVC",
   "BasePath": "_content/FinalProjectMVC",
   "Mode": "Default",
@@ -3456,6 +3456,25 @@
       "OriginalItemSpec": "wwwroot\\templates\\Verification.html"
     },
     {
+      "Identity": "C:\\Users\\vuqar\\Desktop\\Final Code\\FinalProjectMVC\\wwwroot\\uploads\\licenses\\166571ec-96dd-4caf-b19c-57d77cd5d73e_75b6c2d5b103423197c0836e61087979.jpg",
+      "SourceId": "FinalProjectMVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\vuqar\\Desktop\\Final Code\\FinalProjectMVC\\wwwroot\\",
+      "BasePath": "_content/FinalProjectMVC",
+      "RelativePath": "uploads/licenses/166571ec-96dd-4caf-b19c-57d77cd5d73e_75b6c2d5b103423197c0836e61087979.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\licenses\\166571ec-96dd-4caf-b19c-57d77cd5d73e_75b6c2d5b103423197c0836e61087979.jpg"
+    },
+    {
       "Identity": "C:\\Users\\vuqar\\Desktop\\Final Code\\FinalProjectMVC\\wwwroot\\uploads\\licenses\\1e4c7077-2ea2-4d87-bb69-6c7cb3868c19_Mercedes-Benz_W_222_S_350_Bluetec.jpeg",
       "SourceId": "FinalProjectMVC",
       "SourceType": "Discovered",
@@ -3473,6 +3492,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\uploads\\licenses\\1e4c7077-2ea2-4d87-bb69-6c7cb3868c19_Mercedes-Benz_W_222_S_350_Bluetec.jpeg"
+    },
+    {
+      "Identity": "C:\\Users\\vuqar\\Desktop\\Final Code\\FinalProjectMVC\\wwwroot\\uploads\\licenses\\22837afb-c816-4e42-bb1f-bdc934d94379_75b6c2d5b103423197c0836e61087979.jpg",
+      "SourceId": "FinalProjectMVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\vuqar\\Desktop\\Final Code\\FinalProjectMVC\\wwwroot\\",
+      "BasePath": "_content/FinalProjectMVC",
+      "RelativePath": "uploads/licenses/22837afb-c816-4e42-bb1f-bdc934d94379_75b6c2d5b103423197c0836e61087979.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\licenses\\22837afb-c816-4e42-bb1f-bdc934d94379_75b6c2d5b103423197c0836e61087979.jpg"
     },
     {
       "Identity": "C:\\Users\\vuqar\\Desktop\\Final Code\\FinalProjectMVC\\wwwroot\\uploads\\licenses\\354bb18d-3b1c-4f32-8be1-002a7574da98_photo_2024-12-22_16-13-23.jpg",

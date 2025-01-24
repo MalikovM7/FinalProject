@@ -3,10 +3,20 @@
 <div class="container mt-5">
     <h3 class="text-center">Reserve Your Car</h3>
 
+    @if (!ViewData.ModelState.IsValid)
+    {
+        <div class="alert alert-danger">
+            <ul>
+                @foreach (var error in ViewData.ModelState.Values.SelectMany(v => v.Errors))
+                {
+                    <li>@error.ErrorMessage</li>
+                }
+            </ul>
+        </div>
+    }
+
     <form asp-action="Reserve" asp-controller="Reservation" method="post" enctype="multipart/form-data" class="mt-4">
         <input type="hidden" asp-for="CarId" />
-        <input type="hidden" asp-for="StartDate" />
-        <input type="hidden" asp-for="EndDate" />
 
         <div class="row mb-3">
             <div class="col-md-6">
@@ -27,6 +37,19 @@
             <div class="col-md-6">
                 <label class="form-label">Price per Day:</label>
                 <span class="form-control-plaintext">@Model.PricePerDay.ToString("C")</span>
+            </div>
+        </div>
+
+        <div class="row mb-3">
+            <div class="col-md-6">
+                <label asp-for="StartDate" class="form-label">Start Date:</label>
+                <input asp-for="StartDate" type="date" class="form-control" />
+                <span asp-validation-for="StartDate" class="text-danger"></span>
+            </div>
+            <div class="col-md-6">
+                <label asp-for="EndDate" class="form-label">End Date:</label>
+                <input asp-for="EndDate" type="date" class="form-control" />
+                <span asp-validation-for="EndDate" class="text-danger"></span>
             </div>
         </div>
 
@@ -52,6 +75,12 @@
             <button type="submit" class="btn btn-primary">Confirm Reservation</button>
         </div>
     </form>
+
+    <div class="text-center mt-4">
+        <a asp-action="AvailableCars" asp-route-startDate="@Model.StartDate.ToString("yyyy-MM-dd")" asp-route-endDate="@Model.EndDate.ToString("yyyy-MM-dd")" class="btn btn-success">
+            View Available Cars
+        </a>
+    </div>
 </div>
 
 @section Scripts {

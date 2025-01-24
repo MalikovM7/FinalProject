@@ -20,7 +20,7 @@ namespace FinalProjectMVC.ViewModels.Account
 
         [Required]
         [DataType(DataType.Password)]
-        [Compare(nameof(Password))]
+        [Compare("Password", ErrorMessage = "Passwords do not match.")]
         public string ConfirmPassword { get; set; }
 
     }

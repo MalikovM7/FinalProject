@@ -50,6 +50,12 @@ namespace FinalProjectMVC.Controllers
                 return View();
             }
 
+            if (request.Password != request.ConfirmPassword)
+            {
+                ModelState.AddModelError("ConfirmPassword", "Passwords do not match. Please try again.");
+                return View();
+            }
+
             AppUser user = new()
             {
                 FullName = request.FullName,
