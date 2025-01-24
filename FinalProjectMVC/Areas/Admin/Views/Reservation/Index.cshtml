@@ -8,6 +8,7 @@
         <tr>
             <th>Car ID</th>
             <th>User ID</th>
+            <th>UserName</th>
             <th>Total Price</th>
             <th>Start Date</th>
             <th>End Date</th>
@@ -21,6 +22,7 @@
             <tr id="row-@reservation.Id">
                 <td>@reservation.CarId</td>
                 <td>@reservation.UserId</td>
+                <td>@reservation.UserName</td>
                 <td>@reservation.TotalPrice.ToString("C")</td>
                 <td>@reservation.StartDate.ToString("yyyy-MM-dd")</td>
                 <td>@reservation.EndDate.ToString("yyyy-MM-dd")</td>

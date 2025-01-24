@@ -8,6 +8,8 @@
 
         public string UserId { get; set; } // User making the reservation
 
+        public string UserName { get; set; }
+
         public DateTime StartDate { get; set; } // Reservation start date
         public DateTime EndDate { get; set; } // Reservation end date
 

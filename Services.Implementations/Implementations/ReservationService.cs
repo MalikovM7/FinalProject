@@ -57,6 +57,7 @@ namespace Services.Implementations.Implementations
                 CreatedDate = DateTime.Now,
                 TotalPrice = totalPrice,
                 UserId = user.Id,
+                UserName=user.UserName,
                 PhoneNumber = reserve.PhoneNumber,
                 DrivingLicensePath = reserve.DrivingLicensePath,
                

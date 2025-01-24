@@ -16,7 +16,11 @@ namespace Domain.Models
         public int CarId { get; set; }
 
         [Required]
-        public string UserId { get; set; } // Assuming a logged-in user system
+        public string UserId { get; set; }
+
+        // Assuming a logged-in user system
+        [Required]
+        public string UserName { get; set; }
 
         [Required]
         public DateTime StartDate { get; set; }

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "R3Q/yo2RSoiMe7WXPRiROmSNfN0stYL7WPG2H/dBT9c=",
+  "Hash": "N7eXt0CkFG4vGcRAPqr/YWdzbn2dRVsGcdLDK4zq5dQ=",
   "Source": "FinalProjectMVC",
   "BasePath": "_content/FinalProjectMVC",
   "Mode": "Default",
@@ -3475,6 +3475,25 @@
       "OriginalItemSpec": "wwwroot\\uploads\\licenses\\166571ec-96dd-4caf-b19c-57d77cd5d73e_75b6c2d5b103423197c0836e61087979.jpg"
     },
     {
+      "Identity": "C:\\Users\\vuqar\\Desktop\\Final Code\\FinalProjectMVC\\wwwroot\\uploads\\licenses\\1e0f5c91-454c-4d42-bb7b-dbb5ff5ce00c_75b6c2d5b103423197c0836e61087979.jpg",
+      "SourceId": "FinalProjectMVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\vuqar\\Desktop\\Final Code\\FinalProjectMVC\\wwwroot\\",
+      "BasePath": "_content/FinalProjectMVC",
+      "RelativePath": "uploads/licenses/1e0f5c91-454c-4d42-bb7b-dbb5ff5ce00c_75b6c2d5b103423197c0836e61087979.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\licenses\\1e0f5c91-454c-4d42-bb7b-dbb5ff5ce00c_75b6c2d5b103423197c0836e61087979.jpg"
+    },
+    {
       "Identity": "C:\\Users\\vuqar\\Desktop\\Final Code\\FinalProjectMVC\\wwwroot\\uploads\\licenses\\1e4c7077-2ea2-4d87-bb69-6c7cb3868c19_Mercedes-Benz_W_222_S_350_Bluetec.jpeg",
       "SourceId": "FinalProjectMVC",
       "SourceType": "Discovered",
@@ -3703,6 +3722,25 @@
       "OriginalItemSpec": "wwwroot\\uploads\\licenses\\813cf487-1869-4352-aeb8-39e9d1846681_75b6c2d5b103423197c0836e61087979.jpg"
     },
     {
+      "Identity": "C:\\Users\\vuqar\\Desktop\\Final Code\\FinalProjectMVC\\wwwroot\\uploads\\licenses\\814a11b0-160d-475a-9bd2-3d27f57017f3_75b6c2d5b103423197c0836e61087979.jpg",
+      "SourceId": "FinalProjectMVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\vuqar\\Desktop\\Final Code\\FinalProjectMVC\\wwwroot\\",
+      "BasePath": "_content/FinalProjectMVC",
+      "RelativePath": "uploads/licenses/814a11b0-160d-475a-9bd2-3d27f57017f3_75b6c2d5b103423197c0836e61087979.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\licenses\\814a11b0-160d-475a-9bd2-3d27f57017f3_75b6c2d5b103423197c0836e61087979.jpg"
+    },
+    {
       "Identity": "C:\\Users\\vuqar\\Desktop\\Final Code\\FinalProjectMVC\\wwwroot\\uploads\\licenses\\820eec48-62bc-484b-8ae2-6d17f0d07bc7_75b6c2d5b103423197c0836e61087979.jpg",
       "SourceId": "FinalProjectMVC",
       "SourceType": "Discovered",
@@ -3777,6 +3815,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\uploads\\licenses\\93104aa0-c0b0-4d6f-bcb1-5b569288b1df_photo_2024-12-22_16-13-13.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\vuqar\\Desktop\\Final Code\\FinalProjectMVC\\wwwroot\\uploads\\licenses\\935434fc-979f-4e7f-b08b-7ca06ebc7c73_75b6c2d5b103423197c0836e61087979.jpg",
+      "SourceId": "FinalProjectMVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\vuqar\\Desktop\\Final Code\\FinalProjectMVC\\wwwroot\\",
+      "BasePath": "_content/FinalProjectMVC",
+      "RelativePath": "uploads/licenses/935434fc-979f-4e7f-b08b-7ca06ebc7c73_75b6c2d5b103423197c0836e61087979.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\licenses\\935434fc-979f-4e7f-b08b-7ca06ebc7c73_75b6c2d5b103423197c0836e61087979.jpg"
     },
     {
       "Identity": "C:\\Users\\vuqar\\Desktop\\Final Code\\FinalProjectMVC\\wwwroot\\uploads\\licenses\\99c5ff41-f9b8-4de6-95e2-b7ef2c99df6f_a642037a-0996-4680-9be7-ed4a34c34eca_75b6c2d5b103423197c0836e61087979.jpg",
@@ -3872,6 +3929,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\uploads\\licenses\\d7a45678-5150-4861-b963-48cece54638a_75b6c2d5b103423197c0836e61087979.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\vuqar\\Desktop\\Final Code\\FinalProjectMVC\\wwwroot\\uploads\\licenses\\e3111c65-9850-42cd-9b50-6cdf14f882c3_75b6c2d5b103423197c0836e61087979.jpg",
+      "SourceId": "FinalProjectMVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\vuqar\\Desktop\\Final Code\\FinalProjectMVC\\wwwroot\\",
+      "BasePath": "_content/FinalProjectMVC",
+      "RelativePath": "uploads/licenses/e3111c65-9850-42cd-9b50-6cdf14f882c3_75b6c2d5b103423197c0836e61087979.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\licenses\\e3111c65-9850-42cd-9b50-6cdf14f882c3_75b6c2d5b103423197c0836e61087979.jpg"
     },
     {
       "Identity": "C:\\Users\\vuqar\\Desktop\\Final Code\\FinalProjectMVC\\wwwroot\\uploads\\licenses\\e65b4db5-a9a4-4311-b163-45e56dae1e0f_75b6c2d5b103423197c0836e61087979.jpg",
