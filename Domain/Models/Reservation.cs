@@ -18,7 +18,7 @@ namespace Domain.Models
         [Required]
         public string UserId { get; set; }
 
-        // Assuming a logged-in user system
+        
         [Required]
         public string UserName { get; set; }
 
@@ -33,11 +33,11 @@ namespace Domain.Models
 
         public string? PhoneNumber { get; set; }
         public string? DrivingLicensePath { get; set; }
-        public string? Status { get; set; } // Pending, Approved, Declined
+        public string? Status { get; set; } 
 
 
 
-        // Navigation property
+        
         public Car Car { get; set; }
         public AppUser AppUser { get; set; }
     }

@@ -36,7 +36,7 @@ namespace FinalProjectMVC.Areas.Admin.Controllers
                 Location = c.Location,
                 AvailabilityStart = c.AvailabilityStart,
                 AvailabilityEnd = c.AvailabilityEnd,
-                CategoryName = c.Category?.Name // Map the Category Name here
+                CategoryName = c.Category?.Name 
             }).ToList();
 
             return View(carVMs);
@@ -112,7 +112,7 @@ namespace FinalProjectMVC.Areas.Admin.Controllers
 
             if (!ModelState.IsValid)
             {
-                // Return the view with the current data to show validation errors
+                
                 return View(carVM);
             }
 
@@ -271,7 +271,7 @@ namespace FinalProjectMVC.Areas.Admin.Controllers
             var reservationStartDate = startDate ?? DateTime.Today;
             var reservationEndDate = endDate ?? DateTime.Today.AddDays(1);
 
-            // Fetch available cars asynchronously and map to VehicleVM
+            
             var availableCars = (await _vehicleService.GetAvailableCarsAsync(reservationStartDate, reservationEndDate))
                 .Select(car => new VehicleVM
                 {
@@ -283,7 +283,7 @@ namespace FinalProjectMVC.Areas.Admin.Controllers
                     IsAvailable = car.IsAvailable
                 }).ToList();
 
-            // Create the model
+           
             var model = new ReservePageViewModel
             {
                 Reservation = new CarReservationViewModel
@@ -329,7 +329,7 @@ namespace FinalProjectMVC.Areas.Admin.Controllers
                 return NotFound();
             }
 
-            // Update availability details
+            
             car.IsAvailable = carVM.IsAvailable;
             car.AvailabilityStart = carVM.AvailabilityStart ?? DateTime.Now;
             car.AvailabilityEnd = carVM.AvailabilityEnd;

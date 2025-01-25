@@ -44,7 +44,7 @@ namespace FinalProjectMVC.Controllers
                 return View(model);
             }
 
-            // Fetch available cars for the selected date range
+           
             var cars = await _reservationService.GetAvailableCarsAsync(startDate, endDate);
             model.AvailableCars = cars.Select(c => new VehicleVM
             {
@@ -120,29 +120,29 @@ namespace FinalProjectMVC.Controllers
 
             string filePath = null;
 
-            // Validate and save driving license file
+            
             if (model.DrivingLicense != null && model.DrivingLicense.Length > 0)
             {
                 var allowedExtensions = new[] { ".jpg", ".jpeg", ".png", ".pdf" };
                 var fileExtension = Path.GetExtension(model.DrivingLicense.FileName).ToLower();
 
-                // Validate file extension
+                
                 if (!allowedExtensions.Contains(fileExtension))
                 {
                     ModelState.AddModelError("DrivingLicense", "Only JPG, PNG, and PDF files are allowed.");
                     return View(model);
                 }
 
-                // Validate file size (max 5MB)
+                
                 if (model.DrivingLicense.Length > 5 * 1024 * 1024)
                 {
                     ModelState.AddModelError("DrivingLicense", "File size cannot exceed 5 MB.");
                     return View(model);
                 }
 
-                // Save the file to the server
+                
                 string uploadsFolder = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/uploads/licenses");
-                Directory.CreateDirectory(uploadsFolder); // Ensure the directory exists
+                Directory.CreateDirectory(uploadsFolder); 
                 string uniqueFileName = $"{Guid.NewGuid()}_{Path.GetFileName(model.DrivingLicense.FileName)}";
                 filePath = Path.Combine(uploadsFolder, uniqueFileName);
 
@@ -151,7 +151,7 @@ namespace FinalProjectMVC.Controllers
                     await model.DrivingLicense.CopyToAsync(stream);
                 }
 
-                // Store the relative path for easier access
+                
                 filePath = $"/uploads/licenses/{uniqueFileName}";
             }
             else
@@ -160,7 +160,7 @@ namespace FinalProjectMVC.Controllers
                 return View(model);
             }
 
-            // Create and save the reservation
+           
             var reservation = new Reservation
             {
                 CarId = model.CarId,
@@ -168,13 +168,13 @@ namespace FinalProjectMVC.Controllers
                 EndDate = model.EndDate,
                 TotalPrice = model.TotalPrice,
                 PhoneNumber = model.PhoneNumber,
-                DrivingLicensePath = filePath, // Use the relative path
+                DrivingLicensePath = filePath, 
                 Status = "Pending"
             };
 
             await _reservationService.ReserveCarAsync(reservation, user);
 
-            // Notify the user of successful submission
+            
             TempData["SuccessMessage"] = "Your reservation has been submitted and is pending admin approval.";
             return RedirectToAction(nameof(MyReservations));
         }

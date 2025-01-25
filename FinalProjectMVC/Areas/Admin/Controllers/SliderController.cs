@@ -26,10 +26,10 @@ namespace FinalProjectMVC.Areas.Admin.Controllers
         [HttpGet]
         public async Task<IActionResult> Index()
         {
-            // Fetch the sliders from the service
+           
             var sliders = await _sliderService.GetSliderSAsync();
 
-            // Map Domain.Models.Slider to SliderVM
+            
             var sliderVMs = sliders.Select(slider => new SliderVM
             {
                 Id = slider.Id,
@@ -37,7 +37,7 @@ namespace FinalProjectMVC.Areas.Admin.Controllers
                 Subtitle = slider.Subtitle,
             }).ToList();
 
-            // Pass the SliderVM list to the view
+            
             return View(sliderVMs);
         }
 

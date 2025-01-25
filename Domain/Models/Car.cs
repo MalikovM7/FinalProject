@@ -22,14 +22,14 @@ namespace Domain.Models
         public DateTime? AvailabilityStart { get; set; }
         public DateTime? AvailabilityEnd { get; set; }
 
-        // Foreign Key for CarCategory
+        
         [ForeignKey("Category")]
         public int CategoryId { get; set; }
 
-        // Navigation property
+       
         public Category Category { get; set; }
 
-        [NotMapped] // Use NotMapped to exclude it from the database table
+        [NotMapped] 
         public string CategoryName => Category?.Name;
 
 

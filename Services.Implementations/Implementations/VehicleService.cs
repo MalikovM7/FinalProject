@@ -46,7 +46,7 @@ namespace FinalProjectMVC.Services.Implementations
         public async Task<List<Car>> GetCarSAsync()
         {
             var cars = await _vehicleRepository.Query()
-       .Include(c => c.Category) // Ensure Category is included
+       .Include(c => c.Category) 
        .ToListAsync();
             return cars;
         }
@@ -54,7 +54,7 @@ namespace FinalProjectMVC.Services.Implementations
         public async Task<List<Category>> GetCategoriesAsync()
         {
             var categories = await _categoryRepository.GetAllAsync();
-            return categories.ToList(); // Ensure it's converted to a list
+            return categories.ToList(); 
         }
 
         public async Task UpdateCarAsync(int id, Car Car)

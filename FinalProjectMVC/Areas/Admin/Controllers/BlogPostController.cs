@@ -28,7 +28,7 @@ namespace FinalProjectMVC.Areas.Admin.Controllers
             return View();
         }
 
-        // Create (POST)
+        
         [HttpPost]
         [ValidateAntiForgeryToken]
         public IActionResult Create(BlogPost blogPost)
@@ -51,7 +51,7 @@ namespace FinalProjectMVC.Areas.Admin.Controllers
             return View(blogPost);
         }
 
-        // Edit (POST)
+        
         [HttpPost]
         [ValidateAntiForgeryToken]
         public IActionResult Edit(BlogPost blogPost)
@@ -80,7 +80,7 @@ namespace FinalProjectMVC.Areas.Admin.Controllers
             return View(blogPost);
         }
 
-        // Delete (POST)
+        
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public IActionResult DeleteConfirmed(int id)

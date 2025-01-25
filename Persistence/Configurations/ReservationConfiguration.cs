@@ -13,12 +13,12 @@ namespace Persistence.Configurations
             builder.ToTable("Reservations");
 
             builder.HasOne(r => r.Car)
-                .WithMany() // No navigation back to reservations in Car
+                .WithMany() 
                 .HasForeignKey(r => r.CarId)
                 .OnDelete(DeleteBehavior.Restrict);
 
             builder.HasOne(r => r.AppUser)
-                .WithMany() // No navigation back to reservations in AppUser
+                .WithMany() 
                 .HasForeignKey(r => r.UserId)
                 .OnDelete(DeleteBehavior.Restrict);
 

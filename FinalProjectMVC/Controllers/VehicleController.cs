@@ -75,7 +75,7 @@ namespace FinalProjectMVC.Controllers
                 Location = car.Location,
                 AvailabilityStart = car.AvailabilityStart,
                 AvailabilityEnd = car.AvailabilityEnd,
-                CategoryName = car.Category?.Name // Assuming category is a navigation property
+                CategoryName = car.Category?.Name 
             };
 
             return View(viewModel); 

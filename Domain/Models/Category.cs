@@ -11,7 +11,7 @@ namespace Domain.Models
         [Required]
         public string? Name { get; set; }
 
-        // Navigation property for related cars
+       
         public ICollection<Car> Cars { get; set; } = new List<Car>();
     }
 }

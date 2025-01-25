@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "N7eXt0CkFG4vGcRAPqr/YWdzbn2dRVsGcdLDK4zq5dQ=",
+  "Hash": "1PiCwUmZjYK3iX+3UuT3eo2N4JEOXmPF8jcHzZyeAlI=",
   "Source": "FinalProjectMVC",
   "BasePath": "_content/FinalProjectMVC",
   "Mode": "Default",
@@ -3836,6 +3836,25 @@
       "OriginalItemSpec": "wwwroot\\uploads\\licenses\\935434fc-979f-4e7f-b08b-7ca06ebc7c73_75b6c2d5b103423197c0836e61087979.jpg"
     },
     {
+      "Identity": "C:\\Users\\vuqar\\Desktop\\Final Code\\FinalProjectMVC\\wwwroot\\uploads\\licenses\\98db1150-1b29-41c3-a383-94f432fe2f22_licence-full-front.jpg",
+      "SourceId": "FinalProjectMVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\vuqar\\Desktop\\Final Code\\FinalProjectMVC\\wwwroot\\",
+      "BasePath": "_content/FinalProjectMVC",
+      "RelativePath": "uploads/licenses/98db1150-1b29-41c3-a383-94f432fe2f22_licence-full-front.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\licenses\\98db1150-1b29-41c3-a383-94f432fe2f22_licence-full-front.jpg"
+    },
+    {
       "Identity": "C:\\Users\\vuqar\\Desktop\\Final Code\\FinalProjectMVC\\wwwroot\\uploads\\licenses\\99c5ff41-f9b8-4de6-95e2-b7ef2c99df6f_a642037a-0996-4680-9be7-ed4a34c34eca_75b6c2d5b103423197c0836e61087979.jpg",
       "SourceId": "FinalProjectMVC",
       "SourceType": "Discovered",
@@ -3967,6 +3986,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\uploads\\licenses\\e65b4db5-a9a4-4311-b163-45e56dae1e0f_75b6c2d5b103423197c0836e61087979.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\vuqar\\Desktop\\Final Code\\FinalProjectMVC\\wwwroot\\uploads\\licenses\\f7fe7e05-87c3-4e74-bef9-8eb7ca787ed7_licence-full-front.jpg",
+      "SourceId": "FinalProjectMVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\vuqar\\Desktop\\Final Code\\FinalProjectMVC\\wwwroot\\",
+      "BasePath": "_content/FinalProjectMVC",
+      "RelativePath": "uploads/licenses/f7fe7e05-87c3-4e74-bef9-8eb7ca787ed7_licence-full-front.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\licenses\\f7fe7e05-87c3-4e74-bef9-8eb7ca787ed7_licence-full-front.jpg"
     },
     {
       "Identity": "C:\\Users\\vuqar\\Desktop\\Final Code\\FinalProjectMVC\\wwwroot\\uploads\\licenses\\f9788674-3d9d-442c-914c-9905379610d0_75b6c2d5b103423197c0836e61087979.jpg",

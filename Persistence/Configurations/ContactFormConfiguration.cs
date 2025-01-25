@@ -8,12 +8,12 @@ namespace Persistence.Configurations
     {
         public void Configure(EntityTypeBuilder<Contact> builder)
         {
-            // Define the table name
+            
             builder.ToTable("Contacts");
 
             
 
-            // Configure properties
+          
             builder.Property(c => c.Name)
                 .IsRequired()
                 .HasMaxLength(100);
