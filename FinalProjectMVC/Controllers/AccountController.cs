@@ -6,6 +6,7 @@ using Domain.Identity;
 using Services.Interfaces;
 using Microsoft.AspNetCore.Authorization;
 using System.Security.Claims;
+using Microsoft.VisualStudio.Web.CodeGenerators.Mvc.Templates.BlazorIdentity.Pages;
 
 namespace FinalProjectMVC.Controllers
 {
@@ -234,6 +235,114 @@ namespace FinalProjectMVC.Controllers
 
             return View(model);
         }
+
+
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> ForgotPassword(string email)
+        {
+            if (string.IsNullOrEmpty(email))
+            {
+                ModelState.AddModelError(string.Empty, "Email is required.");
+                return View();
+            }
+
+            var user = await _userManager.FindByEmailAsync(email);
+
+            if (user == null || !(await _userManager.IsEmailConfirmedAsync(user)))
+            {
+                ModelState.AddModelError(string.Empty, "Invalid email or email not confirmed.");
+                return View();
+            }
+
+            var token = await _userManager.GeneratePasswordResetTokenAsync(user);
+            var callbackUrl = Url.Action("ResetPassword", "Account", new { email, token }, Request.Scheme);
+
+            string subject = "Reset Password";
+            string html;
+
+            using (StreamReader reader = new("wwwroot/templates/resetpassword.html"))
+            {
+                html = reader.ReadToEnd();
+            }
+
+            html = html.Replace("{{reset-link}}", callbackUrl);
+
+            _emailService.Send(user.Email, subject, html);
+
+            TempData["SuccessMessage"] = "Password reset link has been sent to your email.";
+            return RedirectToAction("Login");
+        }
+
+        [HttpGet]
+        public IActionResult ResetPassword(string email, string token)
+        {
+            if (string.IsNullOrEmpty(email) || string.IsNullOrEmpty(token))
+            {
+                return RedirectToAction("Error", "Home");
+            }
+
+            var model = new ResetPasswordVM { Email = email, Token = token };
+            return View(model);
+        }
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> ResetPassword(ResetPasswordVM model)
+        {
+            if (!ModelState.IsValid)
+            {
+                return View(model);
+            }
+
+            if (string.IsNullOrEmpty(model.Username) || string.IsNullOrEmpty(model.Password) || string.IsNullOrEmpty(model.ConfirmPassword))
+            {
+                TempData["ErrorMessage"] = "All fields are required.";
+                return View(model);
+            }
+
+            if (model.Password != model.ConfirmPassword)
+            {
+                TempData["ErrorMessage"] = "New Password and Confirm Password do not match.";
+                return View(model);
+            }
+
+            if (model.Password.Length < 8 ||
+                !model.Password.Any(char.IsUpper) ||
+                !model.Password.Any(char.IsDigit) ||
+                !model.Password.Any(c => "!@#$%^&*(),.?\":{}|<>".Contains(c)))
+            {
+                TempData["ErrorMessage"] = "Password must be at least 8 characters long, contain an uppercase letter, a number, and a special character.";
+                return View(model);
+            }
+
+           
+            var user = await _userManager.FindByNameAsync(model.Username);
+
+            if (user == null)
+            {
+                TempData["ErrorMessage"] = "Invalid request. Username not found.";
+                return View(model);
+            }
+
+            
+            var token = await _userManager.GeneratePasswordResetTokenAsync(user);
+            var result = await _userManager.ResetPasswordAsync(user, token, model.Password);
+
+            if (result.Succeeded)
+            {
+                TempData["SuccessMessage"] = "Your password has been reset successfully.";
+                return RedirectToAction("Login");
+            }
+
+            foreach (var error in result.Errors)
+            {
+                TempData["ErrorMessage"] = error.Description;
+            }
+
+            return View(model);
+        }
+
 
 
 

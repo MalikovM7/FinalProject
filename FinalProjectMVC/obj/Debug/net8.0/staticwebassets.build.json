@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "1PiCwUmZjYK3iX+3UuT3eo2N4JEOXmPF8jcHzZyeAlI=",
+  "Hash": "b22z6P3K4LsBQXTcwpy6uPe4zly5wgkrGQez2MMg2d0=",
   "Source": "FinalProjectMVC",
   "BasePath": "_content/FinalProjectMVC",
   "Mode": "Default",
@@ -3435,6 +3435,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\vuqar\\Desktop\\Final Code\\FinalProjectMVC\\wwwroot\\templates\\Resetpassword.html",
+      "SourceId": "FinalProjectMVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\vuqar\\Desktop\\Final Code\\FinalProjectMVC\\wwwroot\\",
+      "BasePath": "_content/FinalProjectMVC",
+      "RelativePath": "templates/Resetpassword.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\templates\\Resetpassword.html"
     },
     {
       "Identity": "C:\\Users\\vuqar\\Desktop\\Final Code\\FinalProjectMVC\\wwwroot\\templates\\Verification.html",

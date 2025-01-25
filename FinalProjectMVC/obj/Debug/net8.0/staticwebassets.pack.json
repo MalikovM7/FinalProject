@@ -477,6 +477,10 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\vuqar\\Desktop\\Final Code\\FinalProjectMVC\\wwwroot\\templates\\Resetpassword.html",
+      "PackagePath": "staticwebassets\\templates\\Resetpassword.html"
+    },
+    {
       "Id": "C:\\Users\\vuqar\\Desktop\\Final Code\\FinalProjectMVC\\wwwroot\\templates\\Verification.html",
       "PackagePath": "staticwebassets\\templates\\Verification.html"
     },
